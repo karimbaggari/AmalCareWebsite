@@ -6,23 +6,52 @@
       "home": "Home",
       "language": "Language",
       "loading": "Loading...",
-      "error": "An error occurred"
+      "error": "An error occurred",
+      "forNurses": "For Nurses from Morocco",
+      "forInstitutions": "For Institutions in Germany",
+      "equityQuality": "Equity and Quality"
     },
     "navigation": {
       "home": "Home",
       "about": "About Us",
       "services": "Services",
-      "contact": "Contact"
+      "contact": "Contact",
+      "forNurses": "For Nurses",
+      "forInstitutions": "For Institutions"
     },
     "home": {
+      "tagline": "CARE CONNECTS. AMALCARE.",
       "title": "Welcome to AmalCare",
-      "subtitle": "Your trusted healthcare partner",
-      "description": "We provide comprehensive healthcare services with compassion and excellence.",
-      "cta": "Learn More"
+      "subtitle": "We are AmalCare eG – a placement agency organized as a cooperative for nursing professionals from Morocco.",
+      "description": "What makes us special: we don't just mediate, we prepare, accompany and integrate. From the first lesson in Rabat to successful arrival at a German care facility.",
+      "mission": {
+        "title": "Our Mission",
+        "description": "To offer nursing professionals real prospects. Institutions. And bring people together on both sides for the long term."
+      },
+      "whatWeDo": {
+        "title": "What We Do",
+        "description": "Many placement agencies end with a signed contract. That's where our work really begins.",
+        "details": "We prepare nursing professionals linguistically, professionally and personally to live and work in Germany. And we help institutions attract motivated specialists who are not only competent, but also culturally and humanly suitable.",
+        "focus": "Everything we do is focused on one thing: connecting responsibly. For strong care."
+      },
+      "forNurses": {
+        "title": "For Nurses from Morocco",
+        "description": "We help you get off to a good start with preparation."
+      },
+      "forInstitutions": {
+        "title": "For Institutions in Germany",
+        "description": "Attract nursing professionals from abroad"
+      },
+      "whatMakesUsSpecial": {
+        "title": "What Makes AmalCare Special",
+        "description": "AmalCare is not a 'ready-made' brokerage company. We are a team of nursing professionals, education experts and interculturally trained companions.",
+        "expertise": "We know the routine of daily care. We understand the challenges. And we know how integration succeeds.",
+        "commitment": "We are there. Before entry, on arrival and beyond."
+      }
     },
     "about": {
       "title": "About AmalCare",
-      "description": "We are dedicated to providing exceptional healthcare services to our community."
+      "description": "We are a team of nursing professionals, education experts and interculturally trained companions who connect care responsibly."
     },
     "contact": {
       "title": "Contact Us",

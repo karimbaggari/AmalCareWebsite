@@ -6,23 +6,52 @@
       "home": "Accueil",
       "language": "Langue",
       "loading": "Chargement...",
-      "error": "Une erreur s'est produite"
+      "error": "Une erreur s'est produite",
+      "forNurses": "Pour les infirmières du Maroc",
+      "forInstitutions": "Pour les institutions en Allemagne",
+      "equityQuality": "Équité et qualité"
     },
     "navigation": {
       "home": "Accueil",
       "about": "À propos de nous",
       "services": "Services",
-      "contact": "Contact"
+      "contact": "Contact",
+      "forNurses": "Pour les infirmières",
+      "forInstitutions": "Pour les institutions"
     },
     "home": {
+      "tagline": "LES SOINS CONNECTENT. AMALCARE.",
       "title": "Bienvenue chez AmalCare",
-      "subtitle": "Votre partenaire de santé de confiance",
-      "description": "Nous fournissons des services de santé complets avec compassion et excellence.",
-      "cta": "En savoir plus"
+      "subtitle": "Nous sommes AmalCare eG – une agence de placement organisée en coopération pour les professionnels des soins infirmiers du Maroc.",
+      "description": "Ce qui nous rend spéciaux : nous ne nous contentons pas de faire de la médiation, nous préparons, accompagnons et intégrons. De la première leçon à Rabat à l'arrivée réussie dans un établissement de soins allemand.",
+      "mission": {
+        "title": "Notre mission",
+        "description": "Offrir aux professionnels des soins infirmiers de réelles perspectives. Institutions. Et rassembler les gens des deux côtés à long terme."
+      },
+      "whatWeDo": {
+        "title": "Ce que nous faisons",
+        "description": "De nombreuses agences de placement se terminent par un contrat signé. C'est là que commence vraiment notre travail.",
+        "details": "Nous préparons les professionnels des soins infirmiers sur les plans linguistique, professionnel et personnel à vivre et à travailler en Allemagne. Et nous aidons les institutions à attirer des spécialistes motivés, non seulement compétents, mais aussi adaptés à la culture et à l'humanité.",
+        "focus": "Tout ce que nous faisons est axé sur une chose : se connecter de manière responsable. Pour des soins forts."
+      },
+      "forNurses": {
+        "title": "Pour les infirmières du Maroc",
+        "description": "Nous vous aidons à bien commencer la préparation."
+      },
+      "forInstitutions": {
+        "title": "Pour les institutions en Allemagne",
+        "description": "Attirer des professionnels des soins infirmiers de l'étranger"
+      },
+      "whatMakesUsSpecial": {
+        "title": "Qu'est-ce qui rend AmalCare spécial",
+        "description": "AmalCare n'est pas une société de courtage « prête à l'emploi ». Nous sommes une équipe de professionnels des soins infirmiers, d'experts en éducation et d'accompagnateurs formés de manière interculturelle.",
+        "expertise": "Nous connaissons la routine des soins quotidiens. Nous comprenons les défis. Et nous savons comment l'intégration réussit.",
+        "commitment": "On est là. Avant l'entrée, à l'arrivée et au-delà."
+      }
     },
     "about": {
       "title": "À propos d'AmalCare",
-      "description": "Nous nous engageons à fournir des services de santé exceptionnels à notre communauté."
+      "description": "Nous sommes une équipe de professionnels des soins infirmiers, d'experts en éducation et d'accompagnateurs formés de manière interculturelle qui connectent les soins de manière responsable."
     },
     "contact": {
       "title": "Nous contacter",
