@@ -1,0 +1,33 @@
+{
+    "common": {
+      "welcome": "Bienvenue chez AmalCare",
+      "about": "À propos",
+      "contact": "Contact",
+      "home": "Accueil",
+      "language": "Langue",
+      "loading": "Chargement...",
+      "error": "Une erreur s'est produite"
+    },
+    "navigation": {
+      "home": "Accueil",
+      "about": "À propos de nous",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "home": {
+      "title": "Bienvenue chez AmalCare",
+      "subtitle": "Votre partenaire de santé de confiance",
+      "description": "Nous fournissons des services de santé complets avec compassion et excellence.",
+      "cta": "En savoir plus"
+    },
+    "about": {
+      "title": "À propos d'AmalCare",
+      "description": "Nous nous engageons à fournir des services de santé exceptionnels à notre communauté."
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email"
+    }
+  }

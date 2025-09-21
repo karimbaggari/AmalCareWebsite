@@ -1,0 +1,33 @@
+{
+    "common": {
+      "welcome": "Welcome to AmalCare",
+      "about": "About",
+      "contact": "Contact",
+      "home": "Home",
+      "language": "Language",
+      "loading": "Loading...",
+      "error": "An error occurred"
+    },
+    "navigation": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "home": {
+      "title": "Welcome to AmalCare",
+      "subtitle": "Your trusted healthcare partner",
+      "description": "We provide comprehensive healthcare services with compassion and excellence.",
+      "cta": "Learn More"
+    },
+    "about": {
+      "title": "About AmalCare",
+      "description": "We are dedicated to providing exceptional healthcare services to our community."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    }
+  }
