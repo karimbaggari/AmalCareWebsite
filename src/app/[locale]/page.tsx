@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import {setRequestLocale} from 'next-intl/server';
+import Navbar from '@/components/Navbar';
 
 export default async function HomePage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
@@ -12,9 +13,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
 
   return (
     <>
-    <h1>{t('title')}</h1>
-    <p>{t('description')}</p>
-    <p>{tCommon('common')}</p>
+    <Navbar />
     </>
     
   );
