@@ -4,6 +4,9 @@ import Navbar from '@/components/Navbar';
 import { HeroSection } from '@/components/HeroSection';
 import { CallToAction } from '@/components/callToAction';
 import QuickAbout from '@/components/QuickAbout';
+import { VideoSection } from '@/components/videoSection';
+import DiffComponent from '@/components/DiffComponent';
+import LastComp from '@/components/LastComp';
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -20,7 +23,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <HeroSection />
       <div className='h-32 bg-white'></div>
       <QuickAbout />
-      
+
       {/* Two Card Layout */}
       <div className='flex justify-center relative gap-10 bg-white'>
         <CallToAction
@@ -36,6 +39,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           backgroundColor="bg-[#5A2574]"
         />
       </div>
+      <VideoSection />
+      <DiffComponent />
+      <LastComp />
     </>
   );
 }
