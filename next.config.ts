@@ -1,9 +1,21 @@
 import createNextIntlPlugin from 'next-intl/plugin';
+import type { NextConfig } from 'next';
 
 const withNextIntl = createNextIntlPlugin();
 
-const nextConfig = {
-  // Other Next.js config options here
+const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https' as const,
+        hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com',
+      },
+      {
+        protocol: 'https' as const,
+        hostname: 'www.amal-care.de',
+      },
+    ],
+  },
 };
 
 export default withNextIntl(nextConfig);
