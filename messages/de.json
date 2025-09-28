@@ -1,0 +1,87 @@
+{
+  "common": {
+    "welcome": "Willkommen bei AmalCare",
+    "about": "Über Amal Care",
+    "contact": "Kontakt",
+    "home": "Startseite",
+    "language": "Sprache",
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "forNurses": "Für Pflegefachkräfte aus Marokko",
+    "forInstitutions": "Für Einrichtungen in Deutschland",
+    "equityQuality": "Fairness & Qualität",
+    "menu": "Menü"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über Amal Care",
+    "philosophy": "Unsere Philosophie",
+    "whoWeAre": "Wer wir sind",
+    "contact": "Ansprechpartner",
+    "services": "Leistungen",
+    "forNurses": "Pflegefachkraft in Deutschland werden",
+    "forInstitutions": "Ausländische Pflegefachkräfte gewinnen",
+    "ourSchool": "Unsere Schule",
+    "languageSchool": "Sprachschule"
+  },
+  "home": {
+    "tagline": "PFLEGE VERBINDET. AMALCARE BEGLEITET.",
+    "title": "Willkommen bei AmalCare",
+    "subtitle": "Wir sind AmalCare eG – eine genossenschaftlich organisierte Vermittlungsagentur für Pflegefachkräfte aus Marokko.",
+    "description": "Was uns besonders macht: Wir vermitteln nicht nur – wir bereiten vor, begleiten und integrieren. Von der ersten Unterrichtsstunde in Rabat bis zur erfolgreichen Ankunft in einer deutschen Pflegeeinrichtung.",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Pflegefachkräften echte Perspektiven bieten. Einrichtungen verlässliche Unterstützung ermöglichen. Und Menschen auf beiden Seiten langfristig zusammenbringen."
+    },
+    "whatWeDo": {
+      "title": "Was wir tun",
+      "description": "Viele Vermittlungsagenturen enden mit einem unterschriebenen Vertrag. Unsere Arbeit beginnt dort erst richtig.",
+      "details": "Wir bereiten Pflegefachkräfte sprachlich, fachlich und persönlich auf das Leben und Arbeiten in Deutschland vor. Und wir unterstützen Einrichtungen dabei, motivierte Fachkräfte zu gewinnen – die nicht nur kompetent sind, sondern auch kulturell und menschlich passen.",
+      "focus": "Alles, was wir tun, ist auf eines ausgerichtet: Verantwortungsvoll verbinden. Für eine starke Pflege."
+    },
+    "forNurses": {
+      "title": "Für Pflegefachkräfte aus Marokko",
+      "subtitle": "FÜR PFLEGEFACHKRÄFTE AUS MAROKKO",
+      "description": "Wir helfen Ihnen, gut vorbereitet zu starten."
+    },
+    "forInstitutions": {
+      "title": "Für Einrichtungen in Deutschland",
+      "subtitle": "FÜR EINRICHTUNGEN IN DEUTSCHLAND",
+      "description": "Pflegefachkräfte aus dem Ausland gewinnen"
+    },
+    "pathWithAmalCare": {
+      "title": "Gut vorbereitet nach Deutschland:",
+      "subtitle": "Dein Weg mit Amal Care"
+    },
+    "whatMakesUsSpecial": {
+      "title": "Was AmalCare besonders macht",
+      "subtitle": "FAIRNESS UND QUALITÄT",
+      "description": "AmalCare ist keine Vermittlung \"von der Stange\". Wir sind ein Team aus Pflegeprofis, Bildungsexpert:innen und interkulturell geschulten Begleiter:innen. Wir kennen den Pflegealltag. Wir verstehen die Herausforderungen. Und wir wissen, wie Integration gelingt.",
+      "commitment": "Wir sind da. Vor der Einreise, beim Ankommen und darüber hinaus."
+    },
+    "process": {
+      "title": "Ablauf der Vermittlung",
+      "subtitle": "ABLAUF DER VERMITTLUNG",
+      "description": "Wir begleiten – vor, während und nach der Vermittlung",
+      "details": "AmalCare übernimmt den gesamten Vermittlungsprozess: von der Auswahl geeigneter Kandidat:innen über Sprach- und Fachvorbereitung, Anerkennung und Visa bis hin zur Ankunft in Deutschland. Auch nach dem Start bleiben wir verlässlicher Ansprechpartner – für Pflegefachkräfte und Einrichtungen."
+    },
+    "languageSchool": {
+      "title": "Sprachschule in Rabat",
+      "description": "Unsere Sprachschule in Rabat ist der erste Schritt für Pflegekräfte und Auszubildende, die in Deutschland arbeiten oder eine Ausbildung beginnen möchten."
+    },
+    "nursingSchool": {
+      "title": "Pflegeschule ergänzt Sprachunterricht",
+      "description": "Parallel zum Sprachunterricht beginnt die fachliche Qualifizierung in unserer Schule mit dem Simulationskurs. Alle Inhalte sind praxisnah aufbereitet."
+    }
+  },
+  "about": {
+    "title": "Über AmalCare",
+    "description": "Wir sind ein Team aus Pflegeprofis, Bildungsexpert:innen und interkulturell geschulten Begleiter:innen, die Pflege verantwortungsvoll verbinden."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "address": "Anschrift",
+    "phone": "Telefon",
+    "email": "E-Mail"
+  }
+}
