@@ -21,11 +21,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <>
       <Navbar />
       <HeroSection />
-      <div className='h-32 bg-white'></div>
+      <div className='h-42 relative bg-white'></div>
       <QuickAbout />
 
       {/* Two Card Layout */}
-      <div className='flex justify-center relative gap-10 bg-white'>
+      <div className='flex justify-center relative gap-20 bg-white'>
         <CallToAction
           subtitle="FÜR PFLEGEFACHKRÄFTE AUS MAROKKO"
           title="Wir helfen Ihnen, gut vorbereitet zu starten."
@@ -39,7 +39,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           backgroundColor="bg-[#5A2574]"
         />
       </div>
+      <div className='h-28 relative bg-white'></div>
       <VideoSection />
+      <div className='h-28 relative bg-white'></div>
       <DiffComponent />
       <LastComp />
     </>

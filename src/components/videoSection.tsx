@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function VideoSection() {
     return (
-        <section className="py-16 px-4 bg-white">
+        <section className="px-4 bg-white">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-12">
                     <p className="text-gray-600 text-lg mb-4">Gut vorbereitet nach Deutschland:</p>
