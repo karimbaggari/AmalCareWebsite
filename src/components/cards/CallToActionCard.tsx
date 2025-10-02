@@ -1,20 +1,15 @@
 "use client";
 
 import { ArrowRight } from "lucide-react"
+import { CallToActionCardProps } from "@/types"
 
-interface CallToActionProps {
-    subtitle: string;
-    title: string;
-    backgroundImage: string;
-    backgroundColor: string;
-}
-
-export function CallToAction({
+export function CallToActionCard({
     subtitle,
     title,
     backgroundImage,
     backgroundColor,
-}: CallToActionProps) {
+    href = "#"
+}: CallToActionCardProps) {
     return (
         <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl h-[600px] w-[685px] flex justify-center items-center">
             {/* Background Image */}
@@ -41,18 +36,19 @@ export function CallToAction({
                         </p>
 
                         {/* Main Heading */}
-                        <h1 className="text-2xl font-bold leading-tight">
+                        <h1 className="text-2xl font-bold leading-tight" style={{fontSize: '2rem'}}>
                             {title}
                         </h1>
                     </div>
 
                     {/* Right side - CTA Button */}
                     <div className="flex items-center justify-center ml-6">
-                        <button
+                        <a
+                            href={href}
                             className="bg-white text-[#00a6a2] rounded-full p-3 hover:bg-gray-50 transition-all duration-300 hover:scale-105 shadow-lg group"
                         >
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

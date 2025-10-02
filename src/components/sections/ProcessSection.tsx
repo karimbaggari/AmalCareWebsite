@@ -1,8 +1,9 @@
 import React from 'react'
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import { IMAGES } from "@/types"
 
-const LastComp = () => {
+const ProcessSection = () => {
     return (
         <div className="w-full bg-white flex items-center justify-center py-16">
             {/* Main content container */}
@@ -13,7 +14,7 @@ const LastComp = () => {
                         <Image 
                             width={1200} 
                             height={800} 
-                            src="https://www.amal-care.de/fileadmin/_processed_/6/3/csm_amal-teaser-vermittlung_7933672b40.webp" 
+                            src={IMAGES.processImage}
                             alt="Healthcare worker in blue scrubs" 
                             className="w-full h-auto object-cover" 
                         />
@@ -226,4 +227,4 @@ const LastComp = () => {
     )
 }
 
-export default LastComp
+export default ProcessSection

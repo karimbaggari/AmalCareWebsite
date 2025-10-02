@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
         protocol: 'https' as const,
         hostname: 'www.amal-care.de',
       },
+      {
+        protocol: 'https' as const,
+        hostname: 'alamalhealthcare.com',
+      },
     ],
   },
 };

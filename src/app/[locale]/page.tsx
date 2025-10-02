@@ -1,12 +1,14 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
-import Navbar from '@/components/Navbar';
-import { HeroSection } from '@/components/HeroSection';
-import { CallToAction } from '@/components/callToAction';
-import QuickAbout from '@/components/QuickAbout';
-import { VideoSection } from '@/components/videoSection';
-import DiffComponent from '@/components/DiffComponent';
-import LastComp from '@/components/LastComp';
+import Header from '@/components/layout/Header';
+import { HeroSection } from '@/components/sections/HeroSection';
+import { CallToActionCard } from '@/components/cards/CallToActionCard';
+import AboutSection from '@/components/sections/AboutSection';
+import { VideoSection } from '@/components/sections/VideoSection';
+import ValuesSection from '@/components/sections/ValuesSection';
+import ProcessSection from '@/components/sections/ProcessSection';
+import Footer from '@/components/layout/Footer';
+import { IMAGES } from '@/types';
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -19,31 +21,48 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
-      <Navbar />
+      <Header />
       <HeroSection />
       <div className='h-42 relative bg-white'></div>
-      <QuickAbout />
+      <AboutSection />
 
       {/* Two Card Layout */}
       <div className='flex justify-center relative gap-20 bg-white'>
-        <CallToAction
+        <CallToActionCard
           subtitle="FÜR PFLEGEFACHKRÄFTE AUS MAROKKO"
           title="Wir helfen Ihnen, gut vorbereitet zu starten."
-          backgroundImage="https://www.amal-care.de/fileadmin/_processed_/d/b/csm_AmalCare-49_40f8beb5c3.webp"
+          backgroundImage={IMAGES.ctaImage1}
           backgroundColor="bg-[#00a6a2]"
         />
-        <CallToAction
+        <CallToActionCard
           subtitle="FÜR EINRICHTUNGEN IN DEUTSCHLAND"
           title="Pflegefachkräfte aus dem Ausland gewinnen"
-          backgroundImage="https://www.amal-care.de/fileadmin/_processed_/7/0/csm_AmalCare-19_d532d38f2c.webp"
+          backgroundImage={IMAGES.ctaImage2}
           backgroundColor="bg-[#5A2574]"
         />
       </div>
       <div className='h-28 relative bg-white'></div>
       <VideoSection />
       <div className='h-28 relative bg-white'></div>
-      <DiffComponent />
-      <LastComp />
+      <ValuesSection />
+      <ProcessSection />
+      <div className='flex justify-center relative gap-20 bg-white'>
+        <CallToActionCard
+          subtitle="FÜR PFLEGEFACHKRÄFTE AUS MAROKKO"
+          title="Wir helfen Ihnen, gut vorbereitet zu starten."
+          backgroundImage={IMAGES.languageSchool}
+          backgroundColor="bg-[#00a6a2]"
+        />
+        <CallToActionCard
+          subtitle="FÜR EINRICHTUNGEN IN DEUTSCHLAND"
+          title="Pflegefachkräfte aus dem Ausland gewinnen"
+          backgroundImage={IMAGES.languageSchool}
+          backgroundColor="bg-[#5A2574]"
+        />
+      </div>
+
+      <div className='h-28 relative bg-white'></div>
+      <Footer />
     </>
   );
 }

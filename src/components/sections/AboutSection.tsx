@@ -1,11 +1,11 @@
-const QuickAbout = () => {
+const AboutSection = () => {
     return (
-        <div className="bg-white ">
+        <div className="bg-white mt-12">
             <div className="max-w-5xl mx-auto px-6 pb-16">
                 {/* Mission Section */}
                 <section className="mb-16">
                     <h2 className="text-3xl md:text-4xl font-semibold text-[#00a6a2] mb-8">Unsere Mission</h2>
-                    <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
+                    <p className="text-lg text-gray-700 leading-relaxed">
                         Pflegefachkräften echte Perspektiven bieten. Einrichtungen verlässliche Unterstützung ermöglichen. Und
                         Menschen auf beiden Seiten langfristig zusammenbringen.
                     </p>
@@ -15,7 +15,7 @@ const QuickAbout = () => {
                 <section className="mb-12">
                     <h2 className="text-3xl md:text-4xl font-semibold text-[#00a6a2] mb-8">Was wir tun</h2>
 
-                    <div className="space-y-8 max-w-3xl">
+                    <div className="space-y-8">
                         <p className="text-lg text-gray-700 leading-relaxed">
                             Viele Vermittlungsagenturen enden mit einem unterschriebenen Vertrag. Unsere Arbeit beginnt dort erst
                             richtig.
@@ -41,4 +41,4 @@ const QuickAbout = () => {
     )
 }
 
-export default QuickAbout
+export default AboutSection

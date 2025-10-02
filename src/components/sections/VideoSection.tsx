@@ -1,11 +1,12 @@
 import { Play } from "lucide-react"
 import Image from "next/image"
+import { IMAGES } from "@/types"
 
 export function VideoSection() {
     return (
         <section className="px-4 bg-white">
             <div className="max-w-7xl mx-auto">
-                <div className="mb-12">
+                <div className="mb-20">
                     <p className="text-gray-600 text-lg mb-4">Gut vorbereitet nach Deutschland:</p>
                     <h2 className="text-4xl md:text-5xl font-bold text-teal-500">Dein Weg mit Amal Care</h2>
                 </div>
@@ -17,7 +18,7 @@ export function VideoSection() {
                             <Image
                                 width={1200}
                                 height={800}
-                                src="https://www.amal-care.de/fileadmin/_processed_/7/0/csm_AmalCare-19_d532d38f2c.webp"
+                                src={IMAGES.ctaImage2}
                                 alt="Training presentation in German"
                                 className="w-full h-[400px] object-cover"
                             />
@@ -42,7 +43,7 @@ export function VideoSection() {
                             <Image
                                 width={1200}
                                 height={800}
-                                src="https://www.amal-care.de/fileadmin/_processed_/7/0/csm_AmalCare-19_d532d38f2c.webp"
+                                src={IMAGES.ctaImage2}
                                 alt="Training presentation in Arabic"
                                 className="w-full h-[400px] object-cover"
                             />

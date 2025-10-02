@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { IMAGES } from "@/types"
 
 export function HeroSection() {
   return (
@@ -7,7 +8,7 @@ export function HeroSection() {
       <div className="absolute inset-0 opacity-100">
         <div className="absolute right-0 top-0 w-1/2 h-full">
           <Image
-            src="https://www.amal-care.de/_assets/6020ad64298e304d8b844c8dc69c472e/Images//Frontend/keyvisual.svg"
+            src={IMAGES.keyvisual}
             alt="AmalCare Keyvisual"
             width={700}
             height={600}
@@ -54,7 +55,7 @@ export function HeroSection() {
       <div className="absolute left-0 right-0 px-6 lg:px-12 z-20 top-[20em]">
         <div className="container mx-auto h-[700px] w-[1400px]">
           <Image
-            src="https://www.amal-care.de//fileadmin/_processed_/2/a/csm_AmalCare-28_c19a1c4d25.webp"
+            src={IMAGES.heroImage}
             alt="Healthcare professionals with elderly patient in wheelchair outdoors"
             width={1200}
             height={600}

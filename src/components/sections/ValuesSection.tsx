@@ -1,7 +1,8 @@
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import { IMAGES } from "@/types"
 
-const DiffComponent = () => {
+const ValuesSection = () => {
     return (
         <div className="min-h-screen bg-white flex items-center justify-center p-4">
             <div className="relative w-full max-w-7xl h-[600px]">
@@ -9,7 +10,7 @@ const DiffComponent = () => {
                     className="absolute inset-0 rounded-3xl"
                     style={{ 
                         backgroundColor: '#5A2574',
-                        backgroundImage: "url('https://www.amal-care.de/_assets/6020ad64298e304d8b844c8dc69c472e/Images//Frontend/keyvisual.svg')",
+                        backgroundImage: `url(${IMAGES.keyvisual})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat'
@@ -44,7 +45,7 @@ const DiffComponent = () => {
                     <div className="flex-1 relative h-full">
                         <div className="absolute -top-20 -right-8 w-[700px] h-[700px]">
                             <Image
-                                src="https://www.amal-care.de/fileadmin/_processed_/b/d/csm_img-fairness-xxl-lg-1_9b644be1a5.webp"
+                                src={IMAGES.valuesImage}
                                 alt="AmalCare team and values"
                                 width={700}
                                 height={700}
@@ -58,4 +59,4 @@ const DiffComponent = () => {
     )
 }
 
-export default DiffComponent
+export default ValuesSection
