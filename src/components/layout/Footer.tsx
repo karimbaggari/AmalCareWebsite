@@ -6,9 +6,12 @@ import { Mail, MapPin, Phone, ArrowRight, Heart } from "lucide-react"
 import { useState } from "react"
 import { MAIN_NAVIGATION, LEGAL_LINKS, SOCIAL_MEDIA_LINKS } from "@/constants/navigation"
 import { COLORS } from "@/types"
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
   const [email, setEmail] = useState("")
+  const t = useTranslations('common')
+  const tNav = useTranslations('navigation')
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -37,25 +40,25 @@ export default function Footer() {
               </h2>
               <div className="flex items-center gap-2 text-white/90 text-lg">
                 <Heart className="w-5 h-5 fill-current" />
-                <span className="font-medium">Pflege mit Herz</span>
+                <span className="font-medium">Care with Heart</span>
               </div>
             </div>
 
             <p className="text-white/90 text-lg leading-relaxed mb-12 max-w-lg">
-              Ihre genossenschaftliche Vermittlungsagentur für qualifizierte Pflegefachkräfte aus Marokko. Wir verbinden
-              Kompetenz mit Menschlichkeit.
+              {t('welcome')} - Your cooperative placement agency for qualified nursing professionals from Morocco. We connect
+              competence with humanity.
             </p>
 
             {/* Newsletter Signup */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <h3 className="text-2xl font-bold mb-3">Bleiben Sie informiert</h3>
-              <p className="text-white/80 mb-6">Erhalten Sie Updates zu Pflegefachkräften und Branchennews.</p>
+              <h3 className="text-2xl font-bold mb-3">Stay Informed</h3>
+              <p className="text-white/80 mb-6">Get updates on nursing professionals and industry news.</p>
               <form onSubmit={handleNewsletterSubmit} className="flex gap-3">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Ihre E-Mail-Adresse"
+                  placeholder="Your email address"
                   className="flex-1 px-5 py-3.5 rounded-xl bg-white/20 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white/25 transition-all"
                   required
                 />
@@ -63,7 +66,7 @@ export default function Footer() {
                   type="submit"
                   className="px-6 py-3.5 bg-white text-[#00a6a2] rounded-xl font-semibold hover:bg-white/90 transition-all hover:scale-105 flex items-center gap-2 group"
                 >
-                  <span>Anmelden</span>
+                  <span>Subscribe</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </form>

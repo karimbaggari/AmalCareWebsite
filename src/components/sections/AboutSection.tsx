@@ -1,37 +1,37 @@
+"use client"
+
+import { useTranslations } from 'next-intl'
+
 const AboutSection = () => {
+    const t = useTranslations('home')
+    
     return (
         <div className="bg-white mt-12">
             <div className="max-w-5xl mx-auto px-6 pb-16">
                 {/* Mission Section */}
                 <section className="mb-16">
-                    <h2 className="text-3xl md:text-4xl font-semibold text-[#00a6a2] mb-8">Unsere Mission</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold text-[#00a6a2] mb-8">{t('mission.title')}</h2>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                        Pflegefachkräften echte Perspektiven bieten. Einrichtungen verlässliche Unterstützung ermöglichen. Und
-                        Menschen auf beiden Seiten langfristig zusammenbringen.
+                        {t('mission.description')}
                     </p>
                 </section>
 
                 {/* Services Section */}
                 <section className="mb-12">
-                    <h2 className="text-3xl md:text-4xl font-semibold text-[#00a6a2] mb-8">Was wir tun</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold text-[#00a6a2] mb-8">{t('whatWeDo.title')}</h2>
 
                     <div className="space-y-8">
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            Viele Vermittlungsagenturen enden mit einem unterschriebenen Vertrag. Unsere Arbeit beginnt dort erst
-                            richtig.
+                            {t('whatWeDo.description')}
                         </p>
 
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            Wir bereiten Pflegefachkräfte sprachlich, fachlich und persönlich auf das Leben und Arbeiten in
-                            Deutschland vor. Und wir unterstützen Einrichtungen dabei, motivierte Fachkräfte zu gewinnen – die nicht
-                            nur kompetent sind, sondern auch kulturell und menschlich passen.
+                            {t('whatWeDo.details')}
                         </p>
 
                         <div className="pt-4">
                             <p className="text-lg text-[#00a6a2] font-medium leading-relaxed">
-                                Alles, was wir tun, ist auf eines ausgerichtet:
-                                <br />
-                                Verantwortungsvoll verbinden. Für eine starke Pflege.
+                                {t('whatWeDo.focus')}
                             </p>
                         </div>
                     </div>

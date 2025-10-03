@@ -9,7 +9,8 @@
       "error": "An error occurred",
       "forNurses": "For Nurses from Morocco",
       "forInstitutions": "For Institutions in Germany",
-      "equityQuality": "Equity and Quality"
+      "equityQuality": "Equity and Quality",
+      "menu": "Menu"
     },
     "navigation": {
       "home": "Home",
@@ -36,14 +37,27 @@
       },
       "forNurses": {
         "title": "For Nurses from Morocco",
+        "subtitle": "FOR NURSES FROM MOROCCO",
         "description": "We help you get off to a good start with preparation."
       },
       "forInstitutions": {
         "title": "For Institutions in Germany",
+        "subtitle": "FOR INSTITUTIONS IN GERMANY",
         "description": "Attract nursing professionals from abroad"
+      },
+      "pathWithAmalCare": {
+        "title": "Well prepared for Germany:",
+        "subtitle": "Your path with Amal Care"
+      },
+      "process": {
+        "title": "Placement Process",
+        "subtitle": "PLACEMENT PROCESS",
+        "description": "We accompany – before, during and after placement",
+        "details": "AmalCare handles the entire placement process: from selecting suitable candidates through language and professional preparation, recognition and visa to arrival in Germany. Even after the start, we remain a reliable contact – for nursing professionals and institutions."
       },
       "whatMakesUsSpecial": {
         "title": "What Makes AmalCare Special",
+        "subtitle": "FAIRNESS AND QUALITY",
         "description": "AmalCare is not a 'ready-made' brokerage company. We are a team of nursing professionals, education experts and interculturally trained companions.",
         "expertise": "We know the routine of daily care. We understand the challenges. And we know how integration succeeds.",
         "commitment": "We are there. Before entry, on arrival and beyond."

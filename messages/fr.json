@@ -9,7 +9,8 @@
       "error": "Une erreur s'est produite",
       "forNurses": "Pour les infirmières du Maroc",
       "forInstitutions": "Pour les institutions en Allemagne",
-      "equityQuality": "Équité et qualité"
+      "equityQuality": "Équité et qualité",
+      "menu": "Menu"
     },
     "navigation": {
       "home": "Accueil",
@@ -36,14 +37,27 @@
       },
       "forNurses": {
         "title": "Pour les infirmières du Maroc",
+        "subtitle": "POUR LES INFIRMIÈRES DU MAROC",
         "description": "Nous vous aidons à bien commencer la préparation."
       },
       "forInstitutions": {
         "title": "Pour les institutions en Allemagne",
+        "subtitle": "POUR LES INSTITUTIONS EN ALLEMAGNE",
         "description": "Attirer des professionnels des soins infirmiers de l'étranger"
+      },
+      "pathWithAmalCare": {
+        "title": "Bien préparé pour l'Allemagne :",
+        "subtitle": "Votre chemin avec Amal Care"
+      },
+      "process": {
+        "title": "Processus de placement",
+        "subtitle": "PROCESSUS DE PLACEMENT",
+        "description": "Nous accompagnons – avant, pendant et après le placement",
+        "details": "AmalCare gère l'ensemble du processus de placement : de la sélection des candidats appropriés à travers la préparation linguistique et professionnelle, la reconnaissance et le visa jusqu'à l'arrivée en Allemagne. Même après le début, nous restons un contact fiable – pour les professionnels des soins infirmiers et les institutions."
       },
       "whatMakesUsSpecial": {
         "title": "Qu'est-ce qui rend AmalCare spécial",
+        "subtitle": "ÉQUITÉ ET QUALITÉ",
         "description": "AmalCare n'est pas une société de courtage « prête à l'emploi ». Nous sommes une équipe de professionnels des soins infirmiers, d'experts en éducation et d'accompagnateurs formés de manière interculturelle.",
         "expertise": "Nous connaissons la routine des soins quotidiens. Nous comprenons les défis. Et nous savons comment l'intégration réussit.",
         "commitment": "On est là. Avant l'entrée, à l'arrivée et au-delà."

@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react"
 import { CallToActionCardProps } from "@/types"
+import { useTranslations } from 'next-intl'
 
 export function CallToActionCard({
     subtitle,
@@ -10,6 +11,7 @@ export function CallToActionCard({
     backgroundColor,
     href = "#"
 }: CallToActionCardProps) {
+    const t = useTranslations('home')
     return (
         <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl h-[600px] w-[685px] flex justify-center items-center">
             {/* Background Image */}

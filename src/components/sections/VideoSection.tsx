@@ -1,14 +1,16 @@
 import { Play } from "lucide-react"
 import Image from "next/image"
 import { IMAGES } from "@/types"
+import { useTranslations } from 'next-intl'
 
 export function VideoSection() {
+    const t = useTranslations('home')
     return (
         <section className="px-4 bg-white">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-20">
-                    <p className="text-gray-600 text-lg mb-4">Gut vorbereitet nach Deutschland:</p>
-                    <h2 className="text-4xl md:text-5xl font-bold text-teal-500">Dein Weg mit Amal Care</h2>
+                    <p className="text-gray-600 text-lg mb-4">{t('pathWithAmalCare.title')}</p>
+                    <h2 className="text-4xl md:text-5xl font-bold text-teal-500">{t('pathWithAmalCare.subtitle')}</h2>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">

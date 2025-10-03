@@ -2,8 +2,10 @@ import React from 'react'
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { IMAGES } from "@/types"
+import { useTranslations } from 'next-intl'
 
 const ProcessSection = () => {
+    const t = useTranslations('home')
     return (
         <div className="w-full bg-white flex items-center justify-center py-16">
             {/* Main content container */}
@@ -197,18 +199,13 @@ const ProcessSection = () => {
                 {/* Right content - 40% width */}
                 <div className="w-2/5">
                     <div className="max-w-lg">
-                        <p className="text-gray-500 text-sm font-medium tracking-wide uppercase mb-4">ABLAUF DER VERMITTLUNG</p>
+                        <p className="text-gray-500 text-sm font-medium tracking-wide uppercase mb-4">{t('process.subtitle')}</p>
                         <h1 className="text-teal-600 text-4xl font-bold leading-tight mb-8">
-                            Wir begleiten – vor, während und nach der Vermittlung
+                            {t('process.description')}
                         </h1>
                         <div className="space-y-6 text-gray-700 text-base leading-relaxed">
                             <p>
-                                AmalCare übernimmt den gesamten Vermittlungsprozess: von der Auswahl geeigneter Kandidat:innen über
-                                Sprach- und Fachvorbereitung, Anerkennung und Visa bis hin zur Ankunft in Deutschland.
-                            </p>
-                            <p>
-                                Auch nach dem Start bleiben wir verlässlicher Ansprechpartner – für Pflegefachkräfte und
-                                Einrichtungen.
+                                {t('process.details')}
                             </p>
                         </div>
                     </div>

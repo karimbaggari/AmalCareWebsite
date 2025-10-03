@@ -1,8 +1,10 @@
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { IMAGES } from "@/types"
+import { useTranslations } from 'next-intl'
 
 const ValuesSection = () => {
+    const t = useTranslations('home')
     return (
         <div className="min-h-screen bg-white flex items-center justify-center p-4">
             <div className="relative w-full max-w-7xl h-[600px]">
@@ -22,15 +24,13 @@ const ValuesSection = () => {
                     {/* Left content */}
                     <div className="flex-1 pl-16 pr-8">
                         <div className="max-w-lg">
-                            <p className="text-white text-sm font-medium tracking-wide uppercase mb-4">FAIRNESS UND QUALITÄT</p>
-                            <h1 className="text-white text-4xl font-bold leading-tight mb-8">Was AmalCare besonders macht</h1>
+                            <p className="text-white text-sm font-medium tracking-wide uppercase mb-4">{t('whatMakesUsSpecial.subtitle')}</p>
+                            <h1 className="text-white text-4xl font-bold leading-tight mb-8">{t('whatMakesUsSpecial.title')}</h1>
                             <div className="space-y-6 text-white/90 text-base leading-relaxed">
                                 <p>
-                                    AmalCare ist keine Vermittlung „von der Stange. Wir sind ein Team aus Pflegeprofis,
-                                    Bildungsexpert:innen und interkulturell geschulten Begleiter:innen. Wir kennen den Pflegealltag. Wir
-                                    verstehen die Herausforderungen. Und wir wissen, wie Integration gelingt.
+                                    {t('whatMakesUsSpecial.description')}
                                 </p>
-                                <p>Wir sind da. Vor der Einreise, beim Ankommen und darüber hinaus.</p>
+                                <p>{t('whatMakesUsSpecial.commitment')}</p>
                             </div>
                         </div>
 

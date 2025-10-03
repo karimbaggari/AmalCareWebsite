@@ -29,14 +29,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* Two Card Layout */}
       <div className='flex justify-center relative gap-20 bg-white'>
         <CallToActionCard
-          subtitle="FÜR PFLEGEFACHKRÄFTE AUS MAROKKO"
-          title="Wir helfen Ihnen, gut vorbereitet zu starten."
+          subtitle={t('forNurses.subtitle')}
+          title={t('forNurses.description')}
           backgroundImage={IMAGES.ctaImage1}
           backgroundColor="bg-[#00a6a2]"
         />
         <CallToActionCard
-          subtitle="FÜR EINRICHTUNGEN IN DEUTSCHLAND"
-          title="Pflegefachkräfte aus dem Ausland gewinnen"
+          subtitle={t('forInstitutions.subtitle')}
+          title={t('forInstitutions.description')}
           backgroundImage={IMAGES.ctaImage2}
           backgroundColor="bg-[#5A2574]"
         />
@@ -48,14 +48,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <ProcessSection />
       <div className='flex justify-center relative gap-20 bg-white'>
         <CallToActionCard
-          subtitle="FÜR PFLEGEFACHKRÄFTE AUS MAROKKO"
-          title="Wir helfen Ihnen, gut vorbereitet zu starten."
+          subtitle={t('forNurses.subtitle')}
+          title={t('forNurses.description')}
           backgroundImage={IMAGES.languageSchool}
           backgroundColor="bg-[#00a6a2]"
         />
         <CallToActionCard
-          subtitle="FÜR EINRICHTUNGEN IN DEUTSCHLAND"
-          title="Pflegefachkräfte aus dem Ausland gewinnen"
+          subtitle={t('forInstitutions.subtitle')}
+          title={t('forInstitutions.description')}
           backgroundImage={IMAGES.languageSchool}
           backgroundColor="bg-[#5A2574]"
         />
