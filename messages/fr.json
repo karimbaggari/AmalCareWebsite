@@ -65,12 +65,96 @@
     },
     "about": {
       "title": "À propos d'AmalCare",
-      "description": "Nous sommes une équipe de professionnels des soins infirmiers, d'experts en éducation et d'accompagnateurs formés de manière interculturelle qui connectent les soins de manière responsable."
+      "description": "Nous sommes une équipe de professionnels des soins infirmiers, d'experts en éducation et d'accompagnateurs formés de manière interculturelle qui connectent les soins de manière responsable.",
+      "eyebrow": "À propos d'AmalCare",
+      "mainTitle": "Qui nous sommes",
+      "description1": "AmalCare eG est une coopérative enregistrée en Allemagne. Elle a été fondée par des professionnels des soins infirmiers et des dirigeants du secteur de la santé qui connaissent la routine des soins diaconaux - ambulatoires et hospitaliers - par leur propre expérience.",
+      "description2": "Notre idée : une agence de placement de personnel qui fait plus. Une qui prépare, accompagne et intègre - au lieu de simplement placer. Et une où nous pouvons dire en toute conscience : \"Nous embaucherions ce professionnel nous-mêmes.\"",
+      "uniqueTitle": "Ce qui rend AmalCare unique",
+      "uniqueDescription": "AmalCare combine la promotion linguistique, la formation aux compétences infirmières et l'intégration sociale en un concept global - unique dans sa forme et sa qualité.",
+      "ctaText": "Voulez-vous en savoir plus sur notre approche unique ?",
+      "ctaButton": "Contactez-nous",
+      "features": {
+        "languageSchool": {
+          "title": "École de langue à Rabat",
+          "description": "Formation intensive en langue allemande au Maroc pour préparer les professionnels des soins infirmiers à leur carrière en Allemagne."
+        },
+        "nursingKnowledge": {
+          "title": "Connaissances infirmières avant l'entrée",
+          "description": "Formation et certification complètes en soins infirmiers avant l'arrivée, garantissant que les professionnels sont entièrement préparés."
+        },
+        "personalSupport": {
+          "title": "Soutien personnel en Allemagne",
+          "description": "Soutien personnel dédié tout au long du processus d'intégration en Allemagne, de l'arrivée au développement de carrière."
+        },
+        "qualityAssurance": {
+          "title": "Qualité par la participation",
+          "description": "Assurance qualité par la participation active et les commentaires des professionnels et des établissements de santé."
+        },
+        "ourCommitment": {
+          "title": "Notre engagement",
+          "description": "Notre engagement envers l'excellence dans tous les aspects du recrutement, de la formation et de l'intégration."
+        },
+        "whoWeServe": {
+          "title": "Qui nous servons",
+          "description": "Soutenir à la fois les professionnels des soins infirmiers marocains cherchant des opportunités et les établissements de santé allemands cherchant du personnel qualifié."
+        }
+      }
     },
     "contact": {
       "title": "Nous contacter",
       "address": "Adresse",
       "phone": "Téléphone",
-      "email": "Email"
+      "email": "Email",
+      "getInTouch": "Entrer en contact",
+      "mainTitle": "Commençons une conversation",
+      "description": "Que vous soyez un établissement de santé en Allemagne à la recherche de professionnels infirmiers qualifiés, ou une infirmière marocaine cherchant des opportunités à l'étranger, nous sommes là pour vous aider.",
+      "emailTitle": "Nous écrire",
+      "emailAddress": "info@amalcare.de",
+      "emailResponse": "Nous répondrons dans les 24 heures",
+      "phoneTitle": "Nous appeler",
+      "phoneNumber": "+49 (0) 123 456 789",
+      "phoneHours": "Lun-Ven, 9h00 - 18h00 CET",
+      "addressTitle": "Nous rendre visite",
+      "addressLine1": "Musterstraße 123",
+      "addressLine2": "10115 Berlin, Allemagne",
+      "hoursTitle": "Heures d'ouverture",
+      "hoursWeekdays": "Lundi - Vendredi : 9h00 - 18h00",
+      "hoursWeekends": "Samedi - Dimanche : Fermé",
+      "formTitle": "Envoyez-nous un message",
+      "formDescription": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
+      "firstName": "Prénom",
+      "lastName": "Nom de famille",
+      "emailLabel": "Adresse e-mail",
+      "phoneLabel": "Numéro de téléphone",
+      "organizationLabel": "Organisation / Établissement de santé",
+      "messageLabel": "Message",
+      "firstNamePlaceholder": "Jean",
+      "lastNamePlaceholder": "Dupont",
+      "emailPlaceholder": "jean.dupont@exemple.fr",
+      "phonePlaceholder": "+49 123 456 789",
+      "organizationPlaceholder": "Nom de votre organisation",
+      "messagePlaceholder": "Dites-nous comment nous pouvons vous aider...",
+      "sendButton": "Envoyer le message",
+      "privacyNotice": "En soumettant ce formulaire, vous acceptez notre politique de confidentialité et nos conditions d'utilisation.",
+      "introTitle": "Nous nous réjouissons de",
+      "introTitleHighlight": "votre message",
+      "introDescription1": "Vous souhaitez en savoir plus sur AmalCare eG ? Vous avez des questions sur notre modèle de placement, vous êtes intéressé par une coopération ou vous voulez savoir comment nous préparons spécifiquement les professionnels de la santé du Maroc à la pratique des soins allemande ? Alors vous êtes au bon endroit.",
+      "introDescription2": "Que vous soyez un professionnel de la santé ou un stagiaire du Maroc qui veut travailler ou apprendre en Allemagne - ou que vous représentiez un établissement de soins qui cherche du personnel qualifié et fiable : Nous sommes heureux d'être personnellement disponibles pour vous.",
+      "introDescription3": "AmalCare accompagne les gens dans leur parcours professionnel - et les organisations dans la construction d'équipes de soins solides. Écrivez-nous. Appelez-nous. Ou arrangez directement une conversation personnelle. Nous nous réjouissons de vous entendre.",
+      "introDescription4": "Que ce soit un professionnel de la santé ou un établissement - nous sommes heureux d'être là pour vous.",
+      "contactPersonTitle": "Comment nous joindre",
+      "companyName": "AmalCare eG",
+      "contactPersonName": "Rachid Amessegher",
+      "contactEmail": "rachid.amessegher@amal-care.de",
+      "availabilityLabel": "Disponibilité",
+      "availabilityHours": "Lundi–Vendredi: 9h00–16h00 CET",
+      "quickContactButton": "Contact rapide",
+      "contactPersonDescription": "Contactez notre équipe pour une assistance et un soutien personnalisés.",
+      "contactPersonRole": "Directeur général",
+      "locationLabel": "Localisation",
+      "locationText": "Allemagne",
+      "callButton": "Appeler maintenant",
+      "scheduleButton": "Planifier"
     }
   }

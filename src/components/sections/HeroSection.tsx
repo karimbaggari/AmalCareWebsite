@@ -47,7 +47,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Image positioned to overlap background */}
+      {/* Image positioned to overlap background and extend beyond */}
       <div className="absolute left-0 right-0 px-6 lg:px-12 z-20 top-[20em]">
         <div className="container mx-auto h-[700px] w-[1400px]">
           <Image

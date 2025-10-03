@@ -76,12 +76,96 @@
   },
   "about": {
     "title": "Über AmalCare",
-    "description": "Wir sind ein Team aus Pflegeprofis, Bildungsexpert:innen und interkulturell geschulten Begleiter:innen, die Pflege verantwortungsvoll verbinden."
+    "description": "Wir sind ein Team aus Pflegeprofis, Bildungsexpert:innen und interkulturell geschulten Begleiter:innen, die Pflege verantwortungsvoll verbinden.",
+    "eyebrow": "Über AmalCare",
+    "mainTitle": "Wer wir sind",
+    "description1": "AmalCare eG ist eine eingetragene Genossenschaft in Deutschland. Gegründet wurde sie von Pflegefachkräften und Führungspersonen aus dem Gesundheitswesen, die den diakonischen Pflegealltag – ambulant wie stationär – aus eigener Erfahrung kennen.",
+    "description2": "Unsere Idee: eine Personalvermittlung, die mehr leistet. Eine, die vorbereitet, begleitet und integriert – statt nur zu vermitteln. Und eine, bei der wir mit gutem Gewissen sagen können: „Diese Fachkraft würden wir selbst einstellen.\"",
+    "uniqueTitle": "Was AmalCare einzigartig macht",
+    "uniqueDescription": "AmalCare vereint Sprachförderung, Schulung von Pflegekompetenzen und soziale Integration zu einem Gesamtkonzept – einzigartig in seiner Form und Qualität.",
+    "ctaText": "Möchten Sie mehr über unsere einzigartige Herangehensweise erfahren?",
+    "ctaButton": "Kontaktieren Sie uns",
+    "features": {
+      "languageSchool": {
+        "title": "Sprachschule in Rabat",
+        "description": "Intensives Deutschtraining in Marokko zur Vorbereitung von Pflegefachkräften auf ihre Karriere in Deutschland."
+      },
+      "nursingKnowledge": {
+        "title": "Pflegewissen vor der Einreise",
+        "description": "Umfassende Pflegeausbildung und Zertifizierung vor der Ankunft, um sicherzustellen, dass Fachkräfte vollständig vorbereitet sind."
+      },
+      "personalSupport": {
+        "title": "Persönliche Begleitung in Deutschland",
+        "description": "Dedizierte persönliche Unterstützung während des gesamten Integrationsprozesses in Deutschland, von der Ankunft bis zur Karriereentwicklung."
+      },
+      "qualityAssurance": {
+        "title": "Qualität durch Mitgestaltung",
+        "description": "Qualitätssicherung durch aktive Teilnahme und Feedback sowohl von Fachkräften als auch von Gesundheitseinrichtungen."
+      },
+      "ourCommitment": {
+        "title": "Unser Anspruch",
+        "description": "Unser Engagement für Exzellenz in jedem Aspekt der Rekrutierung, Ausbildung und Integration."
+      },
+      "whoWeServe": {
+        "title": "Für wen wir da sind",
+        "description": "Unterstützung sowohl von marokkanischen Pflegefachkräften, die Chancen suchen, als auch von deutschen Gesundheitseinrichtungen, die qualifiziertes Personal suchen."
+      }
+    }
   },
   "contact": {
     "title": "Kontakt",
     "address": "Anschrift",
     "phone": "Telefon",
-    "email": "E-Mail"
+    "email": "E-Mail",
+    "getInTouch": "Kontakt aufnehmen",
+    "mainTitle": "Lassen Sie uns ins Gespräch kommen",
+    "description": "Ob Sie eine Gesundheitseinrichtung in Deutschland sind, die qualifizierte Pflegefachkräfte sucht, oder eine marokkanische Pflegekraft, die Chancen im Ausland sucht - wir sind für Sie da.",
+    "emailTitle": "E-Mail senden",
+    "emailAddress": "info@amalcare.de",
+    "emailResponse": "Wir antworten innerhalb von 24 Stunden",
+    "phoneTitle": "Anrufen",
+    "phoneNumber": "+49 (0) 123 456 789",
+    "phoneHours": "Mo-Fr, 9:00 - 18:00 Uhr MEZ",
+    "addressTitle": "Besuchen Sie uns",
+    "addressLine1": "Musterstraße 123",
+    "addressLine2": "10115 Berlin, Deutschland",
+    "hoursTitle": "Bürozeiten",
+    "hoursWeekdays": "Montag - Freitag: 9:00 - 18:00 Uhr",
+    "hoursWeekends": "Samstag - Sonntag: Geschlossen",
+    "formTitle": "Senden Sie uns eine Nachricht",
+    "formDescription": "Füllen Sie das untenstehende Formular aus und wir melden uns so schnell wie möglich bei Ihnen.",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "emailLabel": "E-Mail-Adresse",
+    "phoneLabel": "Telefonnummer",
+    "organizationLabel": "Organisation / Gesundheitseinrichtung",
+    "messageLabel": "Nachricht",
+    "firstNamePlaceholder": "Max",
+    "lastNamePlaceholder": "Mustermann",
+    "emailPlaceholder": "max.mustermann@beispiel.de",
+    "phonePlaceholder": "+49 123 456 789",
+    "organizationPlaceholder": "Name Ihrer Organisation",
+    "messagePlaceholder": "Erzählen Sie uns, wie wir Ihnen helfen können...",
+    "sendButton": "Nachricht senden",
+    "privacyNotice": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzrichtlinie und den Nutzungsbedingungen zu.",
+    "introTitle": "Wir freuen uns auf",
+    "introTitleHighlight": "Ihre Nachricht",
+    "introDescription1": "Sie möchten mehr über AmalCare eG erfahren? Sie haben Fragen zu unserem Vermittlungsmodell, interessieren sich für eine Zusammenarbeit oder möchten wissen, wie wir Pflegefachkräfte aus Marokko gezielt auf den deutschen Pflegealltag vorbereiten? Dann sind Sie hier genau richtig.",
+    "introDescription2": "Ganz gleich, ob Sie eine Pflegefachkraft oder Auszubildende:r aus Marokko sind, die:der in Deutschland arbeiten oder lernen möchte – oder ob Sie eine Pflegeeinrichtung vertreten, die qualifiziertes und verlässlich vorbereitetes Personal sucht: Wir sind gerne persönlich für Sie da.",
+    "introDescription3": "AmalCare begleitet Menschen auf ihrem beruflichen Weg – und Organisationen beim Aufbau starker Pflegeteams. Schreiben Sie uns. Rufen Sie uns an. Oder vereinbaren Sie direkt ein persönliches Gespräch. Wir freuen uns, von Ihnen zu hören.",
+    "introDescription4": "Ob Pflegefachkraft oder Einrichtung – wir sind gerne für Sie da.",
+    "contactPersonTitle": "So erreichen Sie uns",
+    "companyName": "AmalCare eG",
+    "contactPersonName": "Rachid Amessegher",
+    "contactEmail": "rachid.amessegher@amal-care.de",
+    "availabilityLabel": "Erreichbarkeit",
+    "availabilityHours": "Montag–Freitag: 9:00–16:00 Uhr (MEZ)",
+    "quickContactButton": "Zum Schnellkontakt",
+    "contactPersonDescription": "Kontaktieren Sie unser Team für persönliche Unterstützung und Beratung.",
+    "contactPersonRole": "Geschäftsführer",
+    "locationLabel": "Standort",
+    "locationText": "Deutschland",
+    "callButton": "Jetzt anrufen",
+    "scheduleButton": "Termin vereinbaren"
   }
 }

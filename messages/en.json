@@ -65,12 +65,96 @@
     },
     "about": {
       "title": "About AmalCare",
-      "description": "We are a team of nursing professionals, education experts and interculturally trained companions who connect care responsibly."
+      "description": "We are a team of nursing professionals, education experts and interculturally trained companions who connect care responsibly.",
+      "eyebrow": "About AmalCare",
+      "mainTitle": "Who We Are",
+      "description1": "AmalCare eG is a registered cooperative in Germany. It was founded by nursing professionals and executives from the healthcare sector who know the diaconal nursing routine - both outpatient and inpatient - from their own experience.",
+      "description2": "Our idea: a personnel placement agency that does more. One that prepares, accompanies and integrates - instead of just placing. And one where we can say with a clear conscience: \"We would hire this professional ourselves.\"",
+      "uniqueTitle": "What Makes AmalCare Unique",
+      "uniqueDescription": "AmalCare combines language promotion, nursing skills training and social integration into an overall concept - unique in its form and quality.",
+      "ctaText": "Would you like to learn more about our unique approach?",
+      "ctaButton": "Contact Us",
+      "features": {
+        "languageSchool": {
+          "title": "Language School in Rabat",
+          "description": "Intensive German language training in Morocco to prepare nursing professionals for their career in Germany."
+        },
+        "nursingKnowledge": {
+          "title": "Nursing Knowledge Before Entry",
+          "description": "Comprehensive nursing education and certification before arrival, ensuring professionals are fully prepared."
+        },
+        "personalSupport": {
+          "title": "Personal Support in Germany",
+          "description": "Dedicated personal support throughout the integration process in Germany, from arrival to career development."
+        },
+        "qualityAssurance": {
+          "title": "Quality Through Participation",
+          "description": "Quality assurance through active participation and feedback from both professionals and healthcare facilities."
+        },
+        "ourCommitment": {
+          "title": "Our Commitment",
+          "description": "Our commitment to excellence in every aspect of recruitment, training, and integration."
+        },
+        "whoWeServe": {
+          "title": "Who We Serve",
+          "description": "Supporting both Moroccan nursing professionals seeking opportunities and German healthcare facilities seeking qualified staff."
+        }
+      }
     },
     "contact": {
       "title": "Contact Us",
       "address": "Address",
       "phone": "Phone",
-      "email": "Email"
+      "email": "Email",
+      "getInTouch": "Get in Touch",
+      "mainTitle": "Let's start a conversation",
+      "description": "Whether you're a healthcare facility in Germany seeking qualified nursing professionals, or a Moroccan nurse looking for opportunities abroad, we're here to help.",
+      "emailTitle": "Email Us",
+      "emailAddress": "info@amalcare.de",
+      "emailResponse": "We'll respond within 24 hours",
+      "phoneTitle": "Call Us",
+      "phoneNumber": "+49 (0) 123 456 789",
+      "phoneHours": "Mon-Fri, 9:00 AM - 6:00 PM CET",
+      "addressTitle": "Visit Us",
+      "addressLine1": "Musterstraße 123",
+      "addressLine2": "10115 Berlin, Germany",
+      "hoursTitle": "Office Hours",
+      "hoursWeekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+      "hoursWeekends": "Saturday - Sunday: Closed",
+      "formTitle": "Send us a message",
+      "formDescription": "Fill out the form below and we'll get back to you as soon as possible.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "emailLabel": "Email Address",
+      "phoneLabel": "Phone Number",
+      "organizationLabel": "Organization / Healthcare Facility",
+      "messageLabel": "Message",
+      "firstNamePlaceholder": "John",
+      "lastNamePlaceholder": "Doe",
+      "emailPlaceholder": "john.doe@example.com",
+      "phonePlaceholder": "+49 123 456 789",
+      "organizationPlaceholder": "Your organization name",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "sendButton": "Send Message",
+      "privacyNotice": "By submitting this form, you agree to our privacy policy and terms of service.",
+      "introTitle": "We look forward to",
+      "introTitleHighlight": "your message",
+      "introDescription1": "Would you like to learn more about AmalCare eG? Do you have questions about our placement model, are interested in cooperation, or would like to know how we specifically prepare nursing professionals from Morocco for German nursing practice? Then you're in exactly the right place.",
+      "introDescription2": "Whether you are a nursing professional or trainee from Morocco who wants to work or learn in Germany - or whether you represent a nursing facility that is looking for qualified and reliably prepared staff: We are happy to be personally available for you.",
+      "introDescription3": "AmalCare accompanies people on their professional path - and organizations in building strong nursing teams. Write to us. Call us. Or arrange a personal conversation directly. We look forward to hearing from you.",
+      "introDescription4": "Whether nursing professional or facility - we are happy to be there for you.",
+      "contactPersonTitle": "How to reach us",
+      "companyName": "AmalCare eG",
+      "contactPersonName": "Rachid Amessegher",
+      "contactEmail": "rachid.amessegher@amal-care.de",
+      "availabilityLabel": "Availability",
+      "availabilityHours": "Monday–Friday: 9:00–16:00 CET",
+      "quickContactButton": "Quick Contact",
+      "contactPersonDescription": "Get in touch with our team for personalized assistance and support.",
+      "contactPersonRole": "Managing Director",
+      "locationLabel": "Location",
+      "locationText": "Germany",
+      "callButton": "Call Now",
+      "scheduleButton": "Schedule"
     }
   }
