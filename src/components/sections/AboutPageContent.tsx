@@ -48,7 +48,7 @@ export default function AboutPageContent() {
         imageHeight={600}
       />
 
-      <div className="h-76 mt-16 mb-16 relative bg-white"></div>
+      <div className="h-76 mt-8 mb-8 relative bg-white"></div>
 
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
         {/* Hero Section - Who We Are */}
