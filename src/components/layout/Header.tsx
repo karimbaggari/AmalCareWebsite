@@ -24,7 +24,7 @@ export default function Header() {
     }, [])
 
     return (
-        <header className={`w-full flex bg-white items-center sticky top-0 z-50 transition-all duration-300 ${
+        <header className={`w-full flex bg-white items-center sticky top-0 z-[9999] transition-all duration-300 ${
             isScrolled ? 'h-[140px] shadow-2xl shadow-gray-800/80' : 'h-[220px] shadow-none'
         }`}>
             {/* AmalCare Logo - Centered */}
