@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+// import { getTranslations } from 'next-intl/server'; // Unused for now
 import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -10,7 +10,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = await getTranslations('contact');
+  // const t = await getTranslations('contact'); // Unused for now
 
   return (
     <>

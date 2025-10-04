@@ -11,7 +11,7 @@ import { useTranslations } from 'next-intl'
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
     const t = useTranslations('common')
-    const tNav = useTranslations('navigation')
+    // const tNav = useTranslations('navigation') // Unused for now
 
     useEffect(() => {
         const handleScroll = () => {

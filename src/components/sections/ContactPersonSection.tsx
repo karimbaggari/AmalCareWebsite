@@ -1,6 +1,6 @@
 "use client"
 
-import { Phone, Mail, Clock, ArrowRight, Copy, Check, MapPin, Calendar } from "lucide-react"
+import { Phone, Mail, Clock, Copy, Check, MapPin, Calendar } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'

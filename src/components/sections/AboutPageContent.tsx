@@ -3,6 +3,7 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { useState } from "react"
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 import { SimpleImageHero } from './GenericHeroSection'
 
 export default function AboutPageContent() {
@@ -145,13 +146,13 @@ export default function AboutPageContent() {
                   <p className="text-balance text-lg font-medium">
                     {t('ctaText')}
                   </p>
-                  <a
+                  <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-teal-600 transition-all hover:scale-105 hover:shadow-lg"
                   >
                     {t('ctaButton')}
                     <ArrowRight className="h-5 w-5" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

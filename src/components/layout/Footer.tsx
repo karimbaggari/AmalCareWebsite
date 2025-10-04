@@ -5,13 +5,13 @@ import Link from "next/link"
 import { Mail, MapPin, Phone, ArrowRight, Heart } from "lucide-react"
 import { useState } from "react"
 import { MAIN_NAVIGATION, LEGAL_LINKS, SOCIAL_MEDIA_LINKS } from "@/constants/navigation"
-import { COLORS } from "@/types"
+// import { COLORS } from "@/types" // Unused for now
 import { useTranslations } from 'next-intl'
 
 export default function Footer() {
   const [email, setEmail] = useState("")
   const t = useTranslations('common')
-  const tNav = useTranslations('navigation')
+  // const tNav = useTranslations('navigation') // Unused for now
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault()
