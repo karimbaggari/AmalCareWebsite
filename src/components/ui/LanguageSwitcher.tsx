@@ -4,6 +4,7 @@ import { useLocale } from 'next-intl'
 import { useRouter, usePathname } from '@/i18n/routing'
 import { Globe } from 'lucide-react'
 import { useState } from 'react'
+import React from 'react'
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
@@ -17,12 +18,27 @@ export default function LanguageSwitcher() {
   const router = useRouter()
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const currentLanguage = languages.find(lang => lang.code === locale) || languages[0]
 
   const handleLanguageChange = (newLocale: string) => {
     router.replace(pathname, { locale: newLocale })
     setIsOpen(false)
+  }
+
+  if (!mounted) {
+    return (
+      <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#00a6a2]/10 border border-[#00a6a2]/30">
+        <div className="w-4 h-4 bg-gray-200 rounded animate-pulse"></div>
+        <div className="w-6 h-4 bg-gray-200 rounded animate-pulse"></div>
+        <div className="w-16 h-4 bg-gray-200 rounded animate-pulse"></div>
+      </div>
+    );
   }
 
   return (

@@ -8,11 +8,24 @@ interface ThemeToggleProps {
 
 const ThemeToggle: React.FC<ThemeToggleProps> = ({ className = "" }) => {
   const [isDark, setIsDark] = React.useState(false);
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleTheme = () => {
     setIsDark(!isDark);
     // Add your theme switching logic here
   };
+
+  if (!mounted) {
+    return (
+      <div className={`flex items-center justify-center rounded-lg p-2 ${className}`}>
+        <div className="w-5 h-5 bg-gray-200 rounded animate-pulse"></div>
+      </div>
+    );
+  }
 
   return (
     <button 

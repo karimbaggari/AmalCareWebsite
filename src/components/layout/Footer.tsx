@@ -152,7 +152,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-white/70 text-sm">© {new Date().getFullYear()} AmalCare eG. Alle Rechte vorbehalten.</p>
+            <p className="text-white/70 text-sm">© 2024 AmalCare eG. Alle Rechte vorbehalten.</p>
             <p className="text-white/60 text-sm italic">Dedicated to Compassion, Quality & Growth.</p>
           </div>
         </div>
