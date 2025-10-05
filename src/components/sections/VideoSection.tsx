@@ -6,8 +6,8 @@ import { useTranslations } from 'next-intl'
 export function VideoSection() {
     const t = useTranslations('home')
     return (
-        <section className="px-4 bg-white">
-            <div className="max-w-7xl mx-auto">
+        <section className="bg-white">
+            <div className="container mx-auto max-w-9xl px-6">
                 <div className="mb-20">
                     <p className="text-gray-600 text-lg mb-4">{t('pathWithAmalCare.title')}</p>
                     <h2 className="text-4xl md:text-5xl font-bold text-teal-500">{t('pathWithAmalCare.subtitle')}</h2>

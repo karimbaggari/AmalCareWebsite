@@ -23,42 +23,46 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <>
       <Header />
       <HeroSection />
-      <div className='h-42 relative bg-white'></div>
+      <div className='h-24 bg-white'></div>
       <AboutSection />
 
-      {/* Two Card Layout */}
-      <div className='flex justify-center relative gap-20 bg-white'>
-        <CallToActionCard
-          subtitle={t('forNurses.subtitle')}
-          title={t('forNurses.description')}
-          backgroundImage={IMAGES.ctaImage1}
-          backgroundColor="bg-[#00a6a2]"
-        />
-        <CallToActionCard
-          subtitle={t('forInstitutions.subtitle')}
-          title={t('forInstitutions.description')}
-          backgroundImage={IMAGES.ctaImage2}
-          backgroundColor="bg-[#5A2574]"
-        />
+      {/* Two Card Layout - unified container width */}
+      <div className='bg-white'>
+        <div className='container mx-auto max-w-9xl px-6 flex flex-col md:flex-row justify-between gap-8 md:gap-12'>
+          <CallToActionCard
+            subtitle={t('forNurses.subtitle')}
+            title={t('forNurses.description')}
+            backgroundImage={IMAGES.ctaImage1}
+            backgroundColor="bg-[#00a6a2]"
+          />
+          <CallToActionCard
+            subtitle={t('forInstitutions.subtitle')}
+            title={t('forInstitutions.description')}
+            backgroundImage={IMAGES.ctaImage2}
+            backgroundColor="bg-[#5A2574]"
+          />
+        </div>
       </div>
-      <div className='h-28 relative bg-white'></div>
+      <div className='h-24 bg-white'></div>
       <VideoSection />
-      <div className='h-28 relative bg-white'></div>
+      <div className='h-24 bg-white'></div>
       <ValuesSection />
       <ProcessSection />
-      <div className='flex justify-center relative gap-20 bg-white'>
-        <CallToActionCard
-          subtitle={t('forNurses.subtitle')}
-          title={t('forNurses.description')}
-          backgroundImage={IMAGES.languageSchool}
-          backgroundColor="bg-[#00a6a2]"
-        />
-        <CallToActionCard
-          subtitle={t('forInstitutions.subtitle')}
-          title={t('forInstitutions.description')}
-          backgroundImage={IMAGES.languageSchool}
-          backgroundColor="bg-[#5A2574]"
-        />
+      <div className='bg-white'>
+        <div className='container mx-auto max-w-9xl px-6 flex flex-col md:flex-row justify-between gap-8 md:gap-12'>
+          <CallToActionCard
+            subtitle={t('forNurses.subtitle')}
+            title={t('forNurses.description')}
+            backgroundImage={IMAGES.languageSchool}
+            backgroundColor="bg-[#00a6a2]"
+          />
+          <CallToActionCard
+            subtitle={t('forInstitutions.subtitle')}
+            title={t('forInstitutions.description')}
+            backgroundImage={IMAGES.languageSchool}
+            backgroundColor="bg-[#5A2574]"
+          />
+        </div>
       </div>
 
       <div className='h-28 relative bg-white'></div>

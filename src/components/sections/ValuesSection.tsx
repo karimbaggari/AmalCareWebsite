@@ -6,8 +6,9 @@ import { useTranslations } from 'next-intl'
 const ValuesSection = () => {
     const t = useTranslations('home')
     return (
-        <div className="min-h-screen bg-white flex items-center justify-center p-4">
-            <div className="relative w-full max-w-7xl h-[600px]">
+        <div className="bg-white">
+            <div className="container mx-auto max-w-9xl px-6 py-16">
+                <div className="relative w-full rounded-3xl overflow-visible" style={{height: '600px'}}>
                 <div 
                     className="absolute inset-0 rounded-3xl"
                     style={{ 
@@ -22,7 +23,7 @@ const ValuesSection = () => {
                 {/* Main content container */}
                 <div className="relative z-10 h-full flex items-center">
                     {/* Left content */}
-                    <div className="flex-1 pl-16 pr-8">
+                    <div className="flex-1 pl-8 md:pl-16 pr-4 md:pr-8">
                         <div className="max-w-lg">
                             <p className="text-white text-sm font-medium tracking-wide uppercase mb-4">{t('whatMakesUsSpecial.subtitle')}</p>
                             <h1 className="text-white text-4xl font-bold leading-tight mb-8">{t('whatMakesUsSpecial.title')}</h1>
@@ -43,7 +44,7 @@ const ValuesSection = () => {
                     </div>
 
                     <div className="flex-1 relative h-full">
-                        <div className="absolute -top-20 -right-8 w-[700px] h-[700px]">
+                        <div className="absolute -top-20 -right-8 w-[700px] h-[700px] z-20">
                             <Image
                                 src={IMAGES.valuesImage}
                                 alt="AmalCare team and values"
@@ -55,6 +56,7 @@ const ValuesSection = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

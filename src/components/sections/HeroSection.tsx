@@ -6,6 +6,9 @@ import { useTranslations } from 'next-intl'
 
 export function HeroSection() {
   const t = useTranslations('home')
+  const titleText = t("title")
+    .replace(/to AmalCare/g, "to\u00A0AmalCare")
+    .replace(/chez AmalCare/g, "chez\u00A0AmalCare")
   return (
     <section className="relative min-h-[700px] md:min-h-screen lg:h-[1300px] bg-gradient-to-br from-[#00a6a2] via-[#008b87] to-[#006b68] overflow-visible">
       {/* Enhanced background with multiple layers */}
@@ -45,12 +48,12 @@ export function HeroSection() {
 
           {/* Enhanced title and paragraph with modern styling */}
           <div className="text-center md:text-left max-w-9xl mx-auto md:mx-0 mb-12 sm:mb-16 md:mb-20 md:ml-8">
-            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-10 sm:gap-14 md:gap-20 lg:gap-72">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 sm:gap-24 md:gap-32 lg:gap-70">
               {/* Title with gradient text effect */}
-              <div className="flex-1">
-                <h1 className="text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight text-balance">
+              <div className="flex-1 max-w-[56ch]">
+                <h1 className="text-white text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight sm:leading-tight md:leading-[1.1] tracking-tight text-balance">
                   <span className="bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
-                    {t("title")}
+                    {titleText}
                   </span>
                 </h1>
               </div>
