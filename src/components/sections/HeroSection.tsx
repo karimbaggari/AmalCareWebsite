@@ -85,7 +85,7 @@ export function HeroSection() {
             height={600}
             className="w-full h-[320px] sm:h-[500px] md:h-[700px] lg:h-[880px] md:-mb-[88px] object-cover transition-transform duration-500 ease-in-out md:hover:scale-105"
             priority
-          />
+          />z
         </div>
       </div>
     </section>

@@ -49,19 +49,17 @@ export default function AboutPageContent() {
         imageHeight={600}
       />
 
-      <div className="h-76 mt-8 mb-8 relative bg-white"></div>
-
-      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+      <div className="min-h-screen mt-80 bg-gradient-to-b from-white to-gray-50">
         {/* Hero Section - Who We Are */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-white to-teal-50/30 py-24 lg:py-32">
+        <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-white to-teal-50/30 py-16 md:py-20 lg:py-24">
           {/* Decorative Elements */}
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
             <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-teal-100/40 blur-3xl" />
             <div className="absolute -left-32 top-1/2 h-96 w-96 rounded-full bg-teal-200/30 blur-3xl" />
           </div>
 
-          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl">
+          <div className="container relative mx-auto max-w-9xl px-6">
+            <div className="mx-auto max-w-7xl space-y-12">
               {/* Eyebrow */}
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">
                 <CheckCircle2 className="h-4 w-4" />
@@ -69,7 +67,7 @@ export default function AboutPageContent() {
               </div>
 
               {/* Main Heading */}
-              <h1 className="mb-8 text-balance font-serif text-5xl font-bold leading-tight text-gray-900 lg:text-6xl">
+              <h1 className="text-balance font-serif text-5xl font-bold leading-tight text-gray-900 lg:text-6xl">
                 {t('mainTitle')}
               </h1>
 
@@ -84,17 +82,22 @@ export default function AboutPageContent() {
               </div>
 
               {/* Decorative Line */}
-              <div className="mt-12 h-1 w-24 rounded-full bg-gradient-to-r from-teal-500 to-teal-300" />
+              <div className="h-1 w-24 rounded-full bg-gradient-to-r from-teal-500 to-teal-300" />
             </div>
           </div>
         </section>
 
         {/* What Makes Us Unique Section */}
-        <section className="relative py-24 lg:py-32">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-6xl">
+        <section className="relative py-16 md:py-20 lg:py-24">
+          {/* Decorative Elements (reused) */}
+          <div className="pointer-events-none absolute inset-0 overflow-hidden">
+            <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-teal-100/40 blur-3xl" />
+            <div className="absolute -left-32 top-1/2 h-96 w-96 rounded-full bg-teal-200/30 blur-3xl" />
+          </div>
+          <div className="container mx-auto max-w-9xl px-6">
+            <div className="mx-auto max-w-7xl space-y-16">
               {/* Section Header */}
-              <div className="mb-16 text-center">
+              <div className="text-center">
                 <h2 className="mb-6 text-balance font-serif text-4xl font-bold text-gray-900 lg:text-5xl">
                   {t('uniqueTitle')}
                 </h2>
@@ -141,7 +144,7 @@ export default function AboutPageContent() {
               </div>
 
               {/* Bottom CTA */}
-              <div className="mt-16 text-center">
+              <div className="text-center">
                 <div className="inline-flex flex-col items-center gap-4 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 p-8 text-white shadow-lg">
                   <p className="text-balance text-lg font-medium">
                     {t('ctaText')}

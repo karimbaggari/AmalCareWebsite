@@ -18,12 +18,12 @@ export function GenericHeroSection({
   overlayImage,
   overlayImageAlt = "Background image",
   overlayImagePosition = 'center',
-  height = "h-[1050px]",
+  height = "min-h-[700px]",
   children
 }: GenericHeroSectionProps) {
   return (
-    <section 
-      className={`relative ${height} overflow-visible`} 
+    <section
+      className={`relative ${height} overflow-visible`}
       style={{ backgroundColor }}
     >
       {/* Background image */}
@@ -44,25 +44,21 @@ export function GenericHeroSection({
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 lg:px-12 pt-16 pb-8">
-        <div className="mx-auto h-[800px] w-[1400px]">
+        <div className="mx-auto max-w-9xl">
           {children}
         </div>
       </div>
 
-      {/* Overlay image positioned to overlap background and extend beyond */}
+      {/* Overlay image in normal flow so spacing starts after image */}
       {overlayImage && (
-        <div className={`absolute left-0 right-0 px-6 lg:px-12 z-20 ${
-          overlayImagePosition === 'top' ? 'top-[20em]' : 
-          overlayImagePosition === 'center' ? 'top-1/2 -translate-y-1/2' : 
-          'bottom-0'
-        }`}>
-          <div className="container mx-auto h-[700px] w-[1400px]">
+        <div className="relative z-20 container mx-auto max-w-9xl px-6 mt-6 sm:mt-10 md:mt-14">
+          <div className="overflow-hidden rounded-3xl shadow-2xl">
             <Image
               src={overlayImage}
               alt={overlayImageAlt}
-              width={1200}
-              height={600}
-              className="w-full rounded-3xl shadow-2xl h-[800px]"
+              width={1600}
+              height={900}
+              className="w-full h-[320px] sm:h-[500px] md:h-[700px] lg:h-[880px] object-cover"
               priority
             />
           </div>
@@ -141,16 +137,18 @@ export function SimpleImageHero({
   imageHeight?: number
 }) {
   return (
-    <section 
-      className={`relative ${height} overflow-visible`} 
+    <section
+      className={`relative ${height} overflow-visible`}
       style={{ backgroundColor }}
     >
       {/* Image positioned to extend beyond background */}
       <div className="absolute left-0 right-0 top-[4rem] flex justify-center z-20">
-        <div 
+        <div
           className="rounded-3xl shadow-2xl overflow-hidden"
           style={{ width: `${imageWidth}px`, height: `${imageHeight}px` }}
         >
+          <div className="absolute -right-2 h-120 w-60 rounded-full bg-teal-200/30 blur-3xl top-[190px]" />
+          <div className="absolute -left-2 h-120 w-60 rounded-full bg-teal-200/30 blur-3xl top-[190px]" />
           <Image
             src={image}
             alt={imageAlt}
