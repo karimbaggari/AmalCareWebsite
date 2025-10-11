@@ -4,6 +4,7 @@ import Footer from '@/components/layout/Footer';
 import { SimpleImageHero } from '@/components/sections/GenericHeroSection';
 import { HeroSection } from '@/components/sections/faqs/HeroSection';
 import { CTASection } from '@/components/sections/faqs/CTASection';
+import FaqComponent from '@/components/sections/faqs/FaqComponent';
 
 export default async function FAQsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -22,9 +23,7 @@ export default async function FAQsPage({ params }: { params: Promise<{ locale: s
       />
 
       <div className="h-16 sm:h-20 md:h-24 bg-gray-50"></div>
-      <HeroSection />
-      {/* <div className="h-16 sm:h-20 md:h-24 bg-gray-50"></div> */}
-      <CTASection />
+      <FaqComponent />
       <div className="h-16 sm:h-20 md:h-24 bg-gray-50"></div>
       <Footer />
     </>

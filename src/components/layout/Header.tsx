@@ -6,12 +6,15 @@ import LanguageSwitcher from "../ui/LanguageSwitcher"
 import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useState } from "react"
-import { useTranslations } from 'next-intl'
+import { createPortal } from "react-dom"
+import { useTranslations, useLocale } from 'next-intl'
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const t = useTranslations('common')
+    const locale = useLocale()
+    const [mounted, setMounted] = useState(false)
     // const tNav = useTranslations('navigation') // Unused for now
 
     useEffect(() => {
@@ -34,6 +37,10 @@ export default function Header() {
         window.addEventListener('scroll', handleScroll, { passive: true })
         handleScroll()
         return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
+    useEffect(() => {
+        setMounted(true)
     }, [])
 
     // Close on ESC and robust scroll-lock while menu is open
@@ -88,7 +95,7 @@ export default function Header() {
         }`}>
             {/* AmalCare Logo - Centered */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                <Link href="/" aria-label="Zur Startseite navigieren">
+                <Link href={`/${locale}`} aria-label="Zur Startseite navigieren">
                     <Image
                         src="https://alamalhealthcare.com/wp-content/uploads/2025/02/Icon.png"
                         alt="AmalCare Logo"
@@ -103,7 +110,7 @@ export default function Header() {
                 <LanguageSwitcher />
                 
                 <Link
-                    href="/contact"
+                    href={`/${locale}/contact`}
                     className="text-[#00a6a2] text-sm sm:text-base font-medium tracking-wide hover:underline uppercase transition-colors duration-300"
                     aria-label={t('contact')}
                 >
@@ -128,6 +135,7 @@ export default function Header() {
                 </button>
             </div>
             {/* Slide-in Drawer (previous design) */}
+            {mounted && createPortal(
             <div className={`fixed inset-0 z-[99999] transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} h-[100dvh] min-h-[100dvh] overscroll-contain`} aria-hidden={!isMenuOpen}>
                 {/* Backdrop */}
                 <div className="absolute inset-0 z-[99999] bg-black/60 backdrop-blur-sm h-[100dvh]" onClick={() => setIsMenuOpen(false)}></div>
@@ -142,12 +150,12 @@ export default function Header() {
                     <div className="px-6 py-6">
                         <ul className="space-y-2">
                             {[
-                                { href: '/', label: 'Home' },
-                                { href: '/about', label: 'About' },
-                                { href: '/language-school', label: 'Language School' },
-                                { href: '/become-a-nurse-in-germany', label: 'Become a Nurse' },
-                                { href: '/faqs', label: 'FAQs' },
-                                { href: '/contact', label: 'Contact' },
+                                { href: `/${locale}`, label: 'Home' },
+                                { href: `/${locale}/about`, label: 'About' },
+                                { href: `/${locale}/language-school`, label: 'Language School' },
+                                { href: `/${locale}/become-a-nurse-in-germany`, label: 'Become a Nurse' },
+                                { href: `/${locale}/faqs`, label: 'FAQs' },
+                                { href: `/${locale}/contact`, label: 'Contact' },
                             ].map((item) => (
                                 <li key={item.href}>
                                     <Link
@@ -163,7 +171,7 @@ export default function Header() {
                         </ul>
 
                         <div className="mt-8 grid grid-cols-2 gap-3">
-                            <Link href="/contact" className="rounded-full bg-[#7c3aed] text-white text-center py-3 font-semibold shadow-md hover:bg-[#6d28d9] transition-colors cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                            <Link href={`/${locale}/contact`} className="rounded-full bg-[#7c3aed] text-white text-center py-3 font-semibold shadow-md hover:bg-[#6d28d9] transition-colors cursor-pointer" onClick={() => setIsMenuOpen(false)}>
                                 {t('contact')}
                             </Link>
                             <button className="rounded-full border border-[#00a6a2]/30 text-[#00a6a2] py-3 font-semibold hover:bg-[#00a6a2]/5 transition-colors cursor-pointer" onClick={() => setIsMenuOpen(false)}>
@@ -176,7 +184,7 @@ export default function Header() {
                         </div>
                     </div>
                 </nav>
-            </div>
+            </div>, document.body)}
         </header>
     )
 }
