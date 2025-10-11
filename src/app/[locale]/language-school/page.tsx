@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SimpleImageHero } from '@/components/sections/GenericHeroSection';
+import LanguageSchoolSection from '@/components/sections/language-school/LanguageSchoolSection';
 
 export default async function LanguageSchoolPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -19,14 +20,9 @@ export default async function LanguageSchoolPage({ params }: { params: Promise<{
         imageHeight={600}
       />
 
-      <section className="bg-white">
-        <div className="container mx-auto max-w-9xl px-6 py-16 space-y-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#003c3a]">Language School</h1>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            Learn German with our tailored programs designed for healthcare professionals. Details coming soon.
-          </p>
-        </div>
-      </section>
+      <div className="h-16 sm:h-20 md:h-24"></div>
+      <LanguageSchoolSection />
+      <div className="h-16 sm:h-20 md:h-24"></div>
       <Footer />
     </>
   );
