@@ -17,7 +17,6 @@ export function GenericHeroSection({
   backgroundImageOpacity = 0.05,
   overlayImage,
   overlayImageAlt = "Background image",
-  overlayImagePosition = 'center',
   height = "min-h-[700px]",
   children
 }: GenericHeroSectionProps) {

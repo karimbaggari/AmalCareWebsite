@@ -42,7 +42,7 @@ export function HeroSection() {
                 </p>
                 <p className="font-medium text-[#003c3a]">Then AmalCare is the right place for you.</p>
                 <p>
-                  We'll accompany you step by step on your path to nursing training in Germany – from language school in
+                  We&apos;ll accompany you step by step on your path to nursing training in Germany – from language school in
                   Morocco to your first day of work. With preparation, trust, and genuine support.
                 </p>
               </div>
@@ -89,7 +89,7 @@ export function HeroSection() {
                     </div>
 
                     <p className="text-gray-700 leading-relaxed italic">
-                      You won't be left alone. We'll walk the path together – so you can arrive, stay, and grow.
+                      You won&apos;t be left alone. We&apos;ll walk the path together – so you can arrive, stay, and grow.
                     </p>
 
                     <Button 
@@ -116,7 +116,7 @@ export function HeroSection() {
                     <div className="space-y-2">
                       <h3 className="font-semibold text-[#003c3a]">Complete Journey Support</h3>
                       <p className="text-sm leading-relaxed text-gray-600">
-                        From language training in Morocco to your first day in Germany, we're with you every step of the
+                        From language training in Morocco to your first day in Germany, we&apos;re with you every step of the
                         way.
                       </p>
                     </div>

@@ -3,6 +3,7 @@
 import { BookOpen, Languages, GraduationCap, Users, CheckCircle2, Sparkles } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export function LanguageSchoolSection() {
   const features = [
@@ -39,7 +40,7 @@ export function LanguageSchoolSection() {
 
               {/* Description */}
               <p className="text-pretty text-lg leading-relaxed text-gray-600">
-                Behind every successful placement lies thorough preparation. That's why AmalCare operates its own
+                Behind every successful placement lies thorough preparation. That&apos;s why AmalCare operates its own
                 educational facility in Morocco: a language school with a focus on nursing and a nursing simulation
                 course based on German standards.
               </p>
@@ -97,10 +98,12 @@ export function LanguageSchoolSection() {
             <div className="relative mx-auto  mt-24 w-[1000px] max-w-4xl">
               <Card className="group relative overflow-hidden bg-white w-full shadow-2xl shadow-[#00a6a2]/10 transition-shadow duration-500 hover:shadow-[#00a6a2]/20">
                 <div className="overflow-hidden w-full">
-                  <img
+                  <Image
                     src="https://www.amal-care.de/fileadmin/_processed_/0/9/csm_IMG_6994_e4e17c16e4.webp"
                     alt="Language school instructors with anatomical charts teaching nursing terminology"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 origin-center"
+                    width={1000}
+                    height={700}
                   />
                 </div>
                 {/* Overlay badge inside image - bottom left */}

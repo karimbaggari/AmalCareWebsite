@@ -13,7 +13,7 @@ export function Accordion({ children, className = "" }: { children: React.ReactN
   return <div className={className}>{children}</div>;
 }
 
-export function AccordionItem({ children, value, className = "" }: { children: React.ReactNode; value: string; className?: string }) {
+export function AccordionItem({ children, className = "" }: { children: React.ReactNode; value?: string; className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={className} data-state={isOpen ? "open" : "closed"}>
@@ -40,11 +40,12 @@ export function AccordionTrigger({ children, className = "" }: { children: React
 
 export function AccordionContent({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   const ctx = useContext(ItemCtx);
-  if (!ctx) return null;
   const outerRef = useRef<HTMLDivElement>(null);
   const [maxH, setMaxH] = useState(0);
 
   useEffect(() => {
+    if (!ctx) return;
+
     const el = outerRef.current;
     if (!el) return;
     if (ctx.isOpen) {
@@ -56,7 +57,9 @@ export function AccordionContent({ children, className = "" }: { children: React
     } else {
       setMaxH(0);
     }
-  }, [ctx.isOpen, children]);
+  }, [ctx, ctx?.isOpen, children]);
+
+  if (!ctx) return null;
 
   return (
     <div

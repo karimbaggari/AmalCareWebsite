@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, MessageCircle, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { IMAGES } from "@/types";
+import Image from "next/image";
 
 export function CTASection() {
   return (
@@ -25,7 +26,7 @@ export function CTASection() {
                 </h2>
 
                 <p className="text-pretty text-lg leading-relaxed text-gray-600 lg:text-xl">
-                  With AmalCare, you don't start alone. You get preparation, support, and a strong partner at your side.
+                  With AmalCare, you don&apos;t start alone. You get preparation, support, and a strong partner at your side.
                 </p>
 
                 <p className="text-pretty text-base leading-relaxed text-gray-600">
@@ -36,7 +37,7 @@ export function CTASection() {
               {/* Benefits list */}
               <Card className="border-2 border-[#00a6a2]/20 bg-white/80 p-6 backdrop-blur-sm">
                 <div className="space-y-4">
-                  <h3 className="font-semibold text-[#003c3a]">What you'll get:</h3>
+                  <h3 className="font-semibold text-[#003c3a]">What you&apos;ll get:</h3>
                   <ul className="space-y-3">
                     {["Personalized career guidance","Language training support","Visa & documentation assistance","Ongoing mentorship in Germany"].map((benefit, index) => (
                       <li key={index} className="flex items-start gap-3">
@@ -72,10 +73,12 @@ export function CTASection() {
             <div className="relative">
               <Card className="overflow-hidden border-2 border-[#00a6a2]/20 bg-white shadow-2xl shadow-[#00a6a2]/10">
                 <div className="aspect-[4/5] overflow-hidden">
-                  <img
+                  <Image
                     src={IMAGES.ctaImage2}
                     alt="Healthcare professionals in blue scrubs celebrating outdoors"
                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                    width={800}
+                    height={1000}
                   />
                 </div>
                 {/* Overlay badge */}

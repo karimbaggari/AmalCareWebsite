@@ -2,8 +2,6 @@ import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SimpleImageHero } from '@/components/sections/GenericHeroSection';
-import { HeroSection } from '@/components/sections/faqs/HeroSection';
-import { CTASection } from '@/components/sections/faqs/CTASection';
 import FaqComponent from '@/components/sections/faqs/FaqComponent';
 
 export default async function FAQsPage({ params }: { params: Promise<{ locale: string }> }) {
