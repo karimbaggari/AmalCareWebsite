@@ -45,7 +45,8 @@ function ContactPageContent() {
         imageHeight={600}
       />
 
-      <div className="h-76 mt-16 mb-16 relative bg-white"></div>
+      {/* White spacer */}
+      <div className="bg-white h-80"></div>
 
       <ContactIntroSection />
       <ContactPersonSection />

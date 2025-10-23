@@ -5,8 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { IMAGES } from "@/types";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export function CTASection() {
+  const t = useTranslations('faqs.cta');
   return (
     <section className="relative overflow-hidden bg-gray-50 pt-32 lg:pt-40 pb-20 lg:pb-32">
       {/* Decorative background */}
@@ -21,28 +23,28 @@ export function CTASection() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <h2 className="text-balance font-sans text-4xl font-bold leading-tight tracking-tight text-[#003c3a] lg:text-5xl xl:text-6xl">
-                  Are you ready?{" "}
-                  <span className="bg-gradient-to-r from-[#00a6a2] to-[#7c3aed] bg-clip-text text-transparent">We are.</span>
+                  {t('title')}{" "}
+                  <span className="bg-gradient-to-r from-[#00a6a2] to-[#7c3aed] bg-clip-text text-transparent">{t('titleHighlight')}</span>
                 </h2>
 
                 <p className="text-pretty text-lg leading-relaxed text-gray-600 lg:text-xl">
-                  With AmalCare, you don&apos;t start alone. You get preparation, support, and a strong partner at your side.
+                  {t('description1')}
                 </p>
 
                 <p className="text-pretty text-base leading-relaxed text-gray-600">
-                  Take the first step – and contact us.
+                  {t('description2')}
                 </p>
               </div>
 
               {/* Benefits list */}
               <Card className="border-2 border-[#00a6a2]/20 bg-white p-6">
                 <div className="space-y-4">
-                  <h3 className="font-semibold text-[#003c3a]">What you&apos;ll get:</h3>
+                  <h3 className="font-semibold text-[#003c3a]">{t('benefitsTitle')}</h3>
                   <ul className="space-y-3">
-                    {["Personalized career guidance","Language training support","Visa & documentation assistance","Ongoing mentorship in Germany"].map((benefit, index) => (
+                    {['b1', 'b2', 'b3', 'b4'].map((key, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#00a6a2]" />
-                        <span className="text-sm text-gray-600">{benefit}</span>
+                        <span className="text-sm text-gray-600">{t(`benefits.${key}`)}</span>
                       </li>
                     ))}
                   </ul>
@@ -56,7 +58,7 @@ export function CTASection() {
                   className="group bg-[#7c3aed] text-white shadow-lg shadow-[#7c3aed]/30 transition-all hover:bg-[#6d28d9] hover:shadow-xl hover:shadow-[#7c3aed]/40"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
-                  Contact Us Now
+                  {t('ctaButton1')}
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Button>
                 <Button
@@ -64,7 +66,7 @@ export function CTASection() {
                   variant="outline"
                   className="border-2 border-[#00a6a2]/20 bg-white transition-all hover:border-[#00a6a2]/40 hover:bg-[#00a6a2]/5 text-[#003c3a]"
                 >
-                  Learn More
+                  {t('ctaButton2')}
                 </Button>
               </div>
             </div>
@@ -89,8 +91,8 @@ export function CTASection() {
                         <Heart className="h-5 w-5 text-[#00a6a2]" />
                       </div>
                       <div>
-                        <div className="text-sm font-semibold text-[#003c3a]">Join Our Community</div>
-                        <div className="text-xs text-gray-600">Start your journey today</div>
+                        <div className="text-sm font-semibold text-[#003c3a]">{t('badgeTitle')}</div>
+                        <div className="text-xs text-gray-600">{t('badgeSubtitle')}</div>
                       </div>
                     </div>
                   </Card>

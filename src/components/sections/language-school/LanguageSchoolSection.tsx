@@ -4,17 +4,19 @@ import { BookOpen, Languages, GraduationCap, Users, CheckCircle2, Sparkles } fro
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export function LanguageSchoolSection() {
+  const t = useTranslations('languageSchool');
   const features = [
-    { icon: Languages, text: "It starts at zero (A1) and leads to the C1 level" },
-    { icon: Users, text: "It is practical – with a focus on communication, nursing vocabulary and everyday language" },
-    { icon: GraduationCap, text: "It is taught by teachers, some of whom are German, who are interculturally trained" },
-    { icon: BookOpen, text: "There are exercises of nursing conversations, handovers and everyday situations" },
+    { icon: Languages, key: 'f1' },
+    { icon: Users, key: 'f2' },
+    { icon: GraduationCap, key: 'f3' },
+    { icon: BookOpen, key: 'f4' },
   ];
 
   return (
-    <section className="relative container overflow-hidden py-8 sm:py-10 md:py-12 lg:py-16">
+    <section className="relative container bg-white overflow-hidden py-8 sm:py-10 md:py-12 lg:py-16">
       <div className="container mx-auto max-w-9xl px-4 sm:px-6">
         <div className="mx-auto max-w-9xl">
           <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12">
@@ -38,8 +40,8 @@ export function LanguageSchoolSection() {
                         <Languages className="h-4 w-4 sm:h-5 sm:w-5 text-[#7c3aed]" />
                       </div>
                       <div>
-                        <div className="text-xs sm:text-sm font-semibold text-[#003c3a] leading-none">Professional Training</div>
-                        <div className="text-[10px] sm:text-[11px] text-gray-600 leading-none mt-1">German language with nursing focus</div>
+                        <div className="text-xs sm:text-sm font-semibold text-[#003c3a] leading-none">{t('professionalTraining')}</div>
+                        <div className="text-[10px] sm:text-[11px] text-gray-600 leading-none mt-1">{t('germanLanguage')}</div>
                       </div>
                     </div>
                   </Card>
@@ -52,8 +54,8 @@ export function LanguageSchoolSection() {
                   <div className="flex items-center gap-2">
                     <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-[#00a6a2]" />
                     <div className="space-y-0.5">
-                      <div className="text-[10px] sm:text-xs font-medium text-gray-500">Based in</div>
-                      <div className="text-xs sm:text-sm font-bold text-[#003c3a]">Rabat, Morocco</div>
+                      <div className="text-[10px] sm:text-xs font-medium text-gray-500">{t('basedIn')}</div>
+                      <div className="text-xs sm:text-sm font-bold text-[#003c3a]">{t('location')}</div>
                     </div>
                   </div>
                 </Card>
@@ -66,41 +68,38 @@ export function LanguageSchoolSection() {
               {/* Badge */}
               <Badge className="inline-flex items-center gap-2 border-0 bg-[#7c3aed]/10 px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-[#7c3aed]">
                 <BookOpen className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span>Language School</span>
+                <span>{t('badge')}</span>
               </Badge>
 
               {/* Main heading */}
               <div className="space-y-2 sm:space-y-3">
                 <h2 className="text-balance font-sans text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#003c3a]">
-                  Our school –{" "}
+                  {t('title')}{" "}
                   <span className="bg-gradient-to-r from-[#00a6a2] to-[#7c3aed] bg-clip-text text-transparent">
-                    language, care, perspective
+                    {t('titleHighlight')}
                   </span>
                 </h2>
               </div>
 
               {/* Description */}
               <p className="text-pretty text-base sm:text-lg leading-relaxed text-gray-600">
-                Behind every successful placement lies thorough preparation. That&apos;s why AmalCare operates its own
-                educational facility in Morocco: a language school with a focus on nursing and a nursing simulation
-                course based on German standards.
+                {t('description')}
               </p>
 
               {/* Subheading */}
               <div className="space-y-2 pt-0">
                 <h3 className="text-balance text-xl sm:text-2xl md:text-3xl font-bold text-[#003c3a]">
-                  Language school in Rabat – German with a focus on nursing
+                  {t('subtitleMain')}
                 </h3>
                 <p className="text-pretty text-sm sm:text-base leading-relaxed text-gray-600">
-                  Our language school in Rabat is the first step for nursing professionals and trainees who want to work
-                  or begin training in Germany.
+                  {t('subtitleDescription')}
                 </p>
               </div>
 
               {/* What makes our lessons special */}
               <Card className="bg-white/80 p-4 sm:p-5 md:p-6 backdrop-blur-sm">
                 <div className="space-y-4 sm:space-y-5">
-                  <h4 className="text-base sm:text-lg font-semibold text-[#003c3a]">What makes our lessons special:</h4>
+                  <h4 className="text-base sm:text-lg font-semibold text-[#003c3a]">{t('featuresTitle')}</h4>
                   <div className="grid gap-3 sm:gap-4">
                     {features.map((feature, index) => {
                       const Icon = feature.icon
@@ -113,7 +112,7 @@ export function LanguageSchoolSection() {
                             <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
                           </div>
                           <p className="pt-1 sm:pt-1.5 text-xs sm:text-sm leading-relaxed text-gray-600 group-hover:text-[#003c3a]">
-                            {feature.text}
+                            {t(`features.${feature.key}`)}
                           </p>
                         </div>
                       )
@@ -129,8 +128,7 @@ export function LanguageSchoolSection() {
                     <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-[#7c3aed]" />
                   </div>
                   <p className="pt-1 text-pretty text-sm sm:text-base leading-relaxed text-[#003c3a]">
-                    In this way, we create a language foundation that goes far beyond a certificate – and facilitates
-                    the path into the German nursing profession.
+                    {t('closingText')}
                   </p>
                 </div>
               </Card>

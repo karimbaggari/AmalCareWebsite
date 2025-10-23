@@ -156,5 +156,104 @@
       "locationText": "Germany",
       "callButton": "Call Now",
       "scheduleButton": "Schedule"
+    },
+    "faqs": {
+      "badge": "FAQ",
+      "title": "Find answers to your questions in",
+      "titleHighlight": "our FAQ",
+      "subtitle": "In our FAQ section for institutions we answer many of the frequently asked questions:",
+      "ctaText": "And if anything remains unclear, we would be happy to advise you personally.",
+      "ctaButton": "Contact Us",
+      "questions": {
+        "q1": {
+          "question": "How long does a placement take?",
+          "answer": "The placement process typically takes 6-12 months from initial application to starting work in Germany. This includes language training in Morocco (4-6 months), document processing and recognition (2-3 months), and visa procedures (1-2 months). We guide you through every step to ensure a smooth transition."
+        },
+        "q2": {
+          "question": "What documents are required?",
+          "answer": "You'll need your nursing diploma or certificate, official transcripts, valid passport, birth certificate, police clearance certificate, and health certificates. All documents must be officially translated into German. We provide a detailed checklist and help you prepare all necessary paperwork."
+        },
+        "q3": {
+          "question": "How does the recognition process work?",
+          "answer": "The recognition process involves submitting your nursing qualifications to German authorities for evaluation. We handle the entire process: document preparation, translation, submission to the relevant recognition body, and follow-up. If additional training is required, we arrange that as well."
+        },
+        "q4": {
+          "question": "Who covers which costs?",
+          "answer": "AmalCare covers the costs of language training, recognition procedures, and placement services. You're responsible for personal documents (passport, certificates) and visa fees. Once employed, your German employer covers relocation costs and provides competitive salary from day one."
+        },
+        "q5": {
+          "question": "How exactly does the cooperative model work?",
+          "answer": "Our cooperative model means we work together as partners. We invest in your training and preparation, while you commit to working with our partner healthcare facilities in Germany. This ensures quality training, guaranteed placement, and long-term career support for your success."
+        }
+      },
+      "hero": {
+        "badge": "Your Care Job in Germany with AmalCare",
+        "title": "Your Perfect",
+        "titleHighlight": "Start",
+        "description1": "Do you dream of working in nursing in Germany? Do you want to do something meaningful, help people—and build a secure future for yourself?",
+        "description2": "Then AmalCare is the right place for you.",
+        "description3": "We'll accompany you step by step on your path to nursing training in Germany – from language school in Morocco to your first day of work. With preparation, trust, and genuine support.",
+        "whyTitle": "Why AmalCare?",
+        "whySubtitle": "Discover what makes us different",
+        "whyStrong": "Because you deserve more than just a placement contract.",
+        "benefitsTitle": "At AmalCare you get:",
+        "benefits": {
+          "b1": "Language lessons supplemented with a simulation course (duration: 3 months)",
+          "b2": "Imparting nursing knowledge before your arrival",
+          "b3": "Job placement and preparation for life in Germany",
+          "b4": "Support with visa, accommodation and registration",
+          "b5": "Personal support – even after your arrival",
+          "b6": "A strong network and real local contacts"
+        },
+        "closingText": "You won't be left alone. We'll walk the path together – so you can arrive, stay, and grow.",
+        "ctaButton": "For quick contact",
+        "featureCard1Title": "Complete Journey Support",
+        "featureCard1Description": "From language training in Morocco to your first day in Germany, we're with you every step of the way.",
+        "featureCard2Title": "Genuine Care & Trust",
+        "featureCard2Description": "We provide preparation, trust, and authentic support to help you build a meaningful career in nursing.",
+        "stat1": "500+",
+        "stat1Label": "Successful Placements",
+        "stat2": "95%",
+        "stat2Label": "Success Rate",
+        "stat3": "24/7",
+        "stat3Label": "Support Available"
+      },
+      "cta": {
+        "title": "Are you ready?",
+        "titleHighlight": "We are.",
+        "description1": "With AmalCare, you don't start alone. You get preparation, support, and a strong partner at your side.",
+        "description2": "Take the first step – and contact us.",
+        "benefitsTitle": "What you'll get:",
+        "benefits": {
+          "b1": "Personalized career guidance",
+          "b2": "Language training support",
+          "b3": "Visa & documentation assistance",
+          "b4": "Ongoing mentorship in Germany"
+        },
+        "ctaButton1": "Contact Us Now",
+        "ctaButton2": "Learn More",
+        "badgeTitle": "Join Our Community",
+        "badgeSubtitle": "Start your journey today"
+      }
+    },
+    "languageSchool": {
+      "badge": "Language School",
+      "title": "Our school –",
+      "titleHighlight": "language, care, perspective",
+      "description": "Behind every successful placement lies thorough preparation. That's why AmalCare operates its own educational facility in Morocco: a language school with a focus on nursing and a nursing simulation course based on German standards.",
+      "subtitleMain": "Language school in Rabat – German with a focus on nursing",
+      "subtitleDescription": "Our language school in Rabat is the first step for nursing professionals and trainees who want to work or begin training in Germany.",
+      "featuresTitle": "What makes our lessons special:",
+      "features": {
+        "f1": "It starts at zero (A1) and leads to the C1 level",
+        "f2": "It is practical – with a focus on communication, nursing vocabulary and everyday language",
+        "f3": "It is taught by teachers, some of whom are German, who are interculturally trained",
+        "f4": "There are exercises of nursing conversations, handovers and everyday situations"
+      },
+      "closingText": "In this way, we create a language foundation that goes far beyond a certificate – and facilitates the path into the German nursing profession.",
+      "professionalTraining": "Professional Training",
+      "germanLanguage": "German language with nursing focus",
+      "basedIn": "Based in",
+      "location": "Rabat, Morocco"
     }
   }

@@ -156,5 +156,104 @@
       "locationText": "Allemagne",
       "callButton": "Appeler maintenant",
       "scheduleButton": "Planifier"
+    },
+    "faqs": {
+      "badge": "FAQ",
+      "title": "Trouvez des réponses à vos questions dans",
+      "titleHighlight": "notre FAQ",
+      "subtitle": "Dans notre section FAQ pour les institutions, nous répondons à de nombreuses questions fréquemment posées :",
+      "ctaText": "Et si quelque chose reste peu clair, nous serions heureux de vous conseiller personnellement.",
+      "ctaButton": "Contactez-nous",
+      "questions": {
+        "q1": {
+          "question": "Combien de temps prend un placement ?",
+          "answer": "Le processus de placement prend généralement 6 à 12 mois depuis la demande initiale jusqu'au début du travail en Allemagne. Cela comprend la formation linguistique au Maroc (4-6 mois), le traitement des documents et la reconnaissance (2-3 mois), et les procédures de visa (1-2 mois). Nous vous guidons à chaque étape pour assurer une transition en douceur."
+        },
+        "q2": {
+          "question": "Quels documents sont requis ?",
+          "answer": "Vous aurez besoin de votre diplôme ou certificat d'infirmier, de relevés de notes officiels, d'un passeport valide, d'un acte de naissance, d'un certificat de police et de certificats de santé. Tous les documents doivent être officiellement traduits en allemand. Nous fournissons une liste de contrôle détaillée et vous aidons à préparer tous les documents nécessaires."
+        },
+        "q3": {
+          "question": "Comment fonctionne le processus de reconnaissance ?",
+          "answer": "Le processus de reconnaissance implique la soumission de vos qualifications infirmières aux autorités allemandes pour évaluation. Nous gérons l'ensemble du processus : préparation des documents, traduction, soumission à l'organisme de reconnaissance compétent et suivi. Si une formation supplémentaire est nécessaire, nous l'organisons également."
+        },
+        "q4": {
+          "question": "Qui couvre quels coûts ?",
+          "answer": "AmalCare couvre les coûts de formation linguistique, les procédures de reconnaissance et les services de placement. Vous êtes responsable des documents personnels (passeport, certificats) et des frais de visa. Une fois employé, votre employeur allemand couvre les frais de déménagement et offre un salaire compétitif dès le premier jour."
+        },
+        "q5": {
+          "question": "Comment fonctionne exactement le modèle coopératif ?",
+          "answer": "Notre modèle coopératif signifie que nous travaillons ensemble en tant que partenaires. Nous investissons dans votre formation et votre préparation, tandis que vous vous engagez à travailler avec nos établissements de soins de santé partenaires en Allemagne. Cela garantit une formation de qualité, un placement garanti et un soutien de carrière à long terme pour votre succès."
+        }
+      },
+      "hero": {
+        "badge": "Votre emploi de soins en Allemagne avec AmalCare",
+        "title": "Votre parfait",
+        "titleHighlight": "Départ",
+        "description1": "Rêvez-vous de travailler dans les soins infirmiers en Allemagne ? Voulez-vous faire quelque chose de significatif, aider les gens et construire un avenir sûr pour vous-même ?",
+        "description2": "Alors AmalCare est le bon endroit pour vous.",
+        "description3": "Nous vous accompagnons étape par étape sur votre chemin vers la formation en soins infirmiers en Allemagne – de l'école de langue au Maroc à votre premier jour de travail. Avec préparation, confiance et soutien authentique.",
+        "whyTitle": "Pourquoi AmalCare ?",
+        "whySubtitle": "Découvrez ce qui nous rend différents",
+        "whyStrong": "Parce que vous méritez plus qu'un simple contrat de placement.",
+        "benefitsTitle": "Chez AmalCare, vous obtenez :",
+        "benefits": {
+          "b1": "Cours de langue complétés par un cours de simulation (durée : 3 mois)",
+          "b2": "Transmission de connaissances en soins infirmiers avant votre arrivée",
+          "b3": "Placement professionnel et préparation à la vie en Allemagne",
+          "b4": "Aide au visa, au logement et à l'enregistrement",
+          "b5": "Soutien personnel – même après votre arrivée",
+          "b6": "Un réseau solide et de vrais contacts locaux"
+        },
+        "closingText": "Vous ne serez pas laissé seul. Nous marcherons ensemble sur le chemin – pour que vous puissiez arriver, rester et grandir.",
+        "ctaButton": "Pour un contact rapide",
+        "featureCard1Title": "Soutien de voyage complet",
+        "featureCard1Description": "De la formation linguistique au Maroc à votre premier jour en Allemagne, nous sommes avec vous à chaque étape.",
+        "featureCard2Title": "Soins et confiance authentiques",
+        "featureCard2Description": "Nous offrons préparation, confiance et soutien authentique pour vous aider à construire une carrière significative dans les soins infirmiers.",
+        "stat1": "500+",
+        "stat1Label": "Placements réussis",
+        "stat2": "95%",
+        "stat2Label": "Taux de réussite",
+        "stat3": "24/7",
+        "stat3Label": "Support disponible"
+      },
+      "cta": {
+        "title": "Êtes-vous prêt ?",
+        "titleHighlight": "Nous le sommes.",
+        "description1": "Avec AmalCare, vous ne commencez pas seul. Vous obtenez préparation, soutien et un partenaire solide à vos côtés.",
+        "description2": "Faites le premier pas – et contactez-nous.",
+        "benefitsTitle": "Ce que vous obtiendrez :",
+        "benefits": {
+          "b1": "Orientation de carrière personnalisée",
+          "b2": "Soutien à la formation linguistique",
+          "b3": "Assistance visa et documentation",
+          "b4": "Mentorat continu en Allemagne"
+        },
+        "ctaButton1": "Contactez-nous maintenant",
+        "ctaButton2": "En savoir plus",
+        "badgeTitle": "Rejoignez notre communauté",
+        "badgeSubtitle": "Commencez votre voyage aujourd'hui"
+      }
+    },
+    "languageSchool": {
+      "badge": "École de langue",
+      "title": "Notre école –",
+      "titleHighlight": "langue, soins, perspective",
+      "description": "Derrière chaque placement réussi se cache une préparation minutieuse. C'est pourquoi AmalCare exploite son propre établissement d'enseignement au Maroc : une école de langue axée sur les soins infirmiers et un cours de simulation de soins basé sur les normes allemandes.",
+      "subtitleMain": "École de langue à Rabat – Allemand avec un focus sur les soins",
+      "subtitleDescription": "Notre école de langue à Rabat est la première étape pour les professionnels des soins infirmiers et les stagiaires qui souhaitent travailler ou commencer une formation en Allemagne.",
+      "featuresTitle": "Ce qui rend nos leçons spéciales :",
+      "features": {
+        "f1": "Il commence à zéro (A1) et mène au niveau C1",
+        "f2": "Il est pratique – avec un focus sur la communication, le vocabulaire des soins et le langage quotidien",
+        "f3": "Il est enseigné par des enseignants, dont certains sont allemands, qui sont formés de manière interculturelle",
+        "f4": "Il y a des exercices de conversations de soins, de transmissions et de situations quotidiennes"
+      },
+      "closingText": "De cette façon, nous créons une base linguistique qui va bien au-delà d'un certificat – et facilite le chemin vers la profession infirmière allemande.",
+      "professionalTraining": "Formation professionnelle",
+      "germanLanguage": "Langue allemande avec focus sur les soins",
+      "basedIn": "Basé à",
+      "location": "Rabat, Maroc"
     }
   }

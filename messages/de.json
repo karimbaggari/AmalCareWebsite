@@ -165,7 +165,107 @@
     "contactPersonRole": "Geschäftsführer",
     "locationLabel": "Standort",
     "locationText": "Deutschland",
-    "callButton": "Jetzt anrufen",
-    "scheduleButton": "Termin vereinbaren"
+      "callButton": "Jetzt anrufen",
+      "scheduleButton": "Termin vereinbaren"
+    },
+    "faqs": {
+      "badge": "FAQ",
+      "title": "Finden Sie Antworten auf Ihre Fragen in",
+      "titleHighlight": "unserem FAQ",
+      "subtitle": "In unserem FAQ-Bereich für Einrichtungen beantworten wir viele der häufig gestellten Fragen:",
+      "ctaText": "Und wenn etwas unklar bleibt, beraten wir Sie gerne persönlich.",
+      "ctaButton": "Kontaktieren Sie uns",
+      "questions": {
+        "q1": {
+          "question": "Wie lange dauert eine Vermittlung?",
+          "answer": "Der Vermittlungsprozess dauert in der Regel 6-12 Monate von der ersten Bewerbung bis zum Arbeitsbeginn in Deutschland. Dies umfasst Sprachtraining in Marokko (4-6 Monate), Dokumentenverarbeitung und Anerkennung (2-3 Monate) und Visaverfahren (1-2 Monate). Wir begleiten Sie bei jedem Schritt, um einen reibungslosen Übergang zu gewährleisten."
+        },
+        "q2": {
+          "question": "Welche Dokumente werden benötigt?",
+          "answer": "Sie benötigen Ihr Pflegediplom oder -zertifikat, offizielle Zeugnisse, gültigen Reisepass, Geburtsurkunde, polizeiliches Führungszeugnis und Gesundheitszeugnisse. Alle Dokumente müssen offiziell ins Deutsche übersetzt werden. Wir stellen eine detaillierte Checkliste bereit und helfen Ihnen bei der Vorbereitung aller notwendigen Unterlagen."
+        },
+        "q3": {
+          "question": "Wie funktioniert das Anerkennungsverfahren?",
+          "answer": "Das Anerkennungsverfahren beinhaltet die Einreichung Ihrer Pflegequalifikationen bei den deutschen Behörden zur Bewertung. Wir übernehmen den gesamten Prozess: Dokumentenvorbereitung, Übersetzung, Einreichung bei der zuständigen Anerkennungsstelle und Nachverfolgung. Falls zusätzliche Schulungen erforderlich sind, organisieren wir diese ebenfalls."
+        },
+        "q4": {
+          "question": "Wer übernimmt welche Kosten?",
+          "answer": "AmalCare übernimmt die Kosten für Sprachtraining, Anerkennungsverfahren und Vermittlungsleistungen. Sie sind verantwortlich für persönliche Dokumente (Reisepass, Zertifikate) und Visagebühren. Nach der Einstellung übernimmt Ihr deutscher Arbeitgeber Umzugskosten und bietet vom ersten Tag an ein wettbewerbsfähiges Gehalt."
+        },
+        "q5": {
+          "question": "Wie funktioniert das Genossenschaftsmodell genau?",
+          "answer": "Unser Genossenschaftsmodell bedeutet, dass wir als Partner zusammenarbeiten. Wir investieren in Ihre Ausbildung und Vorbereitung, während Sie sich verpflichten, mit unseren Partner-Gesundheitseinrichtungen in Deutschland zu arbeiten. Dies gewährleistet qualitativ hochwertige Ausbildung, garantierte Vermittlung und langfristige Karriereunterstützung für Ihren Erfolg."
+        }
+      },
+      "hero": {
+        "badge": "Ihr Pflegejob in Deutschland mit AmalCare",
+        "title": "Dein perfekter",
+        "titleHighlight": "Start",
+        "description1": "Träumst du davon, in der Pflege in Deutschland zu arbeiten? Möchtest du etwas Sinnvolles tun, Menschen helfen – und dir eine sichere Zukunft aufbauen?",
+        "description2": "Dann bist du bei AmalCare genau richtig.",
+        "description3": "Wir begleiten dich Schritt für Schritt auf deinem Weg zur Pflegeausbildung in Deutschland – von der Sprachschule in Marokko bis zu deinem ersten Arbeitstag. Mit Vorbereitung, Vertrauen und echter Unterstützung.",
+        "whyTitle": "Warum AmalCare?",
+        "whySubtitle": "Entdecke, was uns anders macht",
+        "whyStrong": "Weil du mehr verdienst als nur einen Vermittlungsvertrag.",
+        "benefitsTitle": "Bei AmalCare bekommst du:",
+        "benefits": {
+          "b1": "Sprachunterricht ergänzt durch einen Simulationskurs (Dauer: 3 Monate)",
+          "b2": "Vermittlung von Pflegewissen vor deiner Ankunft",
+          "b3": "Jobvermittlung und Vorbereitung auf das Leben in Deutschland",
+          "b4": "Unterstützung bei Visum, Unterkunft und Anmeldung",
+          "b5": "Persönliche Betreuung – auch nach deiner Ankunft",
+          "b6": "Ein starkes Netzwerk und echte lokale Kontakte"
+        },
+        "closingText": "Du wirst nicht allein gelassen. Wir gehen den Weg gemeinsam – damit du ankommen, bleiben und wachsen kannst.",
+        "ctaButton": "Zum Schnellkontakt",
+        "featureCard1Title": "Komplette Reiseunterstützung",
+        "featureCard1Description": "Von der Sprachausbildung in Marokko bis zu deinem ersten Tag in Deutschland begleiten wir dich bei jedem Schritt.",
+        "featureCard2Title": "Echte Fürsorge & Vertrauen",
+        "featureCard2Description": "Wir bieten Vorbereitung, Vertrauen und authentische Unterstützung, um dir zu helfen, eine sinnvolle Karriere in der Pflege aufzubauen.",
+        "stat1": "500+",
+        "stat1Label": "Erfolgreiche Vermittlungen",
+        "stat2": "95%",
+        "stat2Label": "Erfolgsquote",
+        "stat3": "24/7",
+        "stat3Label": "Support verfügbar"
+      },
+      "cta": {
+        "title": "Bist du bereit?",
+        "titleHighlight": "Wir sind es.",
+        "description1": "Mit AmalCare startest du nicht alleine. Du erhältst Vorbereitung, Unterstützung und einen starken Partner an deiner Seite.",
+        "description2": "Mache den ersten Schritt – und kontaktiere uns.",
+        "benefitsTitle": "Was du bekommst:",
+        "benefits": {
+          "b1": "Personalisierte Karriereberatung",
+          "b2": "Unterstützung bei der Sprachausbildung",
+          "b3": "Visa- und Dokumentenhilfe",
+          "b4": "Laufendes Mentoring in Deutschland"
+        },
+        "ctaButton1": "Jetzt kontaktieren",
+        "ctaButton2": "Mehr erfahren",
+        "badgeTitle": "Werde Teil unserer Community",
+        "badgeSubtitle": "Starte heute deine Reise"
+      }
+    },
+    "languageSchool": {
+      "badge": "Sprachschule",
+      "title": "Unsere Schule –",
+      "titleHighlight": "Sprache, Pflege, Perspektive",
+      "description": "Hinter jeder erfolgreichen Vermittlung steht eine gründliche Vorbereitung. Deshalb betreibt AmalCare eine eigene Bildungseinrichtung in Marokko: eine Sprachschule mit Pflegefokus und einen Pflegesimulationskurs nach deutschen Standards.",
+      "subtitleMain": "Sprachschule in Rabat – Deutsch mit Pflegefokus",
+      "subtitleDescription": "Unsere Sprachschule in Rabat ist der erste Schritt für Pflegefachkräfte und Auszubildende, die in Deutschland arbeiten oder eine Ausbildung beginnen möchten.",
+      "featuresTitle": "Was unseren Unterricht besonders macht:",
+      "features": {
+        "f1": "Er beginnt bei null (A1) und führt bis zum C1-Niveau",
+        "f2": "Er ist praxisnah – mit Fokus auf Kommunikation, Pflegevokabular und Alltagssprache",
+        "f3": "Er wird von Lehrkräften unterrichtet, von denen einige Deutsche sind, die interkulturell geschult sind",
+        "f4": "Es gibt Übungen zu Pflegegesprächen, Übergaben und Alltagssituationen"
+      },
+      "closingText": "Auf diese Weise schaffen wir eine Sprachgrundlage, die weit über ein Zertifikat hinausgeht – und den Weg in den deutschen Pflegeberuf erleichtert.",
+      "professionalTraining": "Berufsausbildung",
+      "germanLanguage": "Deutsche Sprache mit Pflegefokus",
+      "basedIn": "Standort",
+      "location": "Rabat, Marokko"
+    }
   }
-}
+  
