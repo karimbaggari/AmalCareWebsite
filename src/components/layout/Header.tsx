@@ -3,12 +3,11 @@
 import { Menu, X, Home, Info, School, Briefcase, HelpCircle, Phone } from "lucide-react"
 import ThemeToggle from "../ThemeToggle"
 import LanguageSwitcher from "../ui/LanguageSwitcher"
-import Link from "next/link"
+import { Link, usePathname } from '@/i18n/routing'
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { createPortal } from "react-dom"
 import { useTranslations, useLocale } from 'next-intl'
-import { usePathname } from 'next/navigation'
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -87,12 +86,12 @@ export default function Header() {
     }, [isMenuOpen])
 
     const mobileNavItems = [
-        { href: `/${locale}`, label: 'Home', icon: Home },
-        { href: `/${locale}/about`, label: 'About', icon: Info },
-        { href: `/${locale}/language-school`, label: 'School', icon: School },
-        { href: `/${locale}/faqs`, label: 'FAQs', icon: HelpCircle },
-        { href: `/${locale}/contact`, label: 'Contact', icon: Phone },
-    ]
+        { href: '/', label: 'Home', icon: Home },
+        { href: '/about', label: 'About', icon: Info },
+        { href: '/language-school', label: 'School', icon: School },
+        { href: '/faqs', label: 'FAQs', icon: HelpCircle },
+        { href: '/contact', label: 'Contact', icon: Phone },
+    ] as const
 
     return (
         <>
@@ -108,7 +107,7 @@ export default function Header() {
 
                     {/* Center: Logo */}
                     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                        <Link href={`/${locale}`} aria-label="Zur Startseite navigieren">
+                        <Link href="/" aria-label="Zur Startseite navigieren">
                             <Image
                                 src="https://alamalhealthcare.com/wp-content/uploads/2025/02/Icon.png"
                                 alt="AmalCare Logo"
@@ -129,7 +128,7 @@ export default function Header() {
                 {/* Desktop/Tablet Layout (>= md screens) */}
                 <div className="hidden md:flex items-center justify-between w-full">
                     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                        <Link href={`/${locale}`} aria-label="Zur Startseite navigieren">
+                        <Link href="/" aria-label="Zur Startseite navigieren">
                             <Image
                                 src="https://alamalhealthcare.com/wp-content/uploads/2025/02/Icon.png"
                                 alt="AmalCare Logo"
@@ -144,7 +143,7 @@ export default function Header() {
                         <LanguageSwitcher />
                         
                         <Link
-                            href={`/${locale}/contact`}
+                            href="/contact"
                             className="text-[#00a6a2] text-sm md:text-base font-medium tracking-wide hover:underline uppercase transition-colors duration-300"
                             aria-label={t('contact')}
                         >
@@ -198,7 +197,7 @@ export default function Header() {
                             </ul>
 
                             <div className="mt-8 grid grid-cols-2 gap-3">
-                                <Link href={`/${locale}/contact`} className="rounded-full bg-[#7c3aed] text-white text-center py-3 font-semibold shadow-md hover:bg-[#6d28d9] transition-colors cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                                <Link href="/contact" className="rounded-full bg-[#7c3aed] text-white text-center py-3 font-semibold shadow-md hover:bg-[#6d28d9] transition-colors cursor-pointer" onClick={() => setIsMenuOpen(false)}>
                                     {t('contact')}
                                 </Link>
                                 <button className="rounded-full border border-[#00a6a2]/30 text-[#00a6a2] py-3 font-semibold hover:bg-[#00a6a2]/5 transition-colors cursor-pointer" onClick={() => setIsMenuOpen(false)}>
@@ -228,7 +227,10 @@ export default function Header() {
                                 <div className="flex items-center gap-1 px-2 py-2.5 min-w-max">
                                     {mobileNavItems.map((item) => {
                                         const Icon = item.icon
-                                        const isActive = pathname === item.href
+                                        // For home, exact match only. For others, match if starts with the path
+                                        const isActive = item.href === '/' 
+                                            ? pathname === '/' 
+                                            : pathname === item.href || pathname.startsWith(item.href + '/')
                                         return (
                                             <Link
                                                 key={item.href}

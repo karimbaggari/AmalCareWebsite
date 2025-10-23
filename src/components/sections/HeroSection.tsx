@@ -10,7 +10,7 @@ export function HeroSection() {
     .replace(/to AmalCare/g, "to\u00A0AmalCare")
     .replace(/chez AmalCare/g, "chez\u00A0AmalCare")
   return (
-    <section className="relative min-h-[600px] sm:min-h-[700px] md:min-h-[900px] lg:min-h-[1100px] xl:min-h-[1300px] bg-gradient-to-br from-[#00a6a2] via-[#008b87] to-[#006b68] overflow-visible pb-6 md:pb-0">
+    <section className="relative  sm:min-h-[700px] lg:min-h-[1100px] xl:min-h-[1300px] bg-gradient-to-br from-[#00a6a2] via-[#008b87] to-[#006b68] overflow-visible pb-6 md:pb-0">
       {/* Enhanced background with multiple layers */}
       <div className="absolute inset-0 opacity-100">
         <div className="absolute right-0 top-0 w-full md:w-1/2 h-full">
@@ -18,7 +18,7 @@ export function HeroSection() {
             src={IMAGES.keyvisual}
             alt="AmalCare Keyvisual"
             width={700}
-            height={600}
+            height={300}
             className="h-full w-full object-cover opacity-100"
           />
         </div>

@@ -126,7 +126,7 @@ export function SimpleImageHero({
   backgroundColor = "#00a6a2",
   height = "h-[600px]",
   imageWidth = 900,
-  imageHeight = 600
+  imageHeight = 300
 }: {
   image: string
   imageAlt?: string
@@ -143,8 +143,8 @@ export function SimpleImageHero({
       {/* Image positioned to extend beyond background */}
       <div className="absolute left-0 right-0 top-[4rem] flex justify-center z-20">
         <div
-          className="rounded-3xl shadow-2xl overflow-hidden"
-          style={{ width: `${imageWidth}px`, height: `${imageHeight}px` }}
+          className="rounded-3xl shadow-2xl m-2 overflow-hidden"
+          style={{ width: `${imageWidth}px`}}
         >
 
           <Image

@@ -44,13 +44,10 @@ export default function AboutPageContent() {
         image="https://www.amal-care.de/fileadmin/_processed_/d/c/csm_AmalCare-60_90c893b951.webp"
         imageAlt="About AmalCare - Healthcare professionals"
         backgroundColor="#00a6a2"
-        height="h-[370px]"
+        height="h-[350px] sm:h-[450px] md:h-[550px]"
         imageWidth={900}
         imageHeight={600}
       />
-
-      {/* White spacer for top-80 */}
-      <div className="bg-white h-80"></div>
 
       <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
         {/* Hero Section - Who We Are */}

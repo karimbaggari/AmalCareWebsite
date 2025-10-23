@@ -15,7 +15,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   return (
     <>
       <Header />
-      <div className="h-16 sm:h-20 md:h-24 sm:bg-[#00a6a2] md:bg-[#00a6a2] lg:bg-[#00a6a2]"></div>
       <AboutPageContent />
       <Footer />
     </>

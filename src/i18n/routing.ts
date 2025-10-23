@@ -25,7 +25,9 @@ export const routing = defineRouting({
       en: '/contact',
       fr: '/contact',
       ar: '/اتصال'
-    }
+    },
+    '/language-school': '/language-school',
+    '/faqs': '/faqs'
     // Dynamic params are supported via square brackets
     // '/news/[articleSlug]-[articleId]': {
     //   en: '/news/[articleSlug]-[articleId]',
