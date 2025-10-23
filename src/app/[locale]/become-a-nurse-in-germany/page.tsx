@@ -14,15 +14,15 @@ export default async function BecomeNursePage({ params }: { params: Promise<{ lo
         image="https://www.amal-care.de/fileadmin/_processed_/d/c/csm_AmalCare-60_90c893b951.webp"
         imageAlt="Become a nurse in Germany"
         backgroundColor="#00a6a2"
-        height="h-[600px]"
+        height="h-[400px] sm:h-[500px] md:h-[600px]"
         imageWidth={900}
         imageHeight={600}
       />
 
       <section className="bg-white">
-        <div className="container mx-auto max-w-9xl px-6 py-16 space-y-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#003c3a]">Become a Nurse in Germany</h1>
-          <p className="text-gray-700 text-lg leading-relaxed">
+        <div className="container mx-auto max-w-9xl px-4 sm:px-6 py-12 sm:py-14 md:py-16 space-y-6 sm:space-y-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#003c3a]">Become a Nurse in Germany</h1>
+          <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
             Guidance on qualifications, language, and recognition process will be published here soon.
           </p>
         </div>

@@ -15,6 +15,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   return (
     <>
       <Header />
+      <div className="h-16 sm:h-20 md:h-24 bg-white"></div>
       <ContactPageContent />
       <Footer />
     </>

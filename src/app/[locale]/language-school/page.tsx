@@ -15,14 +15,14 @@ export default async function LanguageSchoolPage({ params }: { params: Promise<{
         image="https://www.amal-care.de/fileadmin/_processed_/d/c/csm_AmalCare-60_90c893b951.webp"
         imageAlt="Language School"
         backgroundColor="#00a6a2"
-        height="h-[600px]"
+        height="h-[400px] sm:h-[500px] md:h-[600px]"
         imageWidth={900}
         imageHeight={600}
       />
 
-      <div className="h-16 sm:h-20 md:h-24"></div>
+      <div className="h-12 bg-white sm:h-16 md:h-20 lg:h-24"></div>
       <LanguageSchoolSection />
-      <div className="h-16 sm:h-20 md:h-24"></div>
+      <div className="h-12 bg-white sm:h-16 md:h-20 lg:h-24"></div>
       <Footer />
     </>
   );

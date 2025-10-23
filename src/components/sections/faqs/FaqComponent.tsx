@@ -36,13 +36,16 @@ const faqs = [
 export function FaqComponent() {
   return (
     <section className="relative py-24 px-4 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#00a6a2]/5 via-white to-[#7c3aed]/5" />
+      {/* Background gradient - Cross-platform compatible */}
+      <div className="absolute inset-0 faq-bg-gradient"></div>
+      {/* Subtle decorative elements */}
+      <div className="absolute top-20 right-10 w-72 h-72 rounded-full blur-3xl faq-blur-teal"></div>
+      <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full blur-3xl faq-blur-purple"></div>
 
       <div className="relative max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <Badge className="border border-[#00a6a2]/20 bg-[#00a6a2]/10 text-[#00a6a2] px-4 py-1.5 inline-flex items-center gap-2">
+          <Badge className="text-[#00a6a2] px-4 py-1.5 inline-flex items-center gap-2 faq-badge">
             <HelpCircle className="w-4 h-4" />
             FAQ
           </Badge>
@@ -56,14 +59,15 @@ export function FaqComponent() {
           </p>
         </div>
 
-        {/* FAQ Accordion */}
-        <div className="bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-200/50 p-6 md:p-8 shadow-lg">
+        {/* FAQ Accordion - Solid white background for Firefox compatibility */}
+        <div className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 shadow-lg">
           <Accordion className="space-y-2">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-gray-200/50 rounded-lg px-4 data-[state=open]:bg-[#00a6a2]/5 transition-colors"
+                className="border border-gray-200/50 rounded-lg px-4 transition-colors"
+                data-state-style="open"
               >
                 <AccordionTrigger className="relative flex items-center justify-center text-base md:text-lg font-semibold text-[#003c3a] hover:text-[#00a6a2] hover:no-underline transition-all duration-300 data-[state=open]:pt-10 data-[state=open]:pb-10 data-[state=closed]:pt-10 data-[state=closed]:pb-4">
                   <span className="text-center">{faq.question}</span>
@@ -75,9 +79,9 @@ export function FaqComponent() {
           </Accordion>
         </div>
 
-        {/* Contact CTA */}
+        {/* Contact CTA - Cross-platform compatible */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#00a6a2]/10 to-[#7c3aed]/10 rounded-full px-6 py-4 border border-[#00a6a2]/20">
+          <div className="inline-flex items-center gap-3 rounded-full px-6 py-4 shadow-md faq-cta-gradient">
             <MessageCircle className="w-5 h-5 text-[#00a6a2]" />
             <p className="text-sm md:text-base text-[#003c3a]">
               And if anything remains unclear, we would be happy to advise you personally.
@@ -93,5 +97,3 @@ export function FaqComponent() {
 }
 
 export default FaqComponent;
-
-

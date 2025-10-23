@@ -49,9 +49,12 @@ export default function AboutPageContent() {
         imageHeight={600}
       />
 
-      <div className="min-h-screen mt-80 bg-gradient-to-b from-white to-gray-50">
+      {/* White spacer for top-80 */}
+      <div className="bg-white h-80"></div>
+
+      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
         {/* Hero Section - Who We Are */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-white to-teal-50/30 py-16 md:py-20 lg:py-24">
+        <section className="relative overflow-hidden container bg-gradient-to-br from-teal-50 via-white to-teal-50/30 py-16 md:py-20 lg:py-24">
           {/* Decorative Elements */}
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
             <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-teal-100/40 blur-3xl" />
@@ -61,18 +64,18 @@ export default function AboutPageContent() {
           <div className="container relative mx-auto max-w-9xl px-6">
             <div className="mx-auto max-w-7xl space-y-12">
               {/* Eyebrow */}
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">
-                <CheckCircle2 className="h-4 w-4" />
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-teal-100 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-teal-700">
+                <CheckCircle2 className="h-3 w-3 sm:h-4 sm:w-4" />
                 {t('eyebrow')}
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-balance font-serif text-5xl font-bold leading-tight text-gray-900 lg:text-6xl">
+              <h1 className="text-balance font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
                 {t('mainTitle')}
               </h1>
 
               {/* Content */}
-              <div className="space-y-6 text-pretty text-lg leading-relaxed text-gray-700">
+              <div className="space-y-4 sm:space-y-6 text-pretty text-base sm:text-lg leading-relaxed text-gray-700">
                 <p>
                   {t('description1')}
                 </p>
@@ -98,10 +101,10 @@ export default function AboutPageContent() {
             <div className="mx-auto max-w-7xl space-y-16">
               {/* Section Header */}
               <div className="text-center">
-                <h2 className="mb-6 text-balance font-serif text-4xl font-bold text-gray-900 lg:text-5xl">
+                <h2 className="mb-4 sm:mb-6 text-balance font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
                   {t('uniqueTitle')}
                 </h2>
-                <p className="mx-auto max-w-3xl text-pretty text-lg leading-relaxed text-gray-700">
+                <p className="mx-auto max-w-3xl text-pretty text-base sm:text-lg leading-relaxed text-gray-700">
                   {t('uniqueDescription')}
                 </p>
               </div>
@@ -121,20 +124,20 @@ export default function AboutPageContent() {
                     {/* Content */}
                     <div className="relative">
                       <div className="mb-4 flex items-start justify-between gap-4">
-                        <h3 className="text-balance font-semibold text-xl text-gray-900 transition-colors group-hover:text-teal-600">
+                        <h3 className="text-balance font-semibold text-lg sm:text-xl text-gray-900 transition-colors group-hover:text-teal-600">
                           {feature.title}
                         </h3>
                         <div className="flex-shrink-0">
-                          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-100 text-teal-600 transition-all duration-300 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-white">
+                          <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-teal-100 text-teal-600 transition-all duration-300 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-white">
                             <ArrowRight
-                              className={`h-5 w-5 transition-transform duration-300 ${
+                              className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 ${
                                 hoveredIndex === index ? "translate-x-1" : ""
                               }`}
                             />
                           </div>
                         </div>
                       </div>
-                      <p className="text-pretty leading-relaxed text-gray-600">{feature.description}</p>
+                      <p className="text-pretty text-sm sm:text-base leading-relaxed text-gray-600">{feature.description}</p>
                     </div>
 
                     {/* Decorative Corner Element */}
@@ -145,16 +148,16 @@ export default function AboutPageContent() {
 
               {/* Bottom CTA */}
               <div className="text-center">
-                <div className="inline-flex flex-col items-center gap-4 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 p-8 text-white shadow-lg">
-                  <p className="text-balance text-lg font-medium">
+                <div className="inline-flex flex-col items-center gap-3 sm:gap-4 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 p-6 sm:p-8 text-white shadow-lg">
+                  <p className="text-balance text-base sm:text-lg font-medium">
                     {t('ctaText')}
                   </p>
                   <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-teal-600 transition-all hover:scale-105 hover:shadow-lg"
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-teal-600 transition-all hover:scale-105 hover:shadow-lg"
                   >
                     {t('ctaButton')}
-                    <ArrowRight className="h-5 w-5" />
+                    <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </div>
               </div>

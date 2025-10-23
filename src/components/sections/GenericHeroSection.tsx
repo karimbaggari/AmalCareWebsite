@@ -146,8 +146,7 @@ export function SimpleImageHero({
           className="rounded-3xl shadow-2xl overflow-hidden"
           style={{ width: `${imageWidth}px`, height: `${imageHeight}px` }}
         >
-          <div className="absolute -right-2 h-120 w-60 rounded-full bg-teal-200/30 blur-3xl top-[190px]" />
-          <div className="absolute -left-2 h-120 w-60 rounded-full bg-teal-200/30 blur-3xl top-[190px]" />
+
           <Image
             src={image}
             alt={imageAlt}

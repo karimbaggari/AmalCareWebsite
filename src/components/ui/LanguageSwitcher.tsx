@@ -45,12 +45,12 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#00a6a2]/10 hover:bg-[#00a6a2]/20 border border-[#00a6a2]/30 transition-all duration-300 hover:scale-105"
+        className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#00a6a2]/10 hover:bg-[#00a6a2]/20 border border-[#00a6a2]/30 transition-all duration-300 hover:scale-105"
         aria-label="Change language"
       >
-        <Globe className="w-4 h-4 text-[#00a6a2]" />
-        <span className="text-[#00a6a2] text-sm font-medium">{currentLanguage.flag}</span>
-        <span className="text-[#00a6a2] text-sm font-medium">{currentLanguage.name}</span>
+        <Globe className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#00a6a2]" />
+        <span className="text-[#00a6a2] text-sm sm:text-base font-medium">{currentLanguage.flag}</span>
+        <span className="hidden sm:inline text-[#00a6a2] text-sm font-medium">{currentLanguage.name}</span>
       </button>
 
       {isOpen && (
@@ -62,7 +62,7 @@ export default function LanguageSwitcher() {
           />
           
           {/* Dropdown */}
-          <div className="absolute top-full right-0 mt-2 w-52 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 overflow-hidden">
+          <div className="absolute top-full left-0 sm:right-0 sm:left-auto mt-2 w-48 sm:w-52 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 overflow-hidden">
             <div className="py-2">
               {languages.map((language) => (
                 <button

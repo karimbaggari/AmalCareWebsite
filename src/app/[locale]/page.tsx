@@ -23,12 +23,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <>
       <Header />
       <HeroSection />
-      <div className='h-24 bg-white'></div>
+      <div className='h-16 sm:h-20 md:h-24 bg-white'></div>
       <AboutSection />
 
       {/* Two Card Layout - unified container width */}
       <div className='bg-white'>
-        <div className='container mx-auto max-w-9xl px-6 flex flex-col md:flex-row justify-between gap-8 md:gap-12'>
+        <div className='container mx-auto max-w-9xl px-4 sm:px-6 flex flex-col md:flex-row justify-between gap-6 sm:gap-8 md:gap-12'>
           <CallToActionCard
             subtitle={t('forNurses.subtitle')}
             title={t('forNurses.description')}
@@ -43,13 +43,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           />
         </div>
       </div>
-      <div className='h-24 bg-white'></div>
+      <div className='h-16 sm:h-20 md:h-24 bg-white'></div>
       <VideoSection />
-      <div className='h-24 bg-white'></div>
+      <div className='h-16 sm:h-20 md:h-24 bg-white'></div>
       <ValuesSection />
       <ProcessSection />
       <div className='bg-white'>
-        <div className='container mx-auto max-w-9xl px-6 flex flex-col md:flex-row justify-between gap-8 md:gap-12'>
+        <div className='container mx-auto max-w-9xl px-4 sm:px-6 flex flex-col md:flex-row justify-between gap-6 sm:gap-8 md:gap-12'>
           <CallToActionCard
             subtitle={t('forNurses.subtitle')}
             title={t('forNurses.description')}
@@ -65,7 +65,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </div>
 
-      <div className='h-28 relative bg-white'></div>
+      <div className='h-20 sm:h-24 md:h-28 relative bg-white'></div>
       <Footer />
     </>
   );

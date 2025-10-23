@@ -35,7 +35,7 @@ export function CTASection() {
               </div>
 
               {/* Benefits list */}
-              <Card className="border-2 border-[#00a6a2]/20 bg-white/80 p-6 backdrop-blur-sm">
+              <Card className="border-2 border-[#00a6a2]/20 bg-white p-6">
                 <div className="space-y-4">
                   <h3 className="font-semibold text-[#003c3a]">What you&apos;ll get:</h3>
                   <ul className="space-y-3">
@@ -62,7 +62,7 @@ export function CTASection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-[#00a6a2]/20 bg-white/50 backdrop-blur-sm transition-all hover:border-[#00a6a2]/40 hover:bg-[#00a6a2]/5 text-[#003c3a]"
+                  className="border-2 border-[#00a6a2]/20 bg-white transition-all hover:border-[#00a6a2]/40 hover:bg-[#00a6a2]/5 text-[#003c3a]"
                 >
                   Learn More
                 </Button>
@@ -83,7 +83,7 @@ export function CTASection() {
                 </div>
                 {/* Overlay badge */}
                 <div className="absolute bottom-6 left-6 right-6">
-                  <Card className="border-2 border-[#00a6a2]/20 bg-white/95 p-4 backdrop-blur-md">
+                  <Card className="border-2 border-[#00a6a2]/20 bg-white p-4 shadow-lg">
                     <div className="flex items-center gap-3">
                       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#00a6a2]/10">
                         <Heart className="h-5 w-5 text-[#00a6a2]" />

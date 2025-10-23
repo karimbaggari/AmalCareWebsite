@@ -52,7 +52,7 @@ export default function ContactPersonSection() {
                   </p>
                 </div>
 
-                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-gray-100 space-y-6 hover:shadow-2xl transition-all duration-300">
+                <div className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 space-y-6 hover:shadow-2xl transition-all duration-300">
                   <div className="text-center pb-6 border-b border-gray-100">
                     <div className="w-20 h-20 bg-gradient-to-br from-[#00a6a2] to-[#008581] rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-2xl font-bold text-white">
@@ -176,7 +176,7 @@ export default function ContactPersonSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
                   {/* Floating contact info */}
-                  <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm rounded-2xl p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <div className="absolute bottom-6 left-6 right-6 bg-white rounded-2xl p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 shadow-lg">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 bg-[#00a6a2] rounded-full flex items-center justify-center">
                         <span className="text-white font-bold text-sm">RA</span>

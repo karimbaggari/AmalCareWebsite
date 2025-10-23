@@ -68,14 +68,14 @@ function ContactPageContent() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="inline-block">
-                <span className="text-sm font-medium text-[#00a6a2] bg-[#00a6a2]/10 px-4 py-2 rounded-full">
+                <span className="text-xs sm:text-sm font-medium text-[#00a6a2] bg-[#00a6a2]/10 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full">
                   {t('getInTouch')}
                 </span>
               </div>
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
                 {t('mainTitle')}
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl">
                 {t('description')}
               </p>
             </div>
@@ -147,11 +147,11 @@ function ContactPageContent() {
           </div>
 
           {/* Right side - Contact Form */}
-          <div className="lg:sticky lg:top-24">
-            <div className="bg-white/90 backdrop-blur-sm p-8 md:p-10 rounded-3xl shadow-xl border border-gray-100">
-              <div className="mb-8">
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">{t('formTitle')}</h3>
-                <p className="text-gray-600">{t('formDescription')}</p>
+            <div className="lg:sticky lg:top-24">
+            <div className="bg-white/90 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-3xl shadow-xl border border-gray-100">
+              <div className="mb-6 sm:mb-8">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{t('formTitle')}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{t('formDescription')}</p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
