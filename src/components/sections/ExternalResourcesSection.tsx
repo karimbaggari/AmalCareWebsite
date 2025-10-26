@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-import Link from 'next/link';
 import { ExternalLink, Download, Video, BookOpen, Users, Globe } from 'lucide-react';
 import {
   PARTNER_URLS,
