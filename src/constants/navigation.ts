@@ -1,5 +1,6 @@
 import { NavigationLink, SocialMediaLink } from '@/types';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import { SOCIAL_URLS, LEGAL_URLS } from './urls';
 
 export const MAIN_NAVIGATION: NavigationLink[] = [
   { href: '/', label: 'Startseite' },
@@ -11,24 +12,24 @@ export const MAIN_NAVIGATION: NavigationLink[] = [
 ];
 
 export const LEGAL_LINKS: NavigationLink[] = [
-  { href: '/impressum', label: 'Impressum' },
-  { href: '/datenschutz', label: 'Datenschutz' },
-  { href: '/agb', label: 'AGB' },
+  { href: LEGAL_URLS.impressum, label: 'Impressum' },
+  { href: LEGAL_URLS.datenschutz, label: 'Datenschutz' },
+  { href: LEGAL_URLS.agb, label: 'AGB' },
 ];
 
 export const SOCIAL_MEDIA_LINKS: SocialMediaLink[] = [
   { 
-    href: 'https://facebook.com/amalcare', 
+    href: SOCIAL_URLS.facebook, 
     icon: Facebook, 
     label: 'Facebook' 
   },
   { 
-    href: 'https://instagram.com/amalcare', 
+    href: SOCIAL_URLS.instagram, 
     icon: Instagram, 
     label: 'Instagram' 
   },
   { 
-    href: 'https://linkedin.com/company/amalcare', 
+    href: SOCIAL_URLS.linkedin, 
     icon: Linkedin, 
     label: 'LinkedIn' 
   },

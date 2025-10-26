@@ -2,8 +2,10 @@
 
 import { Phone, Mail, Clock, Copy, Check, MapPin, Calendar } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
+import { IMAGE_URLS, CONTACT_URLS } from "@/constants/urls"
 
 export default function ContactPersonSection() {
   const t = useTranslations('contact')
@@ -143,14 +145,18 @@ export default function ContactPersonSection() {
                   </div>
 
                   <div className="grid grid-cols-2 gap-4 pt-4">
-                    <button className="flex items-center justify-center gap-2 h-12 bg-[#00a6a2] hover:bg-[#008581] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group">
-                      <Phone className="w-4 h-4" />
-                      {t('callButton')}
-                    </button>
-                    <button className="flex items-center justify-center gap-2 h-12 bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group">
-                      <Calendar className="w-4 h-4" />
-                      {t('scheduleButton')}
-                    </button>
+                    <a href={CONTACT_URLS.phone}>
+                      <button className="flex items-center justify-center gap-2 h-12 bg-[#00a6a2] hover:bg-[#008581] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full">
+                        <Phone className="w-4 h-4" />
+                        {t('callButton')}
+                      </button>
+                    </a>
+                    <Link href="mailto:rachid.amessegher@amal-care.de">
+                      <button className="flex items-center justify-center gap-2 h-12 bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full">
+                        <Calendar className="w-4 h-4" />
+                        {t('scheduleButton')}
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -165,7 +171,7 @@ export default function ContactPersonSection() {
                 
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-500">
                   <Image
-                    src="https://www.amal-care.de/fileadmin/_processed_/d/c/csm_AmalCare-60_90c893b951.webp"
+                    src={IMAGE_URLS.teamMember1}
                     alt="Rachid Amessegher - AmalCare eG"
                     width={800}
                     height={600}

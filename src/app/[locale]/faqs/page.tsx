@@ -3,6 +3,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SimpleImageHero } from '@/components/sections/GenericHeroSection';
 import FaqComponent from '@/components/sections/faqs/FaqComponent';
+import { IMAGE_URLS } from '@/constants/urls';
 
 export default async function FAQsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -12,8 +13,8 @@ export default async function FAQsPage({ params }: { params: Promise<{ locale: s
     <>
       <Header />
       <SimpleImageHero
-        image="https://www.amal-care.de/fileadmin/_processed_/d/c/csm_AmalCare-60_90c893b951.webp"
-        imageAlt="AmalCare"
+        image={IMAGE_URLS.rabatSchoolClassroom2}
+        imageAlt="FAQs - Frequently Asked Questions"
         backgroundColor="#00a6a2"
         height="h-[600px]"
         imageWidth={900}

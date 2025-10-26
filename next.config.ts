@@ -18,6 +18,10 @@ const nextConfig: NextConfig = {
         protocol: 'https' as const,
         hostname: 'alamalhealthcare.com',
       },
+      {
+        protocol: 'https' as const,
+        hostname: 'ik.imagekit.io',
+      },
     ],
   },
 };

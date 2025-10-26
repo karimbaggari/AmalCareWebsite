@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Mail, MapPin, Phone, ArrowRight, Heart } from "lucide-react"
 import { useState } from "react"
 import { MAIN_NAVIGATION, LEGAL_LINKS, SOCIAL_MEDIA_LINKS } from "@/constants/navigation"
+import { CONTACT_URLS } from "@/constants/urls"
 // import { COLORS } from "@/types" // Unused for now
 import { useTranslations } from 'next-intl'
 
@@ -97,14 +98,14 @@ export default function Footer() {
               <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-white/70">Kontakt</h3>
               <div className="space-y-5 mb-10">
                 <a
-                  href="mailto:info@amal-care.de"
+                  href={CONTACT_URLS.email}
                   className="flex items-start gap-3 text-white/90 hover:text-white transition-colors group"
                 >
                   <Mail className="w-5 h-5 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
                   <span className="text-base">info@amal-care.de</span>
                 </a>
                 <a
-                  href="tel:+49123456789"
+                  href={CONTACT_URLS.phone}
                   className="flex items-start gap-3 text-white/90 hover:text-white transition-colors group"
                 >
                   <Phone className="w-5 h-5 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />

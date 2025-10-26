@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 import { SimpleImageHero } from './GenericHeroSection'
 import ContactIntroSection from './ContactIntroSection'
 import ContactPersonSection from './ContactPersonSection'
+import { IMAGE_URLS } from '@/constants/urls'
 
 function ContactPageContent() {
   const [formData, setFormData] = useState({
@@ -37,7 +38,7 @@ function ContactPageContent() {
     <>
       {/* Hero Section */}
       <SimpleImageHero
-        image="https://www.amal-care.de/fileadmin/_processed_/d/c/csm_AmalCare-60_90c893b951.webp"
+        image={IMAGE_URLS.teamMember2}
         imageAlt="Contact us - Healthcare professionals"
         backgroundColor="#00a6a2"
         height="h-[370px]"

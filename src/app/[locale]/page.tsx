@@ -32,14 +32,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <CallToActionCard
             subtitle={t('forNurses.subtitle')}
             title={t('forNurses.description')}
-            backgroundImage={IMAGES.ctaImage1}
+            backgroundImage={IMAGES.staticImage1}
             backgroundColor="bg-[#00a6a2]"
+            href={`/${locale}/become-a-nurse-in-germany`}
           />
           <CallToActionCard
             subtitle={t('forInstitutions.subtitle')}
             title={t('forInstitutions.description')}
-            backgroundImage={IMAGES.ctaImage2}
+            backgroundImage={IMAGES.staticImage2}
             backgroundColor="bg-[#5A2574]"
+            href={`/${locale}/contact`}
           />
         </div>
       </div>
@@ -53,14 +55,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <CallToActionCard
             subtitle={t('forNurses.subtitle')}
             title={t('forNurses.description')}
-            backgroundImage={IMAGES.languageSchool}
+            backgroundImage={IMAGES.nursesGermany11}
             backgroundColor="bg-[#00a6a2]"
+            href={`/${locale}/language-school`}
           />
           <CallToActionCard
             subtitle={t('forInstitutions.subtitle')}
             title={t('forInstitutions.description')}
-            backgroundImage={IMAGES.languageSchool}
+            backgroundImage={IMAGES.nursesGermany12}
             backgroundColor="bg-[#5A2574]"
+            href={`/${locale}/faqs`}
           />
         </div>
       </div>

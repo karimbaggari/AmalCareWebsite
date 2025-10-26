@@ -5,8 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { IMAGES } from "@/types";
 import Image from "next/image";
+import Link from "next/link";
+import { useLocale } from 'next-intl';
 
 export function CTASection() {
+  const locale = useLocale();
   return (
     <section className="relative overflow-hidden bg-gray-50 pt-32 lg:pt-40 pb-20 lg:pb-32">
       {/* Decorative background */}
@@ -51,21 +54,25 @@ export function CTASection() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button
-                  size="lg"
-                  className="group bg-[#7c3aed] text-white shadow-lg shadow-[#7c3aed]/30 transition-all hover:bg-[#6d28d9] hover:shadow-xl hover:shadow-[#7c3aed]/40"
-                >
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Contact Us Now
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-[#00a6a2]/20 bg-white/50 backdrop-blur-sm transition-all hover:border-[#00a6a2]/40 hover:bg-[#00a6a2]/5 text-[#003c3a]"
-                >
-                  Learn More
-                </Button>
+                <Link href={`/${locale}/contact`}>
+                  <Button
+                    size="lg"
+                    className="group bg-[#7c3aed] text-white shadow-lg shadow-[#7c3aed]/30 transition-all hover:bg-[#6d28d9] hover:shadow-xl hover:shadow-[#7c3aed]/40"
+                  >
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    Contact Us Now
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
+                <Link href={`/${locale}/about`}>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-[#00a6a2]/20 bg-white/50 backdrop-blur-sm transition-all hover:border-[#00a6a2]/40 hover:bg-[#00a6a2]/5 text-[#003c3a]"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
 

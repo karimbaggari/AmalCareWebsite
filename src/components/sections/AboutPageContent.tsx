@@ -5,6 +5,7 @@ import { useState } from "react"
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { SimpleImageHero } from './GenericHeroSection'
+import { IMAGE_URLS } from '@/constants/urls'
 
 export default function AboutPageContent() {
   const t = useTranslations('about')
@@ -41,7 +42,7 @@ export default function AboutPageContent() {
     <>
       {/* Hero Section */}
       <SimpleImageHero
-        image="https://www.amal-care.de/fileadmin/_processed_/d/c/csm_AmalCare-60_90c893b951.webp"
+        image={IMAGE_URLS.nursesGermany13}
         imageAlt="About AmalCare - Healthcare professionals"
         backgroundColor="#00a6a2"
         height="h-[370px]"

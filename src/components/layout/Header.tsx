@@ -8,6 +8,7 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { createPortal } from "react-dom"
 import { useTranslations, useLocale } from 'next-intl'
+import { IMAGE_URLS } from "@/constants/urls"
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -97,7 +98,7 @@ export default function Header() {
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Link href={`/${locale}`} aria-label="Zur Startseite navigieren">
                     <Image
-                        src="https://alamalhealthcare.com/wp-content/uploads/2025/02/Icon.png"
+                        src={IMAGE_URLS.logo}
                         alt="AmalCare Logo"
                         width={150}
                         height={90}
@@ -180,7 +181,7 @@ export default function Header() {
                         </div>
 
                         <div className="mt-10 text-xs text-gray-500">
-                            <p>© 2024 AmalCare</p>
+                            <p>© 2025 AmalCare</p>
                         </div>
                     </div>
                 </nav>

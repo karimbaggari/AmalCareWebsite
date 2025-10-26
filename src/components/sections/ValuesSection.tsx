@@ -1,10 +1,12 @@
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import { IMAGES } from "@/types"
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 
 const ValuesSection = () => {
     const t = useTranslations('home')
+    const locale = useLocale()
     return (
         <div className="bg-white">
             <div className="container mx-auto max-w-9xl px-6 py-16">
@@ -37,9 +39,11 @@ const ValuesSection = () => {
 
                         {/* Arrow button */}
                         <div className="mt-12">
-                            <button className="w-14 h-14 rounded-full bg-white hover:bg-gray-100 flex justify-center items-center text-gray-900 p-0 shadow-lg transition-colors">
-                                <ArrowRight className="w-6 h-6" />
-                            </button>
+                            <Link href={`/${locale}/about`}>
+                                <button className="w-14 h-14 rounded-full bg-white hover:bg-gray-100 flex justify-center items-center text-gray-900 p-0 shadow-lg transition-colors">
+                                    <ArrowRight className="w-6 h-6" />
+                                </button>
+                            </Link>
                         </div>
                     </div>
 

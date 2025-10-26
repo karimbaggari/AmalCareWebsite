@@ -3,6 +3,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SimpleImageHero } from '@/components/sections/GenericHeroSection';
 import LanguageSchoolSection from '@/components/sections/language-school/LanguageSchoolSection';
+import { IMAGE_URLS } from '@/constants/urls';
 
 export default async function LanguageSchoolPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -12,7 +13,7 @@ export default async function LanguageSchoolPage({ params }: { params: Promise<{
     <>
       <Header />
       <SimpleImageHero
-        image="https://www.amal-care.de/fileadmin/_processed_/d/c/csm_AmalCare-60_90c893b951.webp"
+        image={IMAGE_URLS.rabatSchoolClassroom1}
         imageAlt="Language School"
         backgroundColor="#00a6a2"
         height="h-[600px]"
@@ -27,5 +28,3 @@ export default async function LanguageSchoolPage({ params }: { params: Promise<{
     </>
   );
 }
-
-

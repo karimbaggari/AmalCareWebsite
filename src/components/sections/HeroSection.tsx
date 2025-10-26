@@ -79,7 +79,7 @@ export function HeroSection() {
       <div className="relative md:absolute left-0 right-0 px-4 sm:px-6 lg:px-12 z-[100]  max-w-9xl mx-auto container md:top-[35em]">
         <div className="max-w-9xl mx-auto md:ml-4 overflow-hidden rounded-2xl sm:rounded-3xl">
           <Image
-            src={IMAGES.heroImage}
+            src={IMAGES.nursesGermany8}
             alt="Healthcare professionals with elderly patient in wheelchair outdoors"
             width={1200}
             height={600}

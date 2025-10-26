@@ -1,11 +1,12 @@
 import Image from "next/image"
+import { IMAGE_URLS } from "@/constants/urls"
 
 export function CareImage() {
   return (
     <section className="py-16 px-4 max-w-7xl mx-auto">
       <div className="relative">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-09-28%20at%2022.02.21.png-nIjW3pbVvByyV5Xm1m4nikxFYToGb1.jpeg"
+          src={IMAGE_URLS.careTeamImage}
           alt="Healthcare professionals with elderly patient in wheelchair outdoors"
           width={1200}
           height={800}

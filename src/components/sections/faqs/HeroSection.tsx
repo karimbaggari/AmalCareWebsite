@@ -146,7 +146,7 @@ export function HeroSection() {
                       <div className="text-2xl font-bold text-[#00a6a2]">500+</div>
                       <div className="text-xs text-gray-600">Successful Placements</div>
                     </div>
-                    <div className="space-y-1">
+                    <div className="space-y-1"> 
                       <div className="text-2xl font-bold text-[#7c3aed]">95%</div>
                       <div className="text-xs text-gray-600">Success Rate</div>
                     </div>

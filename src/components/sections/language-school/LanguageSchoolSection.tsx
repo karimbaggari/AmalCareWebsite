@@ -4,6 +4,7 @@ import { BookOpen, Languages, GraduationCap, Users, CheckCircle2, Sparkles } fro
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import { IMAGE_URLS } from "@/constants/urls";
 
 export function LanguageSchoolSection() {
   const features = [
@@ -99,7 +100,7 @@ export function LanguageSchoolSection() {
               <Card className="group relative overflow-hidden bg-white w-full shadow-2xl shadow-[#00a6a2]/10 transition-shadow duration-500 hover:shadow-[#00a6a2]/20">
                 <div className="overflow-hidden w-full">
                   <Image
-                    src="https://www.amal-care.de/fileadmin/_processed_/0/9/csm_IMG_6994_e4e17c16e4.webp"
+                    src={IMAGE_URLS.languageSchoolClass}
                     alt="Language school instructors with anatomical charts teaching nursing terminology"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 origin-center"
                     width={1000}
