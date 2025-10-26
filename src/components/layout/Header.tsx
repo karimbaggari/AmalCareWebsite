@@ -1,7 +1,7 @@
 "use client"
 
 import { Menu, X } from "lucide-react"
-import ThemeToggle from "../ThemeToggle"
+// import ThemeToggle from "../ThemeToggle"  // Hidden for now
 import LanguageSwitcher from "../ui/LanguageSwitcher"
 import Link from "next/link"
 import Image from "next/image"
@@ -118,7 +118,7 @@ export default function Header() {
                     {t('contact')}
                 </Link>
                 
-                <ThemeToggle />
+                {/* <ThemeToggle /> */}
 
                 <button
                     className="bg-[#00a6a2] rounded-full flex items-center justify-center hover:bg-[#008a87] transition-transform duration-300 hover:scale-105 w-10 h-10 sm:w-12 sm:h-12 md:w-[74px] md:h-[74px] shadow-lg cursor-pointer"
@@ -143,7 +143,7 @@ export default function Header() {
                 {/* Drawer */}
                 <nav id="main-nav" className={`absolute right-0 top-0 z-[100000] h-[100dvh] min-h-[100dvh] w-[88%] sm:w-[420px] bg-white shadow-2xl transition-transform duration-300 overflow-y-auto ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     <div className="sticky top-0 z-10 flex items-center justify-between px-6 py-5 border-b border-gray-200 bg-white/95 backdrop-blur">
-                        <span className="text-[#003c3a] font-semibold tracking-wide">Menu</span>
+                        <span className="text-[#003c3a] font-semibold tracking-wide">{t('menu')}</span>
                         <button aria-label="Close menu" className="p-2 rounded-full hover:bg-gray-100 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
                             <X className="w-6 h-6 text-gray-700" />
                         </button>
@@ -151,12 +151,12 @@ export default function Header() {
                     <div className="px-6 py-6">
                         <ul className="space-y-2">
                             {[
-                                { href: `/${locale}`, label: 'Home' },
-                                { href: `/${locale}/about`, label: 'About' },
-                                { href: `/${locale}/language-school`, label: 'Language School' },
-                                { href: `/${locale}/become-a-nurse-in-germany`, label: 'Become a Nurse' },
-                                { href: `/${locale}/faqs`, label: 'FAQs' },
-                                { href: `/${locale}/contact`, label: 'Contact' },
+                                { href: `/${locale}`, label: t('home') },
+                                { href: `/${locale}/about`, label: t('about') },
+                                { href: `/${locale}/language-school`, label: t('languageSchool') },
+                                { href: `/${locale}/become-a-nurse-in-germany`, label: t('becomeANurse') },
+                                { href: `/${locale}/faqs`, label: t('faqs') },
+                                { href: `/${locale}/contact`, label: t('contact') },
                             ].map((item) => (
                                 <li key={item.href}>
                                     <Link
@@ -176,7 +176,7 @@ export default function Header() {
                                 {t('contact')}
                             </Link>
                             <button className="rounded-full border border-[#00a6a2]/30 text-[#00a6a2] py-3 font-semibold hover:bg-[#00a6a2]/5 transition-colors cursor-pointer" onClick={() => setIsMenuOpen(false)}>
-                                Close
+                                {t('close')}
                             </button>
                         </div>
 
