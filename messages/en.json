@@ -8,7 +8,7 @@
       "loading": "Loading...",
       "error": "An error occurred",
       "forNurses": "For Nurses from Morocco",
-      "forInstitutions": "For Institutions in Germany",
+      "forInstitutions": "For Students in Morocco",
       "equityQuality": "Equity and Quality",
       "menu": "Menu",
       "close": "Close",
@@ -22,7 +22,7 @@
       "services": "Services",
       "contact": "Contact",
       "forNurses": "For Nurses",
-      "forInstitutions": "For Institutions"
+      "forInstitutions": "For Students"
     },
     "home": {
       "tagline": "CARE CONNECTS. AMALCARE.",
@@ -40,14 +40,16 @@
         "focus": "Everything we do is focused on one thing: connecting responsibly. For strong care."
       },
       "forNurses": {
-        "title": "For Nurses from Morocco",
+        "title": "Language, Care, Perspective",
         "subtitle": "FOR NURSES FROM MOROCCO",
-        "description": "We help you get off to a good start with preparation."
+        "description": "Language school in Rabat",
+        "cardDescription": "Professional nursing careers in Germany with comprehensive preparation and support"
       },
       "forInstitutions": {
-        "title": "For Institutions in Germany",
-        "subtitle": "FOR INSTITUTIONS IN GERMANY",
-        "description": "Attract nursing professionals from abroad"
+        "title": "Hands-on Care Practice",
+        "subtitle": "FOR STUDENTS IN MOROCCO",
+        "description": "The simulation course",
+        "cardDescription": "Start your nursing education journey with hands-on training in Morocco"
       },
       "pathWithAmalCare": {
         "title": "Well prepared for Germany:",

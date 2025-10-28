@@ -13,10 +13,16 @@ import { IMAGE_URLS } from "@/constants/urls"
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [hasAnimated, setHasAnimated] = useState(false)
     const t = useTranslations('common')
     const locale = useLocale()
     const [mounted, setMounted] = useState(false)
     // const tNav = useTranslations('navigation') // Unused for now
+
+    useEffect(() => {
+        // Trigger animation after component mounts
+        setHasAnimated(true)
+    }, [])
 
     useEffect(() => {
         let ticking = false
@@ -91,11 +97,11 @@ export default function Header() {
     }, [isMenuOpen])
 
     return (
-        <header className={`w-full flex items-center sticky top-0 z-[9999] bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 transition-[height,box-shadow] duration-300 ${
+        <header className={`w-full flex items-center sticky top-0 z-[9999] bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 transition-[height,box-shadow,transform,opacity] duration-300 ${
             isScrolled ? 'h-14 md:h-[140px] shadow-xl shadow-gray-800/30' : 'h-16 md:h-[220px] shadow-none'
-        }`}>
+        } ${hasAnimated ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
             {/* AmalCare Logo - Centered */}
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 delay-200 ${hasAnimated ? 'scale-100 opacity-100' : 'scale-50 opacity-0'}`}>
                 <Link href={`/${locale}`} aria-label="Zur Startseite navigieren">
                     <Image
                         src={IMAGE_URLS.logo}
@@ -107,7 +113,7 @@ export default function Header() {
                     />
                 </Link>
             </div>
-            <div className="flex justify-end items-center w-full md:w-[87%] pr-4 md:pr-0 gap-3 sm:gap-4 md:gap-6">
+            <div className={`flex justify-end items-center w-full md:w-[87%] pr-4 md:pr-0 gap-3 sm:gap-4 md:gap-6 transition-all duration-700 delay-300 ${hasAnimated ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}>
                 <LanguageSwitcher />
                 
                 <Link

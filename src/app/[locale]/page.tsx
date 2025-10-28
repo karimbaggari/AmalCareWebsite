@@ -31,14 +31,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className='container mx-auto max-w-9xl px-6 flex flex-col md:flex-row justify-between gap-8 md:gap-12'>
           <CallToActionCard
             subtitle={t('forNurses.subtitle')}
-            title={t('forNurses.description')}
+            title={t('forNurses.cardDescription')}
             backgroundImage={IMAGES.staticImage1}
             backgroundColor="bg-[#00a6a2]"
             href={`/${locale}/become-a-nurse-in-germany`}
           />
           <CallToActionCard
             subtitle={t('forInstitutions.subtitle')}
-            title={t('forInstitutions.description')}
+            title={t('forInstitutions.cardDescription')}
             backgroundImage={IMAGES.staticImage2}
             backgroundColor="bg-[#5A2574]"
             href={`/${locale}/contact`}
@@ -53,14 +53,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <div className='bg-white'>
         <div className='container mx-auto max-w-9xl px-6 flex flex-col md:flex-row justify-between gap-8 md:gap-12'>
           <CallToActionCard
-            subtitle={t('forNurses.subtitle')}
+            subtitle={t('forNurses.title')}
             title={t('forNurses.description')}
             backgroundImage={IMAGES.nursesGermany11}
             backgroundColor="bg-[#00a6a2]"
             href={`/${locale}/language-school`}
           />
           <CallToActionCard
-            subtitle={t('forInstitutions.subtitle')}
+            subtitle={t('forInstitutions.title')}
             title={t('forInstitutions.description')}
             backgroundImage={IMAGES.nursesGermany12}
             backgroundColor="bg-[#5A2574]"

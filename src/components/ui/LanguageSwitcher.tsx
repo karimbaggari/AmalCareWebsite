@@ -33,10 +33,10 @@ export default function LanguageSwitcher() {
 
   if (!mounted) {
     return (
-      <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#00a6a2]/10 border border-[#00a6a2]/30">
+      <div className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-[#00a6a2]/10 border border-[#00a6a2]/30">
         <div className="w-4 h-4 bg-gray-200 rounded animate-pulse"></div>
         <div className="w-6 h-4 bg-gray-200 rounded animate-pulse"></div>
-        <div className="w-16 h-4 bg-gray-200 rounded animate-pulse"></div>
+        <div className="hidden sm:block w-16 h-4 bg-gray-200 rounded animate-pulse"></div>
       </div>
     );
   }
@@ -45,12 +45,12 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#00a6a2]/10 hover:bg-[#00a6a2]/20 border border-[#00a6a2]/30 transition-all duration-300 hover:scale-105"
+        className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-[#00a6a2]/10 hover:bg-[#00a6a2]/20 border border-[#00a6a2]/30 transition-all duration-300 hover:scale-105"
         aria-label="Change language"
       >
         <Globe className="w-4 h-4 text-[#00a6a2]" />
         <span className="text-[#00a6a2] text-sm font-medium">{currentLanguage.flag}</span>
-        <span className="text-[#00a6a2] text-sm font-medium">{currentLanguage.name}</span>
+        <span className="hidden sm:inline text-[#00a6a2] text-sm font-medium">{currentLanguage.name}</span>
       </button>
 
       {isOpen && (

@@ -8,7 +8,7 @@
     "loading": "Wird geladen...",
     "error": "Ein Fehler ist aufgetreten",
     "forNurses": "Für Pflegefachkräfte aus Marokko",
-    "forInstitutions": "Für Einrichtungen in Deutschland",
+    "forInstitutions": "Für Auszubildende in Marokko",
     "equityQuality": "Fairness & Qualität",
     "menu": "Menü",
     "close": "Schließen",
@@ -24,7 +24,7 @@
     "contact": "Ansprechpartner",
     "services": "Leistungen",
     "forNurses": "Pflegefachkraft in Deutschland werden",
-    "forInstitutions": "Ausländische Pflegefachkräfte gewinnen",
+    "forInstitutions": "Auszubildende in Marokko",
     "ourSchool": "Unsere Schule",
     "languageSchool": "Sprachschule"
   },
@@ -44,14 +44,16 @@
       "focus": "Alles, was wir tun, ist auf eines ausgerichtet: Verantwortungsvoll verbinden. Für eine starke Pflege."
     },
     "forNurses": {
-      "title": "Für Pflegefachkräfte aus Marokko",
+      "title": "Sprache, Pflege, Perspektive",
       "subtitle": "FÜR PFLEGEFACHKRÄFTE AUS MAROKKO",
-      "description": "Wir helfen Ihnen, gut vorbereitet zu starten."
+      "description": "Sprachschule in Rabat",
+      "cardDescription": "Professionelle Pflegekarrieren in Deutschland mit umfassender Vorbereitung und Unterstützung"
     },
     "forInstitutions": {
-      "title": "Für Einrichtungen in Deutschland",
-      "subtitle": "FÜR EINRICHTUNGEN IN DEUTSCHLAND",
-      "description": "Pflegefachkräfte aus dem Ausland gewinnen"
+      "title": "Praxisnahe Pflegeübungen",
+      "subtitle": "FÜR AUSZUBILDENDE IN MAROKKO",
+      "description": "Der Simulationskurs",
+      "cardDescription": "Starten Sie Ihre Pflegeausbildung mit praktischem Training in Marokko"
     },
     "pathWithAmalCare": {
       "title": "Gut vorbereitet nach Deutschland:",

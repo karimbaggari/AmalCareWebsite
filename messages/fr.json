@@ -8,7 +8,7 @@
       "loading": "Chargement...",
       "error": "Une erreur s'est produite",
       "forNurses": "Pour les infirmières du Maroc",
-      "forInstitutions": "Pour les institutions en Allemagne",
+      "forInstitutions": "Pour les étudiants au Maroc",
       "equityQuality": "Équité et qualité",
       "menu": "Menu",
       "close": "Fermer",
@@ -22,7 +22,7 @@
       "services": "Services",
       "contact": "Contact",
       "forNurses": "Pour les infirmières",
-      "forInstitutions": "Pour les institutions"
+      "forInstitutions": "Pour les étudiants"
     },
     "home": {
       "tagline": "LES SOINS CONNECTENT. AMALCARE.",
@@ -40,14 +40,16 @@
         "focus": "Tout ce que nous faisons est axé sur une chose : se connecter de manière responsable. Pour des soins forts."
       },
       "forNurses": {
-        "title": "Pour les infirmières du Maroc",
+        "title": "Langue, Soins, Perspective",
         "subtitle": "POUR LES INFIRMIÈRES DU MAROC",
-        "description": "Nous vous aidons à bien commencer la préparation."
+        "description": "École de langue à Rabat",
+        "cardDescription": "Carrières infirmières professionnelles en Allemagne avec préparation et soutien complets"
       },
       "forInstitutions": {
-        "title": "Pour les institutions en Allemagne",
-        "subtitle": "POUR LES INSTITUTIONS EN ALLEMAGNE",
-        "description": "Attirer des professionnels des soins infirmiers de l'étranger"
+        "title": "Pratique des soins en situation réelle",
+        "subtitle": "POUR LES ÉTUDIANTS AU MAROC",
+        "description": "Le cours de simulation",
+        "cardDescription": "Commencez votre parcours d'études en soins infirmiers avec une formation pratique au Maroc"
       },
       "pathWithAmalCare": {
         "title": "Bien préparé pour l'Allemagne :",
