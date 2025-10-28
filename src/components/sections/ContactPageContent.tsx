@@ -46,7 +46,7 @@ function ContactPageContent() {
         imageHeight={600}
       />
 
-      <div className="h-76 mt-16 mb-16 relative bg-white"></div>
+      <div className="h-56 mt-16 mb-16 relative bg-white"></div>
 
       <ContactIntroSection />
       <ContactPersonSection />
@@ -83,52 +83,6 @@ function ContactPageContent() {
 
             {/* Contact Cards */}
             <div className="space-y-6">
-              <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-[#00a6a2]/30 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center group-hover:bg-[#00a6a2] transition-colors duration-300">
-                    <Mail className="w-5 h-5 text-[#00a6a2] group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900 mb-1">{t('emailTitle')}</h3>
-                    <a href="mailto:info@amalcare.de" className="text-[#00a6a2] hover:underline text-lg">
-                      {t('emailAddress')}
-                    </a>
-                    <p className="text-sm text-gray-500 mt-1">{t('emailResponse')}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-[#00a6a2]/30 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center group-hover:bg-[#00a6a2] transition-colors duration-300">
-                    <Phone className="w-5 h-5 text-[#00a6a2] group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900 mb-1">{t('phoneTitle')}</h3>
-                    <a href="tel:+49123456789" className="text-[#00a6a2] hover:underline text-lg">
-                      {t('phoneNumber')}
-                    </a>
-                    <p className="text-sm text-gray-500 mt-1">{t('phoneHours')}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-[#00a6a2]/30 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center group-hover:bg-[#00a6a2] transition-colors duration-300">
-                    <MapPin className="w-5 h-5 text-[#00a6a2] group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900 mb-1">{t('addressTitle')}</h3>
-                    <p className="text-gray-600">
-                      {t('addressLine1')}
-                      <br />
-                      {t('addressLine2')}
-                    </p>
-                  </div>
-                </div>
-              </div>
-
               <div className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:border-[#00a6a2]/30 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center group-hover:bg-[#00a6a2] transition-colors duration-300">

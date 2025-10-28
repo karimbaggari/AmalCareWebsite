@@ -29,43 +29,46 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Content */}
-      <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 mb-20">
-          {/* Left Column - Brand & Newsletter */}
+      <div className="relative max-w-7xl mx-auto px-6 py-12 lg:py-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-12">
+          {/* Left Column - Brand */}
           <div>
             {/* Large decorative logo wordmark */}
-            <div className="mb-12">
-              <h2 className="text-7xl lg:text-8xl xl:text-9xl font-bold leading-none tracking-tight mb-6">
+            <div className="mb-8">
+              <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-none tracking-tight mb-4">
                 <span className="block text-white/95">Amal</span>
-                <span className="block text-white/80 -mt-4">Care</span>
+                <span className="block text-white/80 -mt-3">Care</span>
               </h2>
-              <div className="flex items-center gap-2 text-white/90 text-lg">
-                <Heart className="w-5 h-5 fill-current" />
+              <div className="flex items-center gap-2 text-white/90 text-base">
+                <Heart className="w-4 h-4 fill-current" />
                 <span className="font-medium">Care with Heart</span>
               </div>
             </div>
 
-            <p className="text-white/90 text-lg leading-relaxed mb-12 max-w-lg">
+            <p className="text-white/90 text-base leading-relaxed mb-8 max-w-lg">
               {t('welcome')} - Your cooperative placement agency for qualified nursing professionals from Morocco. We connect
               competence with humanity.
             </p>
+          </div>
 
+          {/* Right Column - Newsletter */}
+          <div className="flex items-center">
             {/* Newsletter Signup */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <h3 className="text-2xl font-bold mb-3">Stay Informed</h3>
-              <p className="text-white/80 mb-6">Get updates on nursing professionals and industry news.</p>
-              <form onSubmit={handleNewsletterSubmit} className="flex gap-3">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 w-full">
+              <h3 className="text-xl font-bold mb-2">Stay Informed</h3>
+              <p className="text-white/80 mb-4 text-sm">Get updates on nursing professionals and industry news.</p>
+              <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email address"
-                  className="flex-1 px-5 py-3.5 rounded-xl bg-white/20 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white/25 transition-all"
+                  className="flex-1 px-4 py-2.5 rounded-lg bg-white/20 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white/25 transition-all text-sm"
                   required
                 />
                 <button
                   type="submit"
-                  className="px-6 py-3.5 bg-white text-[#00a6a2] rounded-xl font-semibold hover:bg-white/90 transition-all hover:scale-105 flex items-center gap-2 group"
+                  className="px-5 py-2.5 bg-white text-[#00a6a2] rounded-lg font-semibold hover:bg-white/90 transition-all hover:scale-105 flex items-center gap-2 group text-sm"
                 >
                   <span>Subscribe</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -73,88 +76,13 @@ export default function Footer() {
               </form>
             </div>
           </div>
-
-          {/* Right Column - Navigation & Contact */}
-          <div className="grid sm:grid-cols-2 gap-12">
-            {/* Navigation Links */}
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-white/70">Navigation</h3>
-              <nav className="space-y-4">
-                {MAIN_NAVIGATION.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block text-white/90 hover:text-white text-lg hover:translate-x-2 transition-all group flex items-center gap-2"
-                  >
-                    <span className="w-0 group-hover:w-6 h-0.5 bg-white transition-all duration-300"></span>
-                    {link.label}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-
-            {/* Contact & Legal */}
-            <div>
-              <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-white/70">Kontakt</h3>
-              <div className="space-y-5 mb-10">
-                <a
-                  href={CONTACT_URLS.email}
-                  className="flex items-start gap-3 text-white/90 hover:text-white transition-colors group"
-                >
-                  <Mail className="w-5 h-5 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                  <span className="text-base">info@amal-care.de</span>
-                </a>
-                <a
-                  href={CONTACT_URLS.phone}
-                  className="flex items-start gap-3 text-white/90 hover:text-white transition-colors group"
-                >
-                  <Phone className="w-5 h-5 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                  <span className="text-base">+49 (0) 123 456789</span>
-                </a>
-                <div className="flex items-start gap-3 text-white/90">
-                  <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
-                  <span className="text-base">Deutschland</span>
-                </div>
-              </div>
-
-              <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-white/70">Rechtliches</h3>
-              <nav className="space-y-3 mb-10">
-                {LEGAL_LINKS.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block text-white/80 hover:text-white text-sm transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </nav>
-
-              {/* Social Media */}
-              <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-white/70">Folgen Sie uns</h3>
-              <div className="flex gap-3">
-                {SOCIAL_MEDIA_LINKS.map((social) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur-sm flex items-center justify-center text-white transition-all hover:scale-110 border border-white/20"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-5 h-5" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-12 border-t border-white/20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-white/70 text-sm">© 2024 AmalCare eG. Alle Rechte vorbehalten.</p>
-            <p className="text-white/60 text-sm italic">Dedicated to Compassion, Quality & Growth.</p>
+        <div className="pt-8 border-t border-white/20">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-white/70 text-xs">© 2024 AmalCare eG. Alle Rechte vorbehalten.</p>
+            <p className="text-white/60 text-xs italic">Dedicated to Compassion, Quality & Growth.</p>
           </div>
         </div>
       </div>

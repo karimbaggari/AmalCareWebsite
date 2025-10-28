@@ -186,7 +186,7 @@ export const IMAGE_URLS = {
   // Team & People Photos (from ImageKit CDN)
   teamMember1: 'https://ik.imagekit.io/p2myilloy/Pictures/Team/78895854-6fc6-4c98-b961-6e7bc7389902.png?updatedAt=1761409497844',
   teamMember2: 'https://ik.imagekit.io/p2myilloy/Pictures/Team/9477661d-209e-44ea-af56-db7268b6cab9.png?updatedAt=1761409497713',
-  nurseInGermany1: 'https://ik.imagekit.io/p2myilloy/Pictures/Team/c5767a68-2bec-4ac2-8d0d-48e153c55b11.png?updatedAt=1761409497450',
+  nurseInGermany1: 'https://ik.imagekit.io/p2myilloy/Pictures/Team/c5767a68-2bec-4ac2-8d0d-48e153c55b11.png?updatedAt=1761613827147',
   nurseInGermany2: 'https://ik.imagekit.io/p2myilloy/Pictures/Team/d8b1bfb7-ca11-4793-a881-e65a0250a2e1.png?updatedAt=1761409494612',
   schoolRabat: 'https://ik.imagekit.io/p2myilloy/Pictures/Team/871b3f9a-4025-4ab2-983b-6693ae5863ae.png?updatedAt=1761409488541',
   
