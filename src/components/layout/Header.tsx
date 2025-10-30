@@ -15,6 +15,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [hasAnimated, setHasAnimated] = useState(false)
     const t = useTranslations('common')
+    const tHeader = useTranslations('header')
     const locale = useLocale()
     const [mounted, setMounted] = useState(false)
     // const tNav = useTranslations('navigation') // Unused for now
@@ -100,9 +101,13 @@ export default function Header() {
         <header className={`w-full flex items-center sticky top-0 z-[9999] bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 transition-[height,box-shadow,transform,opacity] duration-300 ${
             isScrolled ? 'h-14 md:h-[140px] shadow-xl shadow-gray-800/30' : 'h-16 md:h-[220px] shadow-none'
         } ${hasAnimated ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
-            {/* AmalCare Logo - Centered */}
+            {/* AmalCare Logo - Centered and Clickable */}
             <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 delay-200 ${hasAnimated ? 'scale-100 opacity-100' : 'scale-50 opacity-0'}`}>
-                <Link href={`/${locale}`} aria-label="Zur Startseite navigieren">
+                <Link 
+                    href={`/${locale}`} 
+                    aria-label={tHeader('homepageAriaLabel')}
+                    className="block hover:opacity-80 transition-opacity duration-300"
+                >
                     <Image
                         src={IMAGE_URLS.logo}
                         alt="AmalCare Logo"
@@ -150,7 +155,7 @@ export default function Header() {
                 <nav id="main-nav" className={`absolute right-0 top-0 z-[100000] h-[100dvh] min-h-[100dvh] w-[88%] sm:w-[420px] bg-white shadow-2xl transition-transform duration-300 overflow-y-auto ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     <div className="sticky top-0 z-10 flex items-center justify-between px-6 py-5 border-b border-gray-200 bg-white/95 backdrop-blur">
                         <span className="text-[#003c3a] font-semibold tracking-wide">{t('menu')}</span>
-                        <button aria-label="Close menu" className="p-2 rounded-full hover:bg-gray-100 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+                        <button aria-label={tHeader('closeMenuAriaLabel')} className="p-2 rounded-full hover:bg-gray-100 cursor-pointer" onClick={() => setIsMenuOpen(false)}>
                             <X className="w-6 h-6 text-gray-700" />
                         </button>
                     </div>
@@ -187,7 +192,7 @@ export default function Header() {
                         </div>
 
                         <div className="mt-10 text-xs text-gray-500">
-                            <p>© 2025 AmalCare</p>
+                            <p>{tHeader('copyright')}</p>
                         </div>
                     </div>
                 </nav>

@@ -14,7 +14,8 @@
       "close": "إغلاق",
       "languageSchool": "مدرسة اللغة",
       "becomeANurse": "أصبح ممرض",
-      "faqs": "الأسئلة الشائعة"
+      "faqs": "الأسئلة الشائعة",
+      "careWithHeart": "رعاية بالقلب"
     },
     "navigation": {
       "home": "الرئيسية",
@@ -133,14 +134,26 @@
       "lastName": "اسم العائلة",
       "emailLabel": "عنوان البريد الإلكتروني",
       "phoneLabel": "رقم الهاتف",
+      "cityLabel": "المدينة",
       "organizationLabel": "المنظمة / منشأة الرعاية الصحية",
+      "baccalaureateLabel": "وثيقة البكالوريا",
+      "diplomaLabel": "وثيقة الدبلوم",
       "messageLabel": "الرسالة",
       "firstNamePlaceholder": "أحمد",
       "lastNamePlaceholder": "محمد",
       "emailPlaceholder": "ahmed.mohamed@example.com",
       "phonePlaceholder": "+49 123 456 789",
+      "cityPlaceholder": "مدينتك",
       "organizationPlaceholder": "اسم منظمتك",
       "messagePlaceholder": "أخبرنا كيف يمكننا مساعدتك...",
+      "clickToUpload": "انقر للتحميل",
+      "orDragDrop": "أو اسحب وأفلت",
+      "removeFile": "إزالة الملف",
+      "fileErrorPDFOnly": "يرجى رفع ملف PDF فقط",
+      "fileErrorMaxSize": "يجب أن يكون حجم الملف أقل من 5 ميجابايت",
+      "pleaseFixFileErrors": "يرجى إصلاح أخطاء الملفات قبل الإرسال",
+      "emailClientMessage": "يجب أن يفتح عميل البريد الإلكتروني. يرجى إرفاق المستندات المذكورة في نص البريد الإلكتروني.",
+      "fileAttachmentNote": "ملاحظة: نظرًا لأن روابط mailto لا يمكنها إرفاق الملفات، يرجى إرفاق المستندات يدويًا بالبريد الإلكتروني.",
       "sendButton": "إرسال الرسالة",
       "privacyNotice": "بإرسال هذا النموذج، فإنك توافق على سياسة الخصوصية وشروط الخدمة الخاصة بنا.",
       "introTitle": "نتطلع إلى",
@@ -161,6 +174,54 @@
       "locationLabel": "الموقع",
       "locationText": "ألمانيا",
       "callButton": "اتصل الآن",
-      "scheduleButton": "جدولة"
+      "scheduleButton": "جدولة",
+      "schoolSection": {
+        "badge": "مدرسة اللغة",
+        "title": "المدرسة في الرباط",
+        "description": "اتصل بإدارة مدرسة اللغة لدينا في الرباط، المغرب لمزيد من المعلومات حول برامجنا.",
+        "schoolName": "مدرسة أمل كير للغة",
+        "schoolLocation": "الرباط، المغرب",
+        "phoneLabel": "الهاتف",
+        "emailLabel": "البريد الإلكتروني",
+        "addressLabel": "العنوان",
+        "callNowButton": "اتصل الآن",
+        "sendEmailButton": "إرسال بريد إلكتروني",
+        "copyPhoneTitle": "نسخ رقم الهاتف",
+        "copyEmailTitle": "نسخ عنوان البريد الإلكتروني"
+      },
+      "teamMember1": {
+        "name": "رشيد أميسغر",
+        "role": "المدير التنفيذي"
+      },
+      "teamMember2": {
+        "name": "هايك شتاينباخ",
+        "role": "عضو مجلس التعاونية"
+      }
+    },
+    "footer": {
+      "careWithHeart": "رعاية بالقلب",
+      "description": "وكالة التوظيف التعاونية الخاصة بك لمهنيي التمريض المؤهلين من المغرب. نحن نربط الكفاءة بالإنسانية.",
+      "newsletterTitle": "ابق على اطلاع",
+      "newsletterDescription": "احصل على التحديثات حول مهنيي التمريض وأخبار الصناعة.",
+      "newsletterPlaceholder": "عنوان بريدك الإلكتروني",
+      "subscribeButton": "اشترك",
+      "copyright": "© 2024 أمل كير. جميع الحقوق محفوظة.",
+      "tagline": "مكرس للرحمة والجودة والنمو.",
+      "phoneLabel": "الهاتف",
+      "phoneNumber": "+212 623‑055683",
+      "addressLabel": "العنوان",
+      "addressLine1": "N°3 imm 9 rue Moulay Idriss Al Akbar Rabat Hassan",
+      "addressLine2": "الرباط، المغرب"
+    },
+    "video": {
+      "trainingPresentationAlt": "عرض تدريبي",
+      "closeVideoAriaLabel": "إغلاق الفيديو",
+      "youtubeVideoTitle": "مشغل فيديو يوتيوب"
+    },
+    "header": {
+      "homepageAriaLabel": "الانتقال إلى الصفحة الرئيسية",
+      "closeMenuAriaLabel": "إغلاق القائمة",
+      "changeLanguageAriaLabel": "تغيير اللغة",
+      "copyright": "© 2025 أمل كير"
     }
   }

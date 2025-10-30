@@ -43,14 +43,14 @@ export default function ContactPersonSection() {
                 <div className="space-y-4">
                   <div className="inline-block">
                     <span className="text-sm font-semibold text-[#00a6a2] bg-[#00a6a2]/10 px-4 py-2 rounded-full uppercase tracking-wider">
-                      Language School
+                      {t('schoolSection.badge')}
                     </span>
                   </div>
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                    School in Rabat
+                    {t('schoolSection.title')}
                   </h2>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    Contact our language school administration in Rabat, Morocco for more information about our programs.
+                    {t('schoolSection.description')}
                   </p>
                 </div>
 
@@ -59,8 +59,8 @@ export default function ContactPersonSection() {
                     <div className="w-20 h-20 bg-gradient-to-br from-[#00a6a2] to-[#008581] rounded-full flex items-center justify-center mx-auto mb-4">
                       <MapPin className="w-10 h-10 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">AmalCare Language School</h3>
-                    <p className="text-lg text-[#00a6a2] font-semibold">Rabat, Morocco</p>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{t('schoolSection.schoolName')}</h3>
+                    <p className="text-lg text-[#00a6a2] font-semibold">{t('schoolSection.schoolLocation')}</p>
                   </div>
 
                   <div className="space-y-4">
@@ -70,7 +70,7 @@ export default function ContactPersonSection() {
                           <Phone className="w-5 h-5 text-[#00a6a2] group-hover:text-white transition-colors duration-300" />
                         </div>
                         <div>
-                          <p className="text-sm font-medium text-gray-500 mb-1">Phone</p>
+                          <p className="text-sm font-medium text-gray-500 mb-1">{t('schoolSection.phoneLabel')}</p>
                           <a
                             href="tel:+212623055683"
                             className="text-lg font-semibold text-gray-900 hover:text-[#00a6a2] transition-colors"
@@ -82,7 +82,7 @@ export default function ContactPersonSection() {
                       <button
                         onClick={() => copyToClipboard('+212623055683', 'phone')}
                         className="p-2 rounded-lg bg-white hover:bg-gray-100 transition-colors duration-200"
-                        title="Copy phone number"
+                        title={t('schoolSection.copyPhoneTitle')}
                       >
                         {copiedSchoolPhone ? (
                           <Check className="w-4 h-4 text-green-600" />
@@ -98,7 +98,7 @@ export default function ContactPersonSection() {
                           <Mail className="w-5 h-5 text-[#00a6a2] group-hover:text-white transition-colors duration-300" />
                         </div>
                         <div>
-                          <p className="text-sm font-medium text-gray-500 mb-1">Email</p>
+                          <p className="text-sm font-medium text-gray-500 mb-1">{t('schoolSection.emailLabel')}</p>
                           <a
                             href="mailto:info@amal-care.de"
                             className="text-lg font-semibold text-gray-900 hover:text-[#00a6a2] transition-colors break-all"
@@ -110,7 +110,7 @@ export default function ContactPersonSection() {
                       <button
                         onClick={() => copyToClipboard('info@amal-care.de', 'email')}
                         className="p-2 rounded-lg bg-white hover:bg-gray-100 transition-colors duration-200"
-                        title="Copy email address"
+                        title={t('schoolSection.copyEmailTitle')}
                       >
                         {copiedSchoolEmail ? (
                           <Check className="w-4 h-4 text-green-600" />
@@ -125,7 +125,7 @@ export default function ContactPersonSection() {
                         <MapPin className="w-5 h-5 text-[#00a6a2]" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-gray-500 mb-1">Address</p>
+                        <p className="text-sm font-medium text-gray-500 mb-1">{t('schoolSection.addressLabel')}</p>
                         <p className="text-base font-semibold text-gray-900 leading-relaxed">
                           N°3 imm 9 rue Moulay Idriss Al Akbar Rabat Hassan, Rabat, Morocco
                         </p>
@@ -137,13 +137,13 @@ export default function ContactPersonSection() {
                     <a href="tel:+212623055683" className="w-full">
                       <button className="flex items-center justify-center gap-2 h-12 bg-[#00a6a2] hover:bg-[#008581] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full">
                         <Phone className="w-4 h-4" />
-                        Call Now
+                        {t('schoolSection.callNowButton')}
                       </button>
                     </a>
                     <Link href="mailto:info@amal-care.de" className="w-full">
                       <button className="flex items-center justify-center gap-2 h-12 bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full">
                         <Mail className="w-4 h-4" />
-                        Send Email
+                        {t('schoolSection.sendEmailButton')}
                       </button>
                     </Link>
                   </div>
@@ -179,8 +179,8 @@ export default function ContactPersonSection() {
                           <span className="text-white font-bold text-sm">RA</span>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-gray-900">Rachid Amessegher</p>
-                          <p className="text-xs text-gray-600 mb-1">Managing Director</p>
+                          <p className="font-semibold text-gray-900">{t('teamMember1.name')}</p>
+                          <p className="text-xs text-gray-600 mb-1">{t('teamMember1.role')}</p>
                           <a 
                             href="mailto:rachid.amessegher@amal-care.de" 
                             className="text-xs text-[#00a6a2] hover:text-[#008581] transition-colors break-all"
@@ -220,8 +220,8 @@ export default function ContactPersonSection() {
                           <span className="text-white font-bold text-sm">HS</span>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-gray-900">Heike Steinbach</p>
-                          <p className="text-xs text-gray-600 mb-1">Board Member Cooperative</p>
+                          <p className="font-semibold text-gray-900">{t('teamMember2.name')}</p>
+                          <p className="text-xs text-gray-600 mb-1">{t('teamMember2.role')}</p>
                           <a 
                             href="mailto:heike.steinbach@amal-care.de" 
                             className="text-xs text-[#7c3aed] hover:text-[#6d28d9] transition-colors break-all"

@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react'
 
 export function VideoSection() {
     const t = useTranslations('home')
+    const tVideo = useTranslations('video')
     const [isVideoOpen, setIsVideoOpen] = useState(false)
 
     // Lock body scroll when modal is open
@@ -50,7 +51,7 @@ export function VideoSection() {
                                 width={1200}
                                 height={800}
                                 src={IMAGES.ctaImage2}
-                                alt="Training presentation"
+                                alt={tVideo('trainingPresentationAlt')}
                                 className="w-full h-[400px] object-cover"
                             />
 
@@ -85,7 +86,7 @@ export function VideoSection() {
                         <button
                             onClick={() => setIsVideoOpen(false)}
                             className="absolute -top-12 right-0 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-                            aria-label="Close video"
+                            aria-label={tVideo('closeVideoAriaLabel')}
                         >
                             <X className="w-6 h-6" />
                         </button>
@@ -95,7 +96,7 @@ export function VideoSection() {
                             <iframe
                                 className="absolute inset-0 w-full h-full rounded-xl shadow-2xl"
                                 src="https://www.youtube.com/embed/w518NqdTnQU?autoplay=1"
-                                title="YouTube video player"
+                                title={tVideo('youtubeVideoTitle')}
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen

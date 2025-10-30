@@ -2,16 +2,19 @@
 
 import type React from "react"
 import Link from "next/link"
-import { Mail, MapPin, Phone, ArrowRight, Heart } from "lucide-react"
+import Image from "next/image"
+import { ArrowRight, Heart, Phone, MapPin } from "lucide-react"
 import { useState } from "react"
-import { MAIN_NAVIGATION, LEGAL_LINKS, SOCIAL_MEDIA_LINKS } from "@/constants/navigation"
-import { CONTACT_URLS } from "@/constants/urls"
+
+import { IMAGE_URLS } from "@/constants/urls"
 // import { COLORS } from "@/types" // Unused for now
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 
 export default function Footer() {
   const [email, setEmail] = useState("")
   const t = useTranslations('common')
+  const tFooter = useTranslations('footer')
+  const locale = useLocale()
   // const tNav = useTranslations('navigation') // Unused for now
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
@@ -33,36 +36,75 @@ export default function Footer() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-12">
           {/* Left Column - Brand */}
           <div>
-            {/* Large decorative logo wordmark */}
+            {/* Logo - Clickable to Homepage */}
             <div className="mb-8">
-              <h2 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-none tracking-tight mb-4">
-                <span className="block text-white/95">Amal</span>
-                <span className="block text-white/80 -mt-3">Care</span>
-              </h2>
+              <Link 
+                href={`/${locale}`}
+                className="inline-block hover:opacity-80 transition-opacity duration-300 mb-4"
+                aria-label={t('home')}
+              >
+                <Image
+                  src={IMAGE_URLS.logo}
+                  alt="AmalCare Logo"
+                  width={200}
+                  height={120}
+                  className="h-auto max-w-xs"
+                  priority={false}
+                />
+              </Link>
               <div className="flex items-center gap-2 text-white/90 text-base">
                 <Heart className="w-4 h-4 fill-current" />
-                <span className="font-medium">Care with Heart</span>
+                <span className="font-medium">{t('careWithHeart')}</span>
               </div>
             </div>
 
-            <p className="text-white/90 text-base leading-relaxed mb-8 max-w-lg">
-              {t('welcome')} - Your cooperative placement agency for qualified nursing professionals from Morocco. We connect
-              competence with humanity.
+            <p className="text-white/90 text-base leading-relaxed mb-6 max-w-lg">
+              {t('welcome')} - {tFooter('description')}
             </p>
+
+            {/* Contact Information */}
+            <div className="space-y-4">
+              {/* Phone */}
+              <div className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-white/80 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-white/70 text-sm mb-1">{tFooter('phoneLabel')}</p>
+                  <a 
+                    href={`tel:${tFooter('phoneNumber').replace(/\s/g, '')}`}
+                    className="text-white/90 hover:text-white transition-colors text-base font-medium"
+                  >
+                    {tFooter('phoneNumber')}
+                  </a>
+                </div>
+              </div>
+
+              {/* Address */}
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-white/80 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-white/70 text-sm mb-1">{tFooter('addressLabel')}</p>
+                  <p className="text-white/90 text-base leading-relaxed">
+                    {tFooter('addressLine1')}
+                    <br />
+                    {tFooter('addressLine2')}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right Column - Newsletter */}
           <div className="flex items-center">
             {/* Newsletter Signup */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 w-full">
-              <h3 className="text-xl font-bold mb-2">Stay Informed</h3>
-              <p className="text-white/80 mb-4 text-sm">Get updates on nursing professionals and industry news.</p>
+              <h3 className="text-xl font-bold mb-2">{tFooter('newsletterTitle')}</h3>
+              <p className="text-white/80 mb-4 text-sm">{tFooter('newsletterDescription')}</p>
               <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email address"
+                  placeholder={tFooter('newsletterPlaceholder')}
                   className="flex-1 px-4 py-2.5 rounded-lg bg-white/20 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white/25 transition-all text-sm"
                   required
                 />
@@ -70,7 +112,7 @@ export default function Footer() {
                   type="submit"
                   className="px-5 py-2.5 bg-white text-[#00a6a2] rounded-lg font-semibold hover:bg-white/90 transition-all hover:scale-105 flex items-center gap-2 group text-sm"
                 >
-                  <span>Subscribe</span>
+                  <span>{tFooter('subscribeButton')}</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
               </form>
@@ -81,8 +123,8 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/70 text-xs">© 2024 AmalCare eG. Alle Rechte vorbehalten.</p>
-            <p className="text-white/60 text-xs italic">Dedicated to Compassion, Quality & Growth.</p>
+            <p className="text-white/70 text-xs">{tFooter('copyright')}</p>
+            <p className="text-white/60 text-xs italic">{tFooter('tagline')}</p>
           </div>
         </div>
       </div>

@@ -14,7 +14,8 @@
       "close": "Close",
       "languageSchool": "Language School",
       "becomeANurse": "Become a Nurse",
-      "faqs": "FAQs"
+      "faqs": "FAQs",
+      "careWithHeart": "Care with Heart"
     },
     "navigation": {
       "home": "Home",
@@ -133,14 +134,26 @@
       "lastName": "Last Name",
       "emailLabel": "Email Address",
       "phoneLabel": "Phone Number",
+      "cityLabel": "City",
       "organizationLabel": "Organization / Healthcare Facility",
+      "baccalaureateLabel": "Baccalaureate Document",
+      "diplomaLabel": "Diploma Document",
       "messageLabel": "Message",
       "firstNamePlaceholder": "John",
       "lastNamePlaceholder": "Doe",
       "emailPlaceholder": "john.doe@example.com",
       "phonePlaceholder": "+49 123 456 789",
+      "cityPlaceholder": "Your city",
       "organizationPlaceholder": "Your organization name",
       "messagePlaceholder": "Tell us how we can help you...",
+      "clickToUpload": "Click to upload",
+      "orDragDrop": "or drag and drop",
+      "removeFile": "Remove file",
+      "fileErrorPDFOnly": "Please upload a PDF file only",
+      "fileErrorMaxSize": "File size must be less than 5MB",
+      "pleaseFixFileErrors": "Please fix file errors before submitting",
+      "emailClientMessage": "Your email client should open. Please attach the documents mentioned in the email body.",
+      "fileAttachmentNote": "Note: Since mailto links cannot attach files, please manually attach your documents to the email.",
       "sendButton": "Send Message",
       "privacyNotice": "By submitting this form, you agree to our privacy policy and terms of service.",
       "introTitle": "We look forward to",
@@ -161,6 +174,54 @@
       "locationLabel": "Location",
       "locationText": "Germany",
       "callButton": "Call Now",
-      "scheduleButton": "Schedule"
+      "scheduleButton": "Schedule",
+      "schoolSection": {
+        "badge": "Language School",
+        "title": "School in Rabat",
+        "description": "Contact our language school administration in Rabat, Morocco for more information about our programs.",
+        "schoolName": "AmalCare Language School",
+        "schoolLocation": "Rabat, Morocco",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email",
+        "addressLabel": "Address",
+        "callNowButton": "Call Now",
+        "sendEmailButton": "Send Email",
+        "copyPhoneTitle": "Copy phone number",
+        "copyEmailTitle": "Copy email address"
+      },
+      "teamMember1": {
+        "name": "Rachid Amessegher",
+        "role": "Managing Director"
+      },
+      "teamMember2": {
+        "name": "Heike Steinbach",
+        "role": "Board Member Cooperative"
+      }
+    },
+    "footer": {
+      "careWithHeart": "Care with Heart",
+      "description": "Your cooperative placement agency for qualified nursing professionals from Morocco. We connect competence with humanity.",
+      "newsletterTitle": "Stay Informed",
+      "newsletterDescription": "Get updates on nursing professionals and industry news.",
+      "newsletterPlaceholder": "Your email address",
+      "subscribeButton": "Subscribe",
+      "copyright": "© 2024 AmalCare eG. Alle Rechte vorbehalten.",
+      "tagline": "Dedicated to Compassion, Quality & Growth.",
+      "phoneLabel": "Phone",
+      "phoneNumber": "+212 623‑055683",
+      "addressLabel": "Address",
+      "addressLine1": "N°3 imm 9 rue Moulay Idriss Al Akbar Rabat Hassan",
+      "addressLine2": "Rabat, Morocco"
+    },
+    "video": {
+      "trainingPresentationAlt": "Training presentation",
+      "closeVideoAriaLabel": "Close video",
+      "youtubeVideoTitle": "YouTube video player"
+    },
+    "header": {
+      "homepageAriaLabel": "Navigate to homepage",
+      "closeMenuAriaLabel": "Close menu",
+      "changeLanguageAriaLabel": "Change language",
+      "copyright": "© 2025 AmalCare"
     }
   }

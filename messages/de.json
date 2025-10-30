@@ -14,7 +14,8 @@
     "close": "Schließen",
     "languageSchool": "Sprachschule",
     "becomeANurse": "Pflegefachkraft werden",
-    "faqs": "FAQs"
+    "faqs": "FAQs",
+    "careWithHeart": "Pflege mit Herz"
   },
   "navigation": {
     "home": "Startseite",
@@ -144,14 +145,26 @@
     "lastName": "Nachname",
     "emailLabel": "E-Mail-Adresse",
     "phoneLabel": "Telefonnummer",
+    "cityLabel": "Stadt",
     "organizationLabel": "Organisation / Gesundheitseinrichtung",
+    "baccalaureateLabel": "Baccalaureat-Dokument",
+    "diplomaLabel": "Diplom-Dokument",
     "messageLabel": "Nachricht",
     "firstNamePlaceholder": "Max",
     "lastNamePlaceholder": "Mustermann",
     "emailPlaceholder": "max.mustermann@beispiel.de",
     "phonePlaceholder": "+49 123 456 789",
+    "cityPlaceholder": "Ihre Stadt",
     "organizationPlaceholder": "Name Ihrer Organisation",
     "messagePlaceholder": "Erzählen Sie uns, wie wir Ihnen helfen können...",
+    "clickToUpload": "Klicken Sie zum Hochladen",
+    "orDragDrop": "oder ziehen und ablegen",
+    "removeFile": "Datei entfernen",
+    "fileErrorPDFOnly": "Bitte laden Sie nur eine PDF-Datei hoch",
+    "fileErrorMaxSize": "Die Dateigröße muss weniger als 5 MB betragen",
+    "pleaseFixFileErrors": "Bitte beheben Sie Dateifehler vor dem Absenden",
+    "emailClientMessage": "Ihr E-Mail-Client sollte sich öffnen. Bitte fügen Sie die im E-Mail-Text erwähnten Dokumente bei.",
+    "fileAttachmentNote": "Hinweis: Da Mailto-Links keine Dateien anhängen können, fügen Sie Ihre Dokumente bitte manuell zur E-Mail hinzu.",
     "sendButton": "Nachricht senden",
     "privacyNotice": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzrichtlinie und den Nutzungsbedingungen zu.",
     "introTitle": "Wir freuen uns auf",
@@ -172,6 +185,54 @@
     "locationLabel": "Standort",
     "locationText": "Deutschland",
     "callButton": "Jetzt anrufen",
-    "scheduleButton": "Termin vereinbaren"
+    "scheduleButton": "Termin vereinbaren",
+    "schoolSection": {
+      "badge": "Sprachschule",
+      "title": "Schule in Rabat",
+      "description": "Kontaktieren Sie unsere Sprachschulverwaltung in Rabat, Marokko für weitere Informationen zu unseren Programmen.",
+      "schoolName": "AmalCare Sprachschule",
+      "schoolLocation": "Rabat, Marokko",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-Mail",
+      "addressLabel": "Adresse",
+      "callNowButton": "Jetzt anrufen",
+      "sendEmailButton": "E-Mail senden",
+      "copyPhoneTitle": "Telefonnummer kopieren",
+      "copyEmailTitle": "E-Mail-Adresse kopieren"
+    },
+    "teamMember1": {
+      "name": "Rachid Amessegher",
+      "role": "Geschäftsführer"
+    },
+    "teamMember2": {
+      "name": "Heike Steinbach",
+      "role": "Vorstandsmitglied Genossenschaft"
+    }
+  },
+  "footer": {
+    "careWithHeart": "Pflege mit Herz",
+    "description": "Ihre genossenschaftliche Vermittlungsagentur für qualifizierte Pflegefachkräfte aus Marokko. Wir verbinden Kompetenz mit Menschlichkeit.",
+    "newsletterTitle": "Bleiben Sie informiert",
+    "newsletterDescription": "Erhalten Sie Updates zu Pflegefachkräften und Branchennachrichten.",
+    "newsletterPlaceholder": "Ihre E-Mail-Adresse",
+    "subscribeButton": "Abonnieren",
+    "copyright": "© 2024 AmalCare eG. Alle Rechte vorbehalten.",
+    "tagline": "Hingabe an Mitgefühl, Qualität & Wachstum.",
+    "phoneLabel": "Telefon",
+    "phoneNumber": "+212 623‑055683",
+    "addressLabel": "Adresse",
+    "addressLine1": "N°3 imm 9 rue Moulay Idriss Al Akbar Rabat Hassan",
+    "addressLine2": "Rabat, Marokko"
+  },
+  "video": {
+    "trainingPresentationAlt": "Trainingspräsentation",
+    "closeVideoAriaLabel": "Video schließen",
+    "youtubeVideoTitle": "YouTube-Videoplayer"
+  },
+  "header": {
+    "homepageAriaLabel": "Zur Startseite navigieren",
+    "closeMenuAriaLabel": "Menü schließen",
+    "changeLanguageAriaLabel": "Sprache ändern",
+    "copyright": "© 2025 AmalCare"
   }
 }

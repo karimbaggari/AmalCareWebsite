@@ -14,7 +14,8 @@
       "close": "Fermer",
       "languageSchool": "École de langues",
       "becomeANurse": "Devenir infirmier",
-      "faqs": "FAQ"
+      "faqs": "FAQ",
+      "careWithHeart": "Soins avec cœur"
     },
     "navigation": {
       "home": "Accueil",
@@ -133,14 +134,26 @@
       "lastName": "Nom de famille",
       "emailLabel": "Adresse e-mail",
       "phoneLabel": "Numéro de téléphone",
+      "cityLabel": "Ville",
       "organizationLabel": "Organisation / Établissement de santé",
+      "baccalaureateLabel": "Document du Baccalauréat",
+      "diplomaLabel": "Document du Diplôme",
       "messageLabel": "Message",
       "firstNamePlaceholder": "Jean",
       "lastNamePlaceholder": "Dupont",
       "emailPlaceholder": "jean.dupont@exemple.fr",
       "phonePlaceholder": "+49 123 456 789",
+      "cityPlaceholder": "Votre ville",
       "organizationPlaceholder": "Nom de votre organisation",
       "messagePlaceholder": "Dites-nous comment nous pouvons vous aider...",
+      "clickToUpload": "Cliquez pour télécharger",
+      "orDragDrop": "ou glissez-déposez",
+      "removeFile": "Supprimer le fichier",
+      "fileErrorPDFOnly": "Veuillez télécharger uniquement un fichier PDF",
+      "fileErrorMaxSize": "La taille du fichier doit être inférieure à 5 Mo",
+      "pleaseFixFileErrors": "Veuillez corriger les erreurs de fichier avant de soumettre",
+      "emailClientMessage": "Votre client e-mail devrait s'ouvrir. Veuillez joindre les documents mentionnés dans le corps de l'e-mail.",
+      "fileAttachmentNote": "Note : Les liens mailto ne peuvent pas joindre de fichiers, veuillez joindre manuellement vos documents à l'e-mail.",
       "sendButton": "Envoyer le message",
       "privacyNotice": "En soumettant ce formulaire, vous acceptez notre politique de confidentialité et nos conditions d'utilisation.",
       "introTitle": "Nous nous réjouissons de",
@@ -161,6 +174,54 @@
       "locationLabel": "Localisation",
       "locationText": "Allemagne",
       "callButton": "Appeler maintenant",
-      "scheduleButton": "Planifier"
+      "scheduleButton": "Planifier",
+      "schoolSection": {
+        "badge": "École de langues",
+        "title": "École à Rabat",
+        "description": "Contactez l'administration de notre école de langues à Rabat, Maroc pour plus d'informations sur nos programmes.",
+        "schoolName": "École de langues AmalCare",
+        "schoolLocation": "Rabat, Maroc",
+        "phoneLabel": "Téléphone",
+        "emailLabel": "E-mail",
+        "addressLabel": "Adresse",
+        "callNowButton": "Appeler maintenant",
+        "sendEmailButton": "Envoyer un e-mail",
+        "copyPhoneTitle": "Copier le numéro de téléphone",
+        "copyEmailTitle": "Copier l'adresse e-mail"
+      },
+      "teamMember1": {
+        "name": "Rachid Amessegher",
+        "role": "Directeur général"
+      },
+      "teamMember2": {
+        "name": "Heike Steinbach",
+        "role": "Membre du conseil coopératif"
+      }
+    },
+    "footer": {
+      "careWithHeart": "Soins avec cœur",
+      "description": "Votre agence de placement coopérative pour les professionnels infirmiers qualifiés du Maroc. Nous connectons la compétence à l'humanité.",
+      "newsletterTitle": "Restez informé",
+      "newsletterDescription": "Recevez des mises à jour sur les professionnels infirmiers et les nouvelles de l'industrie.",
+      "newsletterPlaceholder": "Votre adresse e-mail",
+      "subscribeButton": "S'abonner",
+      "copyright": "© 2024 AmalCare eG. Tous droits réservés.",
+      "tagline": "Dévoué à la compassion, à la qualité et à la croissance.",
+      "phoneLabel": "Téléphone",
+      "phoneNumber": "+212 623‑055683",
+      "addressLabel": "Adresse",
+      "addressLine1": "N°3 imm 9 rue Moulay Idriss Al Akbar Rabat Hassan",
+      "addressLine2": "Rabat, Maroc"
+    },
+    "video": {
+      "trainingPresentationAlt": "Présentation de formation",
+      "closeVideoAriaLabel": "Fermer la vidéo",
+      "youtubeVideoTitle": "Lecteur vidéo YouTube"
+    },
+    "header": {
+      "homepageAriaLabel": "Naviguer vers la page d'accueil",
+      "closeMenuAriaLabel": "Fermer le menu",
+      "changeLanguageAriaLabel": "Changer de langue",
+      "copyright": "© 2025 AmalCare"
     }
   }

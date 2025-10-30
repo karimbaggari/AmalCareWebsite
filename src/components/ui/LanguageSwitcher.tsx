@@ -1,6 +1,6 @@
 "use client"
 
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { useRouter, usePathname } from '@/i18n/routing'
 import { Globe } from 'lucide-react'
 import { useState } from 'react'
@@ -17,6 +17,7 @@ export default function LanguageSwitcher() {
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
+  const tHeader = useTranslations('header')
   const [isOpen, setIsOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
 
@@ -46,7 +47,7 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-[#00a6a2]/10 hover:bg-[#00a6a2]/20 border border-[#00a6a2]/30 transition-all duration-300 hover:scale-105"
-        aria-label="Change language"
+        aria-label={tHeader('changeLanguageAriaLabel')}
       >
         <Globe className="w-4 h-4 text-[#00a6a2]" />
         <span className="text-[#00a6a2] text-sm font-medium">{currentLanguage.flag}</span>
