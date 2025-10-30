@@ -34,7 +34,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             title={t('forNurses.cardDescription')}
             backgroundImage={IMAGES.staticImage1}
             backgroundColor="bg-[#00a6a2]"
-            href={`/${locale}/become-a-nurse-in-germany`}
+            href={`/${locale}/simulation-course`}
           />
           <CallToActionCard
             subtitle={t('forInstitutions.subtitle')}

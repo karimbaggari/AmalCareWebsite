@@ -13,7 +13,7 @@
       "menu": "Menu",
       "close": "Close",
       "languageSchool": "Language School",
-      "becomeANurse": "Become a Nurse",
+      "simulationCourse": "Simulation Course",
       "faqs": "FAQs",
       "careWithHeart": "Care with Heart"
     },
@@ -197,6 +197,21 @@
         "name": "Heike Steinbach",
         "role": "Board Member Cooperative"
       }
+    },
+    "simulationCourse": {
+      "heroAlt": "Simulation course - Experience nursing practice before it begins",
+      "title": "Simulation course: Experience nursing practice before it begins",
+      "subtitle": "Simulation course AmalCare Rabat",
+      "description": "Our simulation course in Rabat is the centerpiece of the preparation for nursing work in Germany. Step by step, prospective nursing staff learn to apply their knowledge in practice - in a safe environment that reproduces realistic situations from everyday nursing care.",
+      "handsOnTitle": "Hands-on nursing - practical, lively, motivating",
+      "handsOnDescription": "Whether placing an infusion, treating wounds or practising patient handling: The most important nursing techniques are learned and practiced in our modern training room. Each week is dedicated to a specific topic - from asepsis and infusion therapy, exercise and nutrition to dementia and relationship management.",
+      "handsOnConclusion": "This creates a learning process that combines knowledge, action and responsibility.",
+      "systematicTitle": "Systematic learning - how the course works",
+      "systematicDescription1": "The simulation course is divided into several modules over a period of around three months.",
+      "systematicDescription2": "Each week consists of theory, practical demonstrations and training sessions in small groups. At the end, what has been learned is tested in a realistic scenario - from the first contact to complete patient care.",
+      "systematicConclusion": "The aim is to gain confidence, establish a routine and develop a feel for everyday nursing care in Germany.",
+      "qualityTitle": "Our claim: quality with heart and mind",
+      "qualityDescription": "AmalCare stands for sound, human-oriented training. Our experienced nursing educators and lecturers accompany the participants every step of the way. The course combines professional excellence with empathy - and thus optimally prepares students for the start of their training or career."
     },
     "footer": {
       "careWithHeart": "Care with Heart",

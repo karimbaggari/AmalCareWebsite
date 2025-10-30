@@ -13,7 +13,7 @@
     "menu": "Menü",
     "close": "Schließen",
     "languageSchool": "Sprachschule",
-    "becomeANurse": "Pflegefachkraft werden",
+    "simulationCourse": "Simulationskurs",
     "faqs": "FAQs",
     "careWithHeart": "Pflege mit Herz"
   },
@@ -208,6 +208,21 @@
       "name": "Heike Steinbach",
       "role": "Vorstandsmitglied Genossenschaft"
     }
+  },
+  "simulationCourse": {
+    "heroAlt": "Simulationskurs - Pflegepraxis vor dem Start erleben",
+    "title": "Simulationskurs: Pflegepraxis vor dem Start erleben",
+    "subtitle": "Simulationskurs AmalCare Rabat",
+    "description": "Unser Simulationskurs in Rabat ist das Herzstück der Vorbereitung auf die Pflegearbeit in Deutschland. Schritt für Schritt lernen angehende Pflegefachkräfte, ihr Wissen in der Praxis anzuwenden - in einer sicheren Umgebung, die realistische Situationen aus dem Pflegealltag nachbildet.",
+    "handsOnTitle": "Praxisnahe Pflege - praktisch, lebendig, motivierend",
+    "handsOnDescription": "Ob Infusion legen, Wunden versorgen oder Patiententransfer üben: Die wichtigsten Pflegetechniken werden in unserem modernen Schulungsraum erlernt und geübt. Jede Woche ist einem spezifischen Thema gewidmet - von Asepsis und Infusionstherapie über Bewegung und Ernährung bis hin zu Demenz und Beziehungsmanagement.",
+    "handsOnConclusion": "So entsteht ein Lernprozess, der Wissen, Handeln und Verantwortung verbindet.",
+    "systematicTitle": "Systematisches Lernen - wie der Kurs funktioniert",
+    "systematicDescription1": "Der Simulationskurs ist über einen Zeitraum von etwa drei Monaten in mehrere Module unterteilt.",
+    "systematicDescription2": "Jede Woche besteht aus Theorie, praktischen Demonstrationen und Übungen in kleinen Gruppen. Am Ende wird das Gelernte in einem realistischen Szenario getestet - vom ersten Kontakt bis zur vollständigen Patientenbetreuung.",
+    "systematicConclusion": "Ziel ist es, Selbstvertrauen zu gewinnen, Routine zu entwickeln und ein Gefühl für den deutschen Pflegealltag zu bekommen.",
+    "qualityTitle": "Unser Anspruch: Qualität mit Herz und Verstand",
+    "qualityDescription": "AmalCare steht für fundierte, menschenorientierte Ausbildung. Unsere erfahrenen Pflegepädagogen und Dozenten begleiten die Teilnehmer jeden Schritt des Weges. Der Kurs verbindet fachliche Exzellenz mit Empathie - und bereitet so optimal auf den Start der Ausbildung oder des Berufs vor."
   },
   "footer": {
     "careWithHeart": "Pflege mit Herz",

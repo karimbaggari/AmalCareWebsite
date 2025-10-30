@@ -102,11 +102,11 @@ export default function Header() {
             isScrolled ? 'h-14 md:h-[140px] shadow-xl shadow-gray-800/30' : 'h-16 md:h-[220px] shadow-none'
         } ${hasAnimated ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
             {/* AmalCare Logo - Centered and Clickable */}
-            <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 delay-200 ${hasAnimated ? 'scale-100 opacity-100' : 'scale-50 opacity-0'}`}>
+            <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-700 delay-200 z-50 ${hasAnimated ? 'scale-100 opacity-100' : 'scale-50 opacity-0'}`}>
                 <Link 
                     href={`/${locale}`} 
                     aria-label={tHeader('homepageAriaLabel')}
-                    className="block hover:opacity-80 transition-opacity duration-300"
+                    className="block hover:opacity-80 transition-opacity duration-300 relative z-50"
                 >
                     <Image
                         src={IMAGE_URLS.logo}
@@ -165,7 +165,7 @@ export default function Header() {
                                 { href: `/${locale}`, label: t('home') },
                                 { href: `/${locale}/about`, label: t('about') },
                                 { href: `/${locale}/language-school`, label: t('languageSchool') },
-                                { href: `/${locale}/become-a-nurse-in-germany`, label: t('becomeANurse') },
+                                { href: `/${locale}/simulation-course`, label: t('simulationCourse') },
                                 { href: `/${locale}/faqs`, label: t('faqs') },
                                 { href: `/${locale}/contact`, label: t('contact') },
                             ].map((item) => (

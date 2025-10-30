@@ -214,7 +214,7 @@ const ProcessSection = () => {
 
                     {/* Arrow button */}
                     <div className="mt-12">
-                        <Link href={`/${locale}/become-a-nurse-in-germany`}>
+                        <Link href={`/${locale}/simulation-course`}>
                             <button
                                 className="w-14 h-14 rounded-full bg-teal-500 hover:bg-teal-600 flex justify-center items-center text-white p-0 shadow-lg"
                             >

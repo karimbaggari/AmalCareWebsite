@@ -13,7 +13,7 @@
       "menu": "Menu",
       "close": "Fermer",
       "languageSchool": "École de langues",
-      "becomeANurse": "Devenir infirmier",
+      "simulationCourse": "Cours de simulation",
       "faqs": "FAQ",
       "careWithHeart": "Soins avec cœur"
     },
@@ -197,6 +197,21 @@
         "name": "Heike Steinbach",
         "role": "Membre du conseil coopératif"
       }
+    },
+    "simulationCourse": {
+      "heroAlt": "Cours de simulation - Découvrez la pratique infirmière avant de commencer",
+      "title": "Cours de simulation : Découvrez la pratique infirmière avant de commencer",
+      "subtitle": "Cours de simulation AmalCare Rabat",
+      "description": "Notre cours de simulation à Rabat est le point central de la préparation au travail infirmier en Allemagne. Étape par étape, les futurs professionnels de la santé apprennent à appliquer leurs connaissances en pratique - dans un environnement sûr qui reproduit des situations réalistes de la vie quotidienne des soins.",
+      "handsOnTitle": "Soins pratiques - pratiques, vivants, motivants",
+      "handsOnDescription": "Que ce soit pour placer une perfusion, traiter des plaies ou pratiquer la manipulation des patients : les techniques de soins les plus importantes sont apprises et pratiquées dans notre salle de formation moderne. Chaque semaine est consacrée à un sujet spécifique - de l'asepsie et de la thérapie par perfusion, à l'exercice et à la nutrition, jusqu'à la démence et la gestion des relations.",
+      "handsOnConclusion": "Cela crée un processus d'apprentissage qui combine connaissance, action et responsabilité.",
+      "systematicTitle": "Apprentissage systématique - comment fonctionne le cours",
+      "systematicDescription1": "Le cours de simulation est divisé en plusieurs modules sur une période d'environ trois mois.",
+      "systematicDescription2": "Chaque semaine consiste en théorie, démonstrations pratiques et sessions de formation en petits groupes. À la fin, ce qui a été appris est testé dans un scénario réaliste - du premier contact aux soins complets du patient.",
+      "systematicConclusion": "L'objectif est de gagner en confiance, d'établir une routine et de développer un sentiment pour les soins infirmiers quotidiens en Allemagne.",
+      "qualityTitle": "Notre prétention : qualité avec cœur et esprit",
+      "qualityDescription": "AmalCare représente une formation solide et orientée vers l'humain. Nos éducateurs et conférenciers expérimentés accompagnent les participants à chaque étape. Le cours combine l'excellence professionnelle avec l'empathie - et prépare ainsi de manière optimale les étudiants au début de leur formation ou de leur carrière."
     },
     "footer": {
       "careWithHeart": "Soins avec cœur",
