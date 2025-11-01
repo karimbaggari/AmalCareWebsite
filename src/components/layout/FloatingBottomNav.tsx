@@ -1,18 +1,34 @@
 "use client"
 
-import { Home, Info, BookOpen, GraduationCap, MessageCircle, Menu } from "lucide-react"
+import { Home, Info, BookOpen, GraduationCap, MessageCircle, Menu, Globe, Check } from "lucide-react"
 import Link from "next/link"
 import { useTranslations, useLocale } from 'next-intl'
-import { usePathname } from '@/i18n/routing'
+import { usePathname, useRouter } from '@/i18n/routing'
 import { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 
 export default function FloatingBottomNav() {
   const t = useTranslations('common')
+  const tHeader = useTranslations('header')
   const locale = useLocale()
   const pathname = usePathname()
+  const router = useRouter()
   const [mounted, setMounted] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const languages = [
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'ar', name: 'العربية', flag: '🇲🇦' },
+  ]
+
+  const currentLanguage = languages.find((lang) => lang.code === locale) || languages[0]
+
+  const handleLanguageChange = (newLocale: string) => {
+    router.replace(pathname, { locale: newLocale })
+    setIsMenuOpen(false)
+  }
 
   useEffect(() => {
     setMounted(true)
@@ -176,7 +192,7 @@ export default function FloatingBottomNav() {
               </div>
 
               {/* Additional Links */}
-              <div className="pt-4 border-t border-gray-200">
+              <div className="pt-4 border-t border-gray-200 space-y-2">
                 <Link
                   href={`/${locale}/faqs`}
                   onClick={() => setIsMenuOpen(false)}
@@ -184,6 +200,37 @@ export default function FloatingBottomNav() {
                 >
                   <span className="font-medium text-base">FAQs</span>
                 </Link>
+              </div>
+
+              {/* Language Switcher */}
+              <div className="pt-4 border-t border-gray-200">
+                <div className="px-4 py-2 mb-3">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-gray-600 uppercase tracking-wide">
+                    <Globe className="w-4 h-4" />
+                    <span>{tHeader('changeLanguageAriaLabel')}</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  {languages.map((language) => (
+                    <button
+                      key={language.code}
+                      onClick={() => handleLanguageChange(language.code)}
+                      className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
+                        language.code === locale
+                          ? 'bg-[#00a6a2]/10 text-[#00a6a2] border-2 border-[#00a6a2]/30 shadow-sm'
+                          : 'bg-gray-50 text-gray-700 hover:bg-gray-100 border-2 border-transparent'
+                      }`}
+                    >
+                      <span className="text-2xl">{language.flag}</span>
+                      <div className="flex-1 text-left">
+                        <span className="text-sm font-medium block">{language.name}</span>
+                      </div>
+                      {language.code === locale && (
+                        <Check className="w-5 h-5 text-[#00a6a2]" />
+                      )}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
             

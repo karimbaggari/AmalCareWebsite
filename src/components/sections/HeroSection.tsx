@@ -67,9 +67,9 @@ export function HeroSection() {
               </div>
               
               {/* Paragraph with glassmorphism card - Slide in from RIGHT */}
-              <div className={`flex-[1.5] w-full transition-all duration-1000 delay-700 ${hasAnimated ? 'translate-x-0 opacity-100' : 'translate-x-32 opacity-0'}`}>
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10 shadow-2xl w-full max-w-full sm:max-w-[630px]">
-                  <p className="text-white/95 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-snug sm:leading-tight text-pretty font-light">
+              <div className={`flex-[2] w-full transition-all duration-1000 delay-700 ${hasAnimated ? 'translate-x-0 opacity-100' : 'translate-x-32 opacity-0'}`}>
+                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 lg:p-7 shadow-2xl w-full max-w-none">
+                  <p className="text-white/95 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-pretty font-light">
                     {t("subtitle")} {t("description").replace(/chez AmalCare/g, "chez\u00A0AmalCare")}
                   </p>
                   
