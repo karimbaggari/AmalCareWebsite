@@ -4,6 +4,8 @@ import { HelpCircle, MessageCircle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useLocale } from 'next-intl';
+import Link from "next/link";
 
 const faqs = [
   {
@@ -34,57 +36,61 @@ const faqs = [
 ];
 
 export function FaqComponent() {
+  const locale = useLocale();
+  
   return (
-    <section className="relative py-24 px-4 overflow-hidden">
+    <section className="relative py-12 md:py-16 lg:py-20 px-4 overflow-hidden bg-white">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#00a6a2]/5 via-white to-[#7c3aed]/5" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#00a6a2]/5 via-white to-[#003c3a]/5" />
 
       <div className="relative max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 space-y-4">
+        <div className="text-center mb-12 md:mb-16 space-y-4">
           <Badge className="border border-[#00a6a2]/20 bg-[#00a6a2]/10 text-[#00a6a2] px-4 py-1.5 inline-flex items-center gap-2">
             <HelpCircle className="w-4 h-4" />
             FAQ
           </Badge>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-balance text-[#003c3a]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance text-[#003c3a] px-4">
             Find answers to your questions in <span className="text-[#00a6a2]">our FAQ</span>
           </h2>
 
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto text-pretty">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto text-pretty px-4">
             In our FAQ section for institutions we answer many of the frequently asked questions:
           </p>
         </div>
 
         {/* FAQ Accordion */}
-        <div className="bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-200/50 p-6 md:p-8 shadow-lg">
+        <div className="bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-200/50 p-4 sm:p-6 md:p-8 shadow-lg">
           <Accordion className="space-y-2">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-gray-200/50 rounded-lg px-4 data-[state=open]:bg-[#00a6a2]/5 transition-colors"
+                className="border border-gray-200/50 rounded-lg px-3 sm:px-4 data-[state=open]:bg-[#00a6a2]/5 transition-colors"
               >
-                <AccordionTrigger className="relative flex items-center justify-center text-base md:text-lg font-semibold text-[#003c3a] hover:text-[#00a6a2] hover:no-underline transition-all duration-300 data-[state=open]:pt-10 data-[state=open]:pb-10 data-[state=closed]:pt-10 data-[state=closed]:pb-4">
-                  <span className="text-center">{faq.question}</span>
-                  <span className="absolute right-3 top-1/2 -translate-y-1/2 shrink-0 transition-transform duration-300 group-data-[state=open]:rotate-90">→</span>
+                <AccordionTrigger className="relative flex items-center justify-center text-sm sm:text-base md:text-lg font-semibold text-[#003c3a] hover:text-[#00a6a2] hover:no-underline transition-all duration-300 data-[state=open]:pt-6 data-[state=open]:pb-6 sm:data-[state=open]:pt-8 sm:data-[state=open]:pb-8 md:data-[state=open]:pt-10 md:data-[state=open]:pb-10 data-[state=closed]:pt-6 data-[state=closed]:pb-3 sm:data-[state=closed]:pt-8 sm:data-[state=closed]:pb-4 md:data-[state=closed]:pt-10 md:data-[state=closed]:pb-4">
+                  <span className="text-center pr-8">{faq.question}</span>
+                  <span className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 shrink-0 transition-transform duration-300 group-data-[state=open]:rotate-90">→</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 leading-relaxed pb-5 pt-0 text-center">{faq.answer}</AccordionContent>
+                <AccordionContent className="text-sm sm:text-base text-gray-600 leading-relaxed pb-4 sm:pb-5 pt-0 text-center px-2">{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
 
         {/* Contact CTA */}
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#00a6a2]/10 to-[#7c3aed]/10 rounded-full px-6 py-4 border border-[#00a6a2]/20">
-            <MessageCircle className="w-5 h-5 text-[#00a6a2]" />
-            <p className="text-sm md:text-base text-[#003c3a]">
+        <div className="mt-8 md:mt-12 text-center px-4">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-4 bg-gradient-to-r from-[#00a6a2]/10 to-[#003c3a]/10 rounded-full px-4 sm:px-6 py-4 border border-[#00a6a2]/20">
+            <MessageCircle className="w-5 h-5 text-[#00a6a2] shrink-0" />
+            <p className="text-xs sm:text-sm md:text-base text-[#003c3a] text-center sm:text-left">
               And if anything remains unclear, we would be happy to advise you personally.
             </p>
-            <Button size="sm" className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white ml-2">
-              Contact Us
-            </Button>
+            <Link href={`/${locale}/contact`}>
+              <Button size="sm" className="bg-[#00a6a2] hover:bg-[#008a87] text-white">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -93,5 +99,3 @@ export function FaqComponent() {
 }
 
 export default FaqComponent;
-
-

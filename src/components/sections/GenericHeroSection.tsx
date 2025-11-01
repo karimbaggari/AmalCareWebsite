@@ -140,14 +140,12 @@ export function SimpleImageHero({
       className={`relative ${height} overflow-visible`}
       style={{ backgroundColor }}
     >
-      {/* Image positioned to extend beyond background */}
-      <div className="absolute left-0 right-0 top-[4rem] flex justify-center z-20">
+      {/* Image positioned to extend beyond background - Responsive */}
+      <div className="absolute left-0 right-0 top-[4rem] flex justify-center z-20 px-4 sm:px-6">
         <div
-          className="rounded-3xl shadow-2xl overflow-hidden"
-          style={{ width: `${imageWidth}px`, height: `${imageHeight}px` }}
+          className="rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden w-full max-w-[900px]"
+          style={{ aspectRatio: `${imageWidth}/${imageHeight}` }}
         >
-          <div className="absolute -right-2 h-120 w-60 rounded-full bg-teal-200/30 blur-3xl top-[190px]" />
-          <div className="absolute -left-2 h-120 w-60 rounded-full bg-teal-200/30 blur-3xl top-[190px]" />
           <Image
             src={image}
             alt={imageAlt}

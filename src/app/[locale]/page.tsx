@@ -8,6 +8,7 @@ import { VideoSection } from '@/components/sections/VideoSection';
 import ValuesSection from '@/components/sections/ValuesSection';
 import ProcessSection from '@/components/sections/ProcessSection';
 import Footer from '@/components/layout/Footer';
+import FloatingBottomNav from '@/components/layout/FloatingBottomNav';
 import { IMAGES } from '@/types';
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
@@ -71,6 +72,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       <div className='h-28 relative bg-white'></div>
       <Footer />
+      <FloatingBottomNav />
     </>
   );
 }

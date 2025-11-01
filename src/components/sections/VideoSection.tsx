@@ -34,10 +34,10 @@ export function VideoSection() {
 
     return (
         <section className="bg-white">
-            <div className="container mx-auto max-w-9xl px-6">
-                <div className="mb-20">
-                    <p className="text-gray-600 text-lg mb-4">{t('pathWithAmalCare.title')}</p>
-                    <h2 className="text-4xl md:text-5xl font-bold text-teal-500">{t('pathWithAmalCare.subtitle')}</h2>
+            <div className="container mx-auto max-w-7xl px-6">
+                <div className="mb-16 sm:mb-20">
+                    <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-3 sm:mb-4">{t('pathWithAmalCare.title')}</p>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-teal-500">{t('pathWithAmalCare.subtitle')}</h2>
                 </div>
 
                 <div className="flex justify-center">
@@ -46,24 +46,24 @@ export function VideoSection() {
                         onClick={() => setIsVideoOpen(true)}
                         className="relative group cursor-pointer max-w-3xl w-full"
                     >
-                        <div className="relative overflow-hidden rounded-3xl bg-gray-100">
+                        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gray-100">
                             <Image
                                 width={1200}
                                 height={800}
                                 src={IMAGES.ctaImage2}
                                 alt={tVideo('trainingPresentationAlt')}
-                                className="w-full h-[400px] object-cover"
+                                className="w-full h-[250px] sm:h-[320px] md:h-[400px] object-cover"
                             />
 
                             {/* Country Flag */}
-                            <div className="absolute top-4 right-4 w-8 h-8 rounded-full overflow-hidden border-2 border-white shadow-lg">
+                            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 rounded-full overflow-hidden border-2 border-white shadow-lg">
                                 <div className="w-full h-full bg-gradient-to-b from-black via-red-600 to-yellow-400"></div>
                             </div>
 
                             {/* Play Button */}
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-20 h-20 bg-teal-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200">
-                                    <Play className="w-8 h-8 text-white ml-1" fill="currentColor" />
+                                <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-teal-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200">
+                                    <Play className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white ml-1" fill="currentColor" />
                                 </div>
                             </div>
                         </div>

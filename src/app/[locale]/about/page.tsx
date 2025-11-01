@@ -2,6 +2,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import FloatingBottomNav from '@/components/layout/FloatingBottomNav';
 import AboutPageContent from '@/components/sections/AboutPageContent';
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -17,6 +18,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <Header />
       <AboutPageContent />
       <Footer />
+      <FloatingBottomNav />
     </>
   );
 }

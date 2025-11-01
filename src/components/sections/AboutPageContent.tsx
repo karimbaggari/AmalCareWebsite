@@ -1,14 +1,17 @@
 "use client"
 
-import { ArrowRight, CheckCircle2 } from "lucide-react"
+import { ArrowRight, CheckCircle2, Info } from "lucide-react"
 import { useState } from "react"
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
-import { SimpleImageHero } from './GenericHeroSection'
+import Image from 'next/image'
 import { IMAGE_URLS } from '@/constants/urls'
+import { Badge } from '@/components/ui/badge'
+import { VideoSection } from './VideoSection'
 
 export default function AboutPageContent() {
   const t = useTranslations('about')
+  const locale = useLocale()
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   const features = [
@@ -41,39 +44,62 @@ export default function AboutPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <SimpleImageHero
-        image={IMAGE_URLS.nursesGermany13}
-        imageAlt="About AmalCare - Healthcare professionals"
-        backgroundColor="#00a6a2"
-        height="h-[370px]"
-        imageWidth={900}
-        imageHeight={600}
-      />
+      <section className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={IMAGE_URLS.nursesGermany13}
+            alt="About AmalCare - Healthcare professionals"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#00a6a2]/95 via-[#00a6a2]/85 to-[#008a87]/75" />
+        </div>
 
-      <div className="min-h-screen mt-80 bg-gradient-to-b from-white to-gray-50">
-        {/* Hero Section - Who We Are */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 via-white to-teal-50/30 py-16 md:py-20 lg:py-24">
-          {/* Decorative Elements */}
-          <div className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-teal-100/40 blur-3xl" />
-            <div className="absolute -left-32 top-1/2 h-96 w-96 rounded-full bg-teal-200/30 blur-3xl" />
+        {/* Content */}
+        <div className="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-12 md:py-16">
+          <div className="max-w-3xl">
+            {/* Badge */}
+            <div className="mb-6 md:mb-8">
+              <Badge className="inline-flex items-center gap-2 border-0 bg-white/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
+                <Info className="h-4 w-4" />
+                <span>About AmalCare</span>
+              </Badge>
+            </div>
+
+            {/* Heading */}
+            <h1 className="mb-6 md:mb-8 font-sans text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white">
+              Who We Are
+            </h1>
+
+            {/* Description */}
+            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-white/95 max-w-2xl">
+              We are AmalCare eG – a placement agency organized as a cooperative for nursing professionals from Morocco.
+            </p>
           </div>
+        </div>
+      </section>
 
-          <div className="container relative mx-auto max-w-9xl px-6">
-            <div className="mx-auto max-w-7xl space-y-12">
+      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+        {/* Main Content Section - Who We Are */}
+        <section className="relative overflow-hidden py-12 md:py-16 lg:py-20">
+          <div className="container relative mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="mx-auto max-w-7xl space-y-8 md:space-y-12">
               {/* Eyebrow */}
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">
+              <div className="mb-4 md:mb-6 inline-flex items-center gap-2 rounded-full bg-[#00a6a2]/10 px-4 py-2 text-sm font-medium text-[#00a6a2]">
                 <CheckCircle2 className="h-4 w-4" />
                 {t('eyebrow')}
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-balance font-serif text-5xl font-bold leading-tight text-gray-900 lg:text-6xl">
+              <h2 className="text-balance font-sans text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#003c3a]">
                 {t('mainTitle')}
-              </h1>
+              </h2>
 
               {/* Content */}
-              <div className="space-y-6 text-pretty text-lg leading-relaxed text-gray-700">
+              <div className="space-y-4 md:space-y-6 text-pretty text-base sm:text-lg leading-relaxed text-gray-700 max-w-4xl">
                 <p>
                   {t('description1')}
                 </p>
@@ -83,76 +109,76 @@ export default function AboutPageContent() {
               </div>
 
               {/* Decorative Line */}
-              <div className="h-1 w-24 rounded-full bg-gradient-to-r from-teal-500 to-teal-300" />
+              <div className="h-1 w-20 md:w-24 rounded-full bg-gradient-to-r from-[#00a6a2] to-[#008a87]" />
             </div>
           </div>
         </section>
 
+             {/* Video Section */}
+             <div className="py-12 md:py-16 lg:py-20">
+          <VideoSection />
+        </div>
+
         {/* What Makes Us Unique Section */}
-        <section className="relative py-16 md:py-20 lg:py-24">
-          {/* Decorative Elements (reused) */}
-          <div className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-teal-100/40 blur-3xl" />
-            <div className="absolute -left-32 top-1/2 h-96 w-96 rounded-full bg-teal-200/30 blur-3xl" />
-          </div>
-          <div className="container mx-auto max-w-9xl px-6">
-            <div className="mx-auto max-w-7xl space-y-16">
+        <section className="relative py-12 md:py-16 lg:py-20">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="mx-auto max-w-7xl space-y-12 md:space-y-16">
               {/* Section Header */}
               <div className="text-center">
-                <h2 className="mb-6 text-balance font-serif text-4xl font-bold text-gray-900 lg:text-5xl">
+                <h2 className="mb-4 md:mb-6 text-balance font-sans text-3xl sm:text-4xl md:text-5xl font-bold text-[#003c3a]">
                   {t('uniqueTitle')}
                 </h2>
-                <p className="mx-auto max-w-3xl text-pretty text-lg leading-relaxed text-gray-700">
+                <p className="mx-auto max-w-3xl text-pretty text-base sm:text-lg leading-relaxed text-gray-700 px-4">
                   {t('uniqueDescription')}
                 </p>
               </div>
 
               {/* Features Grid */}
-              <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
+              <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:gap-8">
                 {features.map((feature, index) => (
                   <div
                     key={index}
-                    className="group relative overflow-hidden rounded-3xl bg-white p-8 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:shadow-xl hover:ring-teal-200"
+                    className="group relative overflow-hidden rounded-2xl md:rounded-3xl bg-white p-6 md:p-8 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:shadow-xl hover:ring-[#00a6a2]/20"
                     onMouseEnter={() => setHoveredIndex(index)}
                     onMouseLeave={() => setHoveredIndex(null)}
                   >
                     {/* Background Gradient on Hover */}
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-50/0 to-teal-50/0 transition-all duration-300 group-hover:from-teal-50/50 group-hover:to-transparent" />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#00a6a2]/0 to-[#00a6a2]/0 transition-all duration-300 group-hover:from-[#00a6a2]/5 group-hover:to-transparent" />
 
                     {/* Content */}
                     <div className="relative">
                       <div className="mb-4 flex items-start justify-between gap-4">
-                        <h3 className="text-balance font-semibold text-xl text-gray-900 transition-colors group-hover:text-teal-600">
+                        <h3 className="text-balance font-semibold text-lg sm:text-xl text-[#003c3a] transition-colors group-hover:text-[#00a6a2]">
                           {feature.title}
                         </h3>
                         <div className="flex-shrink-0">
-                          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-100 text-teal-600 transition-all duration-300 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-white">
+                          <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#00a6a2]/10 text-[#00a6a2] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#00a6a2] group-hover:text-white">
                             <ArrowRight
-                              className={`h-5 w-5 transition-transform duration-300 ${
+                              className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 ${
                                 hoveredIndex === index ? "translate-x-1" : ""
                               }`}
                             />
                           </div>
                         </div>
                       </div>
-                      <p className="text-pretty leading-relaxed text-gray-600">{feature.description}</p>
+                      <p className="text-pretty text-sm sm:text-base leading-relaxed text-gray-600">{feature.description}</p>
                     </div>
 
                     {/* Decorative Corner Element */}
-                    <div className="pointer-events-none absolute -bottom-8 -right-8 h-32 w-32 rounded-full bg-teal-100/20 blur-2xl transition-all duration-300 group-hover:bg-teal-200/40" />
+                    <div className="pointer-events-none absolute -bottom-8 -right-8 h-32 w-32 rounded-full bg-[#00a6a2]/10 blur-2xl transition-all duration-300 group-hover:bg-[#00a6a2]/20" />
                   </div>
                 ))}
               </div>
 
               {/* Bottom CTA */}
-              <div className="text-center">
-                <div className="inline-flex flex-col items-center gap-4 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-600 p-8 text-white shadow-lg">
-                  <p className="text-balance text-lg font-medium">
+              <div className="text-center px-4">
+                <div className="inline-flex flex-col items-center gap-4 rounded-2xl bg-gradient-to-br from-[#00a6a2] to-[#008a87] p-6 md:p-8 text-white shadow-lg">
+                  <p className="text-balance text-base sm:text-lg font-medium">
                     {t('ctaText')}
                   </p>
                   <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-teal-600 transition-all hover:scale-105 hover:shadow-lg"
+                    href={`/${locale}/contact`}
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm sm:text-base font-semibold text-[#00a6a2] transition-all hover:scale-105 hover:shadow-lg"
                   >
                     {t('ctaButton')}
                     <ArrowRight className="h-5 w-5" />
@@ -162,6 +188,8 @@ export default function AboutPageContent() {
             </div>
           </div>
         </section>
+
+   
       </div>
     </>
   )

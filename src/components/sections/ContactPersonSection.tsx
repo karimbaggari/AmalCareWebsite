@@ -28,52 +28,52 @@ export default function ContactPersonSection() {
   }
 
   return (
-    <section className="relative py-20 md:py-32 bg-white overflow-hidden">
+    <section className="relative py-12 sm:py-16 md:py-20 lg:py-32 bg-white overflow-hidden">
       {/* Enhanced decorative background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#f0f9f9] via-white to-[#e6f7f7]" />
+      <div className="absolute inset-0" />
       <div className="absolute top-1/2 left-0 w-[600px] h-[600px] bg-[#00a6a2]/5 rounded-full blur-3xl -translate-y-1/2" />
       <div className="absolute top-20 right-10 w-[300px] h-[300px] bg-[#7c3aed]/5 rounded-full blur-2xl" />
 
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-20 items-stretch">
             {/* Left side - School Administration Contact Information */}
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <div className="space-y-4">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="space-y-4 sm:space-y-6">
+                <div className="space-y-3 sm:space-y-4">
                   <div className="inline-block">
-                    <span className="text-sm font-semibold text-[#00a6a2] bg-[#00a6a2]/10 px-4 py-2 rounded-full uppercase tracking-wider">
+                    <span className="text-xs sm:text-sm font-semibold text-[#00a6a2] bg-[#00a6a2]/10 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full uppercase tracking-wider">
                       {t('schoolSection.badge')}
                     </span>
                   </div>
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                     {t('schoolSection.title')}
                   </h2>
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                     {t('schoolSection.description')}
                   </p>
                 </div>
 
-                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-gray-100 space-y-6 hover:shadow-2xl transition-all duration-300">
-                  <div className="text-center pb-6 border-b border-gray-100">
-                    <div className="w-20 h-20 bg-gradient-to-br from-[#00a6a2] to-[#008581] rounded-full flex items-center justify-center mx-auto mb-4">
-                      <MapPin className="w-10 h-10 text-white" />
+                <div className="bg-white/90 backdrop-blur-sm p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl border border-gray-100 space-y-4 sm:space-y-6 hover:shadow-2xl transition-all duration-300">
+                  <div className="text-center pb-4 sm:pb-6 border-b border-gray-100">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#00a6a2] to-[#008581] rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                      <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{t('schoolSection.schoolName')}</h3>
-                    <p className="text-lg text-[#00a6a2] font-semibold">{t('schoolSection.schoolLocation')}</p>
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">{t('schoolSection.schoolName')}</h3>
+                    <p className="text-base sm:text-lg text-[#00a6a2] font-semibold">{t('schoolSection.schoolLocation')}</p>
                   </div>
 
-                  <div className="space-y-4">
-                    <div className="group flex items-center justify-between p-4 bg-gray-50 rounded-2xl hover:bg-[#00a6a2]/5 transition-all duration-300">
-                      <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center group-hover:bg-[#00a6a2] transition-colors duration-300">
-                          <Phone className="w-5 h-5 text-[#00a6a2] group-hover:text-white transition-colors duration-300" />
+                  <div className="space-y-3 sm:space-y-4">
+                    <div className="group flex items-center justify-between p-3 sm:p-4 bg-gray-50 rounded-xl sm:rounded-2xl hover:bg-[#00a6a2]/5 transition-all duration-300">
+                      <div className="flex items-center gap-3 sm:gap-4 flex-1 min-w-0">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center group-hover:bg-[#00a6a2] transition-colors duration-300 flex-shrink-0">
+                          <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-[#00a6a2] group-hover:text-white transition-colors duration-300" />
                         </div>
-                        <div>
-                          <p className="text-sm font-medium text-gray-500 mb-1">{t('schoolSection.phoneLabel')}</p>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-xs sm:text-sm font-medium text-gray-500 mb-1">{t('schoolSection.phoneLabel')}</p>
                           <a
                             href="tel:+212623055683"
-                            className="text-lg font-semibold text-gray-900 hover:text-[#00a6a2] transition-colors"
+                            className="text-base sm:text-lg font-semibold text-gray-900 hover:text-[#00a6a2] transition-colors break-all"
                           >
                             +212 623‑055683
                           </a>
@@ -81,7 +81,7 @@ export default function ContactPersonSection() {
                       </div>
                       <button
                         onClick={() => copyToClipboard('+212623055683', 'phone')}
-                        className="p-2 rounded-lg bg-white hover:bg-gray-100 transition-colors duration-200"
+                        className="p-2 rounded-lg bg-white hover:bg-gray-100 transition-colors duration-200 flex-shrink-0"
                         title={t('schoolSection.copyPhoneTitle')}
                       >
                         {copiedSchoolPhone ? (
@@ -92,16 +92,16 @@ export default function ContactPersonSection() {
                       </button>
                     </div>
 
-                    <div className="group flex items-center justify-between p-4 bg-gray-50 rounded-2xl hover:bg-[#00a6a2]/5 transition-all duration-300">
-                      <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center group-hover:bg-[#00a6a2] transition-colors duration-300">
-                          <Mail className="w-5 h-5 text-[#00a6a2] group-hover:text-white transition-colors duration-300" />
+                    <div className="group flex items-center justify-between p-3 sm:p-4 bg-gray-50 rounded-xl sm:rounded-2xl hover:bg-[#00a6a2]/5 transition-all duration-300">
+                      <div className="flex items-center gap-3 sm:gap-4 flex-1 min-w-0">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center group-hover:bg-[#00a6a2] transition-colors duration-300 flex-shrink-0">
+                          <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-[#00a6a2] group-hover:text-white transition-colors duration-300" />
                         </div>
-                        <div>
-                          <p className="text-sm font-medium text-gray-500 mb-1">{t('schoolSection.emailLabel')}</p>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-xs sm:text-sm font-medium text-gray-500 mb-1">{t('schoolSection.emailLabel')}</p>
                           <a
                             href="mailto:info@amal-care.de"
-                            className="text-lg font-semibold text-gray-900 hover:text-[#00a6a2] transition-colors break-all"
+                            className="text-base sm:text-lg font-semibold text-gray-900 hover:text-[#00a6a2] transition-colors break-all"
                           >
                             info@amal-care.de
                           </a>
@@ -109,7 +109,7 @@ export default function ContactPersonSection() {
                       </div>
                       <button
                         onClick={() => copyToClipboard('info@amal-care.de', 'email')}
-                        className="p-2 rounded-lg bg-white hover:bg-gray-100 transition-colors duration-200"
+                        className="p-2 rounded-lg bg-white hover:bg-gray-100 transition-colors duration-200 flex-shrink-0"
                         title={t('schoolSection.copyEmailTitle')}
                       >
                         {copiedSchoolEmail ? (
@@ -120,30 +120,30 @@ export default function ContactPersonSection() {
                       </button>
                     </div>
 
-                    <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-2xl">
-                      <div className="w-12 h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <MapPin className="w-5 h-5 text-[#00a6a2]" />
+                    <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-gray-50 rounded-xl sm:rounded-2xl">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#00a6a2]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-[#00a6a2]" />
                       </div>
-                      <div>
-                        <p className="text-sm font-medium text-gray-500 mb-1">{t('schoolSection.addressLabel')}</p>
-                        <p className="text-base font-semibold text-gray-900 leading-relaxed">
+                      <div className="min-w-0">
+                        <p className="text-xs sm:text-sm font-medium text-gray-500 mb-1">{t('schoolSection.addressLabel')}</p>
+                        <p className="text-sm sm:text-base font-semibold text-gray-900 leading-relaxed">
                           N°3 imm 9 rue Moulay Idriss Al Akbar Rabat Hassan, Rabat, Morocco
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4 pt-4">
+                  <div className="grid grid-cols-2 gap-3 sm:gap-4 pt-2 sm:pt-4">
                     <a href="tel:+212623055683" className="w-full">
-                      <button className="flex items-center justify-center gap-2 h-12 bg-[#00a6a2] hover:bg-[#008581] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full">
-                        <Phone className="w-4 h-4" />
-                        {t('schoolSection.callNowButton')}
+                      <button className="flex items-center justify-center gap-1.5 sm:gap-2 h-10 sm:h-11 md:h-12 bg-[#00a6a2] hover:bg-[#008581] text-white text-xs sm:text-sm md:text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full px-2 sm:px-4">
+                        <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
+                        <span className="truncate">{t('schoolSection.callNowButton')}</span>
                       </button>
                     </a>
                     <Link href="mailto:info@amal-care.de" className="w-full">
-                      <button className="flex items-center justify-center gap-2 h-12 bg-[#7c3aed] hover:bg-[#6d28d9] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full">
-                        <Mail className="w-4 h-4" />
-                        {t('schoolSection.sendEmailButton')}
+                      <button className="flex items-center justify-center gap-1.5 sm:gap-2 h-10 sm:h-11 md:h-12 bg-[#7c3aed] hover:bg-[#6d28d9] text-white text-xs sm:text-sm md:text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full px-2 sm:px-4">
+                        <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
+                        <span className="truncate">{t('schoolSection.sendEmailButton')}</span>
                       </button>
                     </Link>
                   </div>
@@ -152,14 +152,10 @@ export default function ContactPersonSection() {
             </div>
 
             {/* Right side - Two Stacked Images */}
-            <div className="space-y-6 flex flex-col justify-end">
+            <div className="space-y-4 sm:space-y-6 flex flex-col justify-end">
               {/* First Team Member - Rachid Amessegher */}
               <div className="relative group">
-                {/* Enhanced decorative elements */}
-                <div className="absolute -inset-6 bg-gradient-to-br from-[#00a6a2]/20 to-[#7c3aed]/20 rounded-[3rem] blur-2xl group-hover:blur-3xl transition-all duration-500" />
-                <div className="absolute -inset-2 bg-gradient-to-br from-[#00a6a2]/10 to-[#7c3aed]/10 rounded-[2.5rem] blur-xl" />
-                
-                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-500 h-[340px] w-full">
+                <div className="relative rounded-2xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-500 h-[280px] sm:h-[340px] w-full">
                   <Image
                     src={IMAGE_URLS.nurseInGermany1}
                     alt="Rachid Amessegher - AmalCare eG"
@@ -172,18 +168,18 @@ export default function ContactPersonSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
                   {/* Floating contact info */}
-                  <div className="absolute inset-0 flex items-end justify-center p-6">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 max-w-md w-full">
-                      <div className="flex items-start gap-3">
-                        <div className="w-10 h-10 bg-[#00a6a2] rounded-full flex items-center justify-center flex-shrink-0">
-                          <span className="text-white font-bold text-sm">RA</span>
+                  <div className="absolute inset-0 flex items-end justify-center p-4 sm:p-6">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 max-w-md w-full">
+                      <div className="flex items-start gap-2 sm:gap-3">
+                        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#00a6a2] rounded-full flex items-center justify-center flex-shrink-0">
+                          <span className="text-white font-bold text-xs sm:text-sm">RA</span>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-gray-900">{t('teamMember1.name')}</p>
-                          <p className="text-xs text-gray-600 mb-1">{t('teamMember1.role')}</p>
+                          <p className="font-semibold text-sm sm:text-base text-gray-900">{t('teamMember1.name')}</p>
+                          <p className="text-[10px] sm:text-xs text-gray-600 mb-1">{t('teamMember1.role')}</p>
                           <a 
                             href="mailto:rachid.amessegher@amal-care.de" 
-                            className="text-xs text-[#00a6a2] hover:text-[#008581] transition-colors break-all"
+                            className="text-[10px] sm:text-xs text-[#00a6a2] hover:text-[#008581] transition-colors break-all"
                           >
                             rachid.amessegher@amal-care.de
                           </a>
@@ -196,11 +192,7 @@ export default function ContactPersonSection() {
 
               {/* Second Team Member - Heike Steinbach */}
               <div className="relative group">
-                {/* Enhanced decorative elements */}
-                <div className="absolute -inset-6 bg-gradient-to-br from-[#7c3aed]/20 to-[#00a6a2]/20 rounded-[3rem] blur-2xl group-hover:blur-3xl transition-all duration-500" />
-                <div className="absolute -inset-2 bg-gradient-to-br from-[#7c3aed]/10 to-[#00a6a2]/10 rounded-[2.5rem] blur-xl" />
-                
-                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-500 h-[340px] w-full">
+                <div className="relative rounded-2xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-500 h-[280px] sm:h-[340px] w-full">
                   <Image
                     src={IMAGE_URLS.schoolRabat}
                     alt="Heike Steinbach - Board Member Cooperative"
@@ -213,18 +205,18 @@ export default function ContactPersonSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
                   {/* Floating contact info */}
-                  <div className="absolute inset-0 flex items-end justify-center p-6">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 max-w-md w-full">
-                      <div className="flex items-start gap-3">
-                        <div className="w-10 h-10 bg-[#7c3aed] rounded-full flex items-center justify-center flex-shrink-0">
-                          <span className="text-white font-bold text-sm">HS</span>
+                  <div className="absolute inset-0 flex items-end justify-center p-4 sm:p-6">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 max-w-md w-full">
+                      <div className="flex items-start gap-2 sm:gap-3">
+                        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#7c3aed] rounded-full flex items-center justify-center flex-shrink-0">
+                          <span className="text-white font-bold text-xs sm:text-sm">HS</span>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-gray-900">{t('teamMember2.name')}</p>
-                          <p className="text-xs text-gray-600 mb-1">{t('teamMember2.role')}</p>
+                          <p className="font-semibold text-sm sm:text-base text-gray-900">{t('teamMember2.name')}</p>
+                          <p className="text-[10px] sm:text-xs text-gray-600 mb-1">{t('teamMember2.role')}</p>
                           <a 
                             href="mailto:heike.steinbach@amal-care.de" 
-                            className="text-xs text-[#7c3aed] hover:text-[#6d28d9] transition-colors break-all"
+                            className="text-[10px] sm:text-xs text-[#7c3aed] hover:text-[#6d28d9] transition-colors break-all"
                           >
                             heike.steinbach@amal-care.de
                           </a>

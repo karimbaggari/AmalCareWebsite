@@ -3,25 +3,24 @@
 import type React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Heart, Phone, MapPin } from "lucide-react"
-import { useState } from "react"
+import { Heart, Phone, MapPin, Mail, ArrowRight } from "lucide-react"
 
 import { IMAGE_URLS } from "@/constants/urls"
-// import { COLORS } from "@/types" // Unused for now
 import { useTranslations, useLocale } from 'next-intl'
 
 export default function Footer() {
-  const [email, setEmail] = useState("")
   const t = useTranslations('common')
   const tFooter = useTranslations('footer')
   const locale = useLocale()
-  // const tNav = useTranslations('navigation') // Unused for now
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("[v0] Newsletter signup:", email)
-    setEmail("")
-  }
+  const quickLinks = [
+    { href: `/${locale}`, label: t('home') },
+    { href: `/${locale}/about`, label: t('about') },
+    { href: `/${locale}/language-school`, label: t('languageSchool') },
+    { href: `/${locale}/simulation-course`, label: t('simulationCourse') },
+    { href: `/${locale}/faqs`, label: t('faqs') },
+    { href: `/${locale}/contact`, label: t('contact') },
+  ]
 
   return (
     <footer className="relative bg-gradient-to-br from-[#00a6a2] via-[#008581] to-[#006b68] text-white overflow-hidden">
@@ -32,12 +31,13 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Content */}
-      <div className="relative max-w-7xl mx-auto px-6 py-12 lg:py-16">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-12">
-          {/* Left Column - Brand */}
-          <div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 lg:py-20">
+        {/* Top Section - Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-10 lg:gap-12 mb-12">
+          {/* Brand Section - Takes more space */}
+          <div className="lg:col-span-5">
             {/* Logo - Clickable to Homepage */}
-            <div className="mb-8">
+            <div className="mb-6">
               <Link 
                 href={`/${locale}`}
                 className="inline-block hover:opacity-80 transition-opacity duration-300 mb-4"
@@ -46,44 +46,89 @@ export default function Footer() {
                 <Image
                   src={IMAGE_URLS.logo}
                   alt="AmalCare Logo"
-                  width={200}
-                  height={120}
-                  className="h-auto max-w-xs"
+                  width={180}
+                  height={108}
+                  className="h-auto w-36 sm:w-40 md:w-44 brightness-0 invert"
                   priority={false}
                 />
               </Link>
-              <div className="flex items-center gap-2 text-white/90 text-base">
+              <div className="flex items-center gap-2 text-white/90 text-sm sm:text-base">
                 <Heart className="w-4 h-4 fill-current" />
                 <span className="font-medium">{t('careWithHeart')}</span>
               </div>
             </div>
 
-            <p className="text-white/90 text-base leading-relaxed mb-6 max-w-lg">
-              {t('welcome')} - {tFooter('description')}
+            <p className="text-white/90 text-sm sm:text-base leading-relaxed mb-6 max-w-md">
+              {tFooter('description')}
             </p>
+          </div>
 
-            {/* Contact Information */}
-            <div className="space-y-4">
+          {/* Quick Links Section */}
+          <div className="lg:col-span-3">
+            <h3 className="text-white font-semibold text-base sm:text-lg mb-4 md:mb-6">
+              {tFooter('quickLinks')}
+            </h3>
+            <ul className="space-y-2 md:space-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="group inline-flex items-center text-white/80 hover:text-white transition-colors text-sm sm:text-base"
+                  >
+                    <ArrowRight className="w-4 h-4 mr-2 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
+                    <span>{link.label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Information Section */}
+          <div className="lg:col-span-4">
+            <h3 className="text-white font-semibold text-base sm:text-lg mb-4 md:mb-6">
+              {t('contact')}
+            </h3>
+            <div className="space-y-4 md:space-y-5">
               {/* Phone */}
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-white/80 mt-1 flex-shrink-0" />
+                <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-white/10 flex-shrink-0">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                </div>
                 <div>
-                  <p className="text-white/70 text-sm mb-1">{tFooter('phoneLabel')}</p>
+                  <p className="text-white/70 text-xs sm:text-sm mb-1">{tFooter('phoneLabel')}</p>
                   <a 
                     href={`tel:${tFooter('phoneNumber').replace(/\s/g, '')}`}
-                    className="text-white/90 hover:text-white transition-colors text-base font-medium"
+                    className="text-white/90 hover:text-white transition-colors text-sm sm:text-base font-medium"
                   >
                     {tFooter('phoneNumber')}
                   </a>
                 </div>
               </div>
 
+              {/* Email */}
+              <div className="flex items-start gap-3">
+                <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-white/10 flex-shrink-0">
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-white/70 text-xs sm:text-sm mb-1">{tFooter('emailLabel')}</p>
+                  <a 
+                    href={`mailto:${tFooter('emailAddress')}`}
+                    className="text-white/90 hover:text-white transition-colors text-sm sm:text-base font-medium break-all"
+                  >
+                    {tFooter('emailAddress')}
+                  </a>
+                </div>
+              </div>
+
               {/* Address */}
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-white/80 mt-1 flex-shrink-0" />
+                <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-white/10 flex-shrink-0">
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                </div>
                 <div>
-                  <p className="text-white/70 text-sm mb-1">{tFooter('addressLabel')}</p>
-                  <p className="text-white/90 text-base leading-relaxed">
+                  <p className="text-white/70 text-xs sm:text-sm mb-1">{tFooter('addressLabel')}</p>
+                  <p className="text-white/90 text-sm sm:text-base leading-relaxed">
                     {tFooter('addressLine1')}
                     <br />
                     {tFooter('addressLine2')}
@@ -92,45 +137,19 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
-          {/* Right Column - Newsletter */}
-          <div className="flex items-center">
-            {/* Newsletter Signup */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 w-full">
-              <h3 className="text-xl font-bold mb-2">{tFooter('newsletterTitle')}</h3>
-              <p className="text-white/80 mb-4 text-sm">{tFooter('newsletterDescription')}</p>
-              <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder={tFooter('newsletterPlaceholder')}
-                  className="flex-1 px-4 py-2.5 rounded-lg bg-white/20 border border-white/30 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white/25 transition-all text-sm"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="px-5 py-2.5 bg-white text-[#00a6a2] rounded-lg font-semibold hover:bg-white/90 transition-all hover:scale-105 flex items-center gap-2 group text-sm"
-                >
-                  <span>{tFooter('subscribeButton')}</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </form>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/70 text-xs">{tFooter('copyright')}</p>
-            <p className="text-white/60 text-xs italic">{tFooter('tagline')}</p>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
+            <p className="text-white/70 text-xs sm:text-sm text-center sm:text-left">{tFooter('copyright')}</p>
+            <p className="text-white/60 text-xs sm:text-sm italic text-center sm:text-right">{tFooter('tagline')}</p>
           </div>
         </div>
       </div>
 
       {/* Large decorative text element at bottom */}
-      <div className="absolute bottom-0 right-0 text-[20rem] font-bold text-white/5 leading-none pointer-events-none select-none hidden xl:block">
+      <div className="absolute bottom-0 right-0 text-[12rem] sm:text-[16rem] lg:text-[20rem] font-bold text-white/5 leading-none pointer-events-none select-none hidden md:block">
         AC
       </div>
     </footer>
