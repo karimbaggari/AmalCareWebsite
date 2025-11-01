@@ -91,7 +91,7 @@ export default function Header() {
                 ? 'bg-white/95 backdrop-blur-xl shadow-xl shadow-gray-900/10 h-20 md:h-28' 
                 : 'bg-white/70 backdrop-blur-md h-24 md:h-36 lg:h-40'
         }`}>
-            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-full flex items-center relative">
+            <div className="container mx-auto max-w-9xl px-4 sm:px-6 lg:px-8 h-full flex items-center relative">
                 {/* AmalCare Logo - Centered and Clickable */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9999]">
                     <Link 
@@ -122,7 +122,7 @@ export default function Header() {
                     
                     <Link
                         href={`/${locale}/contact`}
-                        className="hidden lg:inline-flex items-center text-[#003c3a] text-sm lg:text-base font-semibold tracking-wide hover:text-[#00a6a2] uppercase transition-all duration-300 hover:scale-105 whitespace-nowrap"
+                        className="hidden lg:inline-flex items-center text-[#003c3a] text-sm lg:text-base font-medium tracking-wide hover:text-[#00a6a2] uppercase transition-all duration-300 whitespace-nowrap"
                         aria-label={t('contact')}
                     >
                         {t('contact')}
@@ -155,7 +155,7 @@ export default function Header() {
                 <nav id="main-nav" className={`absolute right-0 top-0 z-[100000] h-[100dvh] min-h-[100dvh] w-[90%] sm:w-[420px] bg-white shadow-2xl transition-all duration-500 ease-out overflow-y-auto ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     {/* Header */}
                     <div className="sticky top-0 z-10 flex items-center justify-between px-6 py-6 border-b border-gray-200 bg-gradient-to-r from-white via-white to-[#00a6a2]/5 backdrop-blur">
-                        <span className="text-[#003c3a] text-xl font-bold tracking-wide">{t('menu')}</span>
+                        <span className="text-[#003c3a] text-lg font-semibold tracking-wide">{t('menu')}</span>
                         <button 
                             aria-label={tHeader('closeMenuAriaLabel')} 
                             className="p-2.5 rounded-full hover:bg-[#00a6a2]/10 transition-all duration-300 active:scale-90"
@@ -169,7 +169,7 @@ export default function Header() {
                         {/* Mobile-only Language Switcher */}
                         <div className="lg:hidden mb-8">
                             <div className="flex items-center justify-between mb-4">
-                                <span className="text-sm font-bold text-[#003c3a] uppercase tracking-wider">{tHeader('changeLanguageAriaLabel')}</span>
+                                <span className="text-sm font-semibold text-[#003c3a] uppercase tracking-wide">{tHeader('changeLanguageAriaLabel')}</span>
                             </div>
                             <LanguageSwitcher />
                         </div>
@@ -190,7 +190,7 @@ export default function Header() {
                                         className="group relative flex items-center justify-between rounded-2xl px-5 py-4 text-[#003c3a] hover:bg-gradient-to-r hover:from-[#00a6a2]/10 hover:to-[#00a6a2]/5 transition-all duration-300 overflow-hidden"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
-                                        <span className="font-semibold tracking-wide text-lg relative z-10">{item.label}</span>
+                                        <span className="font-medium tracking-wide text-base relative z-10">{item.label}</span>
                                         <span className="text-[#00a6a2] text-xl opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">→</span>
                                         {/* Animated underline */}
                                         <span className="absolute bottom-2 left-5 h-0.5 w-0 bg-gradient-to-r from-[#00a6a2] to-[#008a87] group-hover:w-[calc(100%-40px)] transition-all duration-300"></span>
@@ -203,13 +203,13 @@ export default function Header() {
                         <div className="grid grid-cols-2 gap-4 mb-8">
                             <Link 
                                 href={`/${locale}/contact`} 
-                                className="rounded-2xl bg-gradient-to-br from-[#00a6a2] to-[#008a87] text-white text-center py-4 text-sm font-bold shadow-lg hover:shadow-xl hover:shadow-[#00a6a2]/30 transition-all duration-300 hover:scale-105 active:scale-95" 
+                                className="rounded-2xl bg-gradient-to-br from-[#00a6a2] to-[#008a87] text-white text-center py-4 text-sm font-semibold shadow-lg hover:shadow-xl hover:shadow-[#00a6a2]/30 transition-all duration-300 hover:scale-105 active:scale-95" 
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {t('contact')}
                             </Link>
                             <button 
-                                className="rounded-2xl border-2 border-[#00a6a2]/30 text-[#00a6a2] py-4 text-sm font-bold hover:bg-[#00a6a2]/10 hover:border-[#00a6a2] transition-all duration-300 hover:scale-105 active:scale-95" 
+                                className="rounded-2xl border-2 border-[#00a6a2]/30 text-[#00a6a2] py-4 text-sm font-semibold hover:bg-[#00a6a2]/10 hover:border-[#00a6a2] transition-all duration-300 hover:scale-105 active:scale-95" 
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {t('close')}
