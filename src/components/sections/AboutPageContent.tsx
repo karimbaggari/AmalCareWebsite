@@ -49,7 +49,7 @@ export default function AboutPageContent() {
         <div className="absolute inset-0 z-0">
           <Image
             src={IMAGE_URLS.nursesGermany13}
-            alt="About AmalCare - Healthcare professionals"
+            alt={t('heroBadge')}
             fill
             className="object-cover"
             priority
@@ -65,18 +65,18 @@ export default function AboutPageContent() {
             <div className="mb-6 md:mb-8">
               <Badge className="inline-flex items-center gap-2 border-0 bg-white/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
                 <Info className="h-4 w-4" />
-                <span>About AmalCare</span>
+                <span>{t('heroBadge')}</span>  
               </Badge>
             </div>
 
             {/* Heading */}
             <h1 className="mb-6 md:mb-8 font-sans text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white">
-              Who We Are
+              {t('heroTitle')}
             </h1>
 
             {/* Description */}
             <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-white/95 max-w-2xl">
-              We are AmalCare eG – a placement agency organized as a cooperative for nursing professionals from Morocco.
+              {t('heroDescription')}
             </p>
           </div>
         </div>

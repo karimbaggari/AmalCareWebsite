@@ -27,34 +27,81 @@ export function LanguageSchoolSection() {
             src={IMAGE_URLS.rabatSchoolClassroom1}
             alt="Language School Classroom"
             fill
-            className="object-cover"
+            className="object-cover scale-105 animate-in zoom-in-0 duration-1000"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#00a6a2]/95 via-[#00a6a2]/85 to-[#00a6a2]/75" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#00a6a2]/95 via-[#00a6a2]/90 to-[#006b68]/80" />
+          
+          {/* Decorative Elements */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#003c3a]/20 rounded-full blur-3xl" />
         </div>
 
         {/* Content */}
         <div className="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-12 md:py-16">
-          <div className="max-w-3xl">
-            {/* Badge */}
-            <div className="mb-6 md:mb-8">
-              <Badge className="inline-flex items-center gap-2 border-0 bg-white/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
-                <BookOpen className="h-4 w-4" />
-                <span>{t('heroBadge')}</span>
-              </Badge>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* Left Column - Main Title */}
+            <div className="space-y-6 md:space-y-8 animate-in fade-in slide-in-from-left-10 duration-700">
+              {/* Badge */}
+              <div className="inline-flex">
+                <Badge className="inline-flex items-center gap-2 border-0 bg-white/20 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur-md shadow-lg hover:bg-white/30 transition-all duration-300 hover:scale-105">
+                  <BookOpen className="h-5 w-5" />
+                  <span>{t('heroBadge')}</span>
+                </Badge>
+              </div>
+
+              {/* Heading */}
+              <h1 className="font-sans text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-white drop-shadow-2xl">
+                {t('heroTitle')}
+              </h1>
+
+              {/* Decorative Line */}
+              <div className="flex items-center gap-4">
+                <div className="h-1 w-16 md:w-20 rounded-full bg-gradient-to-r from-white to-white/40" />
+                <div className="h-1 w-8 md:w-12 rounded-full bg-white/40" />
+              </div>
             </div>
 
-            {/* Heading */}
-            <h1 className="mb-6 md:mb-8 font-sans text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white">
-              {t('heroTitle')}
-            </h1>
+            {/* Right Column - Description Card */}
+            <div className="space-y-6 md:space-y-8 animate-in fade-in slide-in-from-right-10 duration-700 delay-150">
+              {/* Card Container */}
+              <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-6 md:p-8 lg:p-10 border border-white/20 shadow-2xl hover:bg-white/15 transition-all duration-500 group">
+                {/* Decorative corner accent */}
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-white/20 to-transparent rounded-bl-3xl opacity-50" />
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-white/20 to-transparent rounded-tr-3xl opacity-50" />
+                
+                <div className="relative space-y-5 md:space-y-6">
+                  {/* Description */}
+                  <p className="text-base sm:text-lg md:text-xl leading-relaxed text-white/95 drop-shadow-md">
+                    {t('heroDescription')}
+                  </p>
 
-            {/* Description */}
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-white/95 max-w-2xl">
-              {t('heroDescription')}
-            </p>
+                  {/* Icon decoration */}
+                  <div className="flex items-center gap-3 pt-2">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 group-hover:scale-110 transition-transform duration-300">
+                      <Languages className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 group-hover:scale-110 transition-transform duration-300 delay-75">
+                      <GraduationCap className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 group-hover:scale-110 transition-transform duration-300 delay-150">
+                      <BookOpen className="w-6 h-6 text-white" />
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+
+        {/* Animated pattern overlay */}
+        <div className="absolute inset-0 z-[1] opacity-10 pointer-events-none">
+          <div className="absolute top-10 left-10 w-2 h-2 bg-white rounded-full animate-pulse" />
+          <div className="absolute top-32 right-24 w-2 h-2 bg-white rounded-full animate-pulse delay-300" />
+          <div className="absolute bottom-24 left-32 w-2 h-2 bg-white rounded-full animate-pulse delay-700" />
+          <div className="absolute bottom-32 right-16 w-2 h-2 bg-white rounded-full animate-pulse delay-500" />
         </div>
       </section>
 
@@ -113,8 +160,9 @@ export function LanguageSchoolSection() {
                 </Card>
               </div>
 
-              {/* Right Column - Image */}
-              <div className="relative mx-auto w-full max-w-2xl lg:max-w-none order-first lg:order-last">
+              {/* Right Column - Images */}
+              <div className="relative mx-auto w-full max-w-2xl lg:max-w-none order-first lg:order-last space-y-6">
+                {/* Main Image Card */}
                 <Card className="group relative overflow-hidden bg-white w-full shadow-2xl shadow-[#00a6a2]/10 transition-shadow duration-500 hover:shadow-[#00a6a2]/20">
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
@@ -135,6 +183,33 @@ export function LanguageSchoolSection() {
                         <div>
                           <div className="text-xs md:text-sm font-semibold text-[#003c3a] leading-none">{t('imageBadgeTitle')}</div>
                           <div className="text-[10px] md:text-[11px] text-gray-600 leading-none mt-1">{t('imageBadgeSubtitle')}</div>
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
+                </Card>
+
+                {/* Second Image Card */}
+                <Card className="group relative overflow-hidden bg-white w-full shadow-xl shadow-[#00a6a2]/10 transition-shadow duration-500 hover:shadow-[#00a6a2]/20">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={IMAGE_URLS.rabatSchoolClassroom2}
+                      alt="Language learning classroom environment"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+                    />
+                  </div>
+                  {/* Overlay badge inside image - bottom right */}
+                  <div className="absolute bottom-3 right-3 md:bottom-4 md:right-4">
+                    <Card className="bg-white/95 px-3 py-2 md:px-4 md:py-3 backdrop-blur-md shadow-lg">
+                      <div className="flex items-center gap-2 md:gap-3">
+                        <div className="flex h-8 w-8 md:h-9 md:w-9 items-center justify-center rounded-full bg-[#00a6a2]/10">
+                          <BookOpen className="h-4 w-4 md:h-5 md:w-5 text-[#00a6a2]" />
+                        </div>
+                        <div>
+                          <div className="text-xs md:text-sm font-semibold text-[#003c3a] leading-none">Interactive Learning</div>
+                          <div className="text-[10px] md:text-[11px] text-gray-600 leading-none mt-1">Modern Teaching Methods</div>
                         </div>
                       </div>
                     </Card>

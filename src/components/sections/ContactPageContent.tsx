@@ -180,18 +180,18 @@ Note: Please attach the documents mentioned above to this email.
             <div className="mb-6 md:mb-8">
               <Badge className="inline-flex items-center gap-2 border-0 bg-white/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
                 <MessageCircle className="h-4 w-4" />
-                <span>Get in Touch</span>
+                <span>{t('heroBadge')}</span>
               </Badge>
             </div>
 
             {/* Heading */}
             <h1 className="mb-6 md:mb-8 font-sans text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white">
-              Let&apos;s Connect
+              {t('heroTitle')}
             </h1>
 
             {/* Description */}
             <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-white/95 max-w-2xl">
-              We&apos;re here to answer your questions and help you start your journey to a nursing career in Germany.
+              {t('heroDescription')}
             </p>
           </div>
         </div>

@@ -90,6 +90,7 @@ export default function SimulationCourseContent() {
                       <Heart className="w-6 h-6 text-white" />
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </div>

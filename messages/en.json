@@ -102,7 +102,20 @@
       "faqTitle": "Find answers to your questions in our FAQ",
       "faqSubtitle": "In our FAQ section for institutions we answer many of the frequently asked questions:",
       "unclearMessage": "And if anything remains unclear, we would be happy to advise you personally.",
-      "contactUsButton": "Contact Us"
+      "contactUsButton": "Contact Us",
+      "ctaTitle": "Are you ready?",
+      "ctaTitleHighlight": "We are.",
+      "ctaDescription": "With AmalCare, you don't start alone. You get preparation, support, and a strong partner at your side.",
+      "ctaStep": "Take the first step – and contact us.",
+      "ctaBenefitsTitle": "What you'll get:",
+      "ctaBenefit1": "Personalized career guidance",
+      "ctaBenefit2": "Language training support",
+      "ctaBenefit3": "Visa & documentation assistance",
+      "ctaBenefit4": "Ongoing mentorship in Germany",
+      "ctaContactButton": "Contact Us Now",
+      "ctaLearnButton": "Learn More",
+      "ctaCardTitle": "Join Our Community",
+      "ctaCardSubtitle": "Start your journey today"
     },
     "about": {
       "heroBadge": "About AmalCare",
