@@ -24,8 +24,8 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#00a6a2]/95 via-[#00a6a2]/85 to-[#008a87]/75" />
         
         {/* Decorative Elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#003c3a]/20 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#003c3a]/20 blur-3xl" />
       </div>
 
       {/* Content */}
@@ -46,19 +46,19 @@ export function HeroSection() {
 
           {/* Visual Features Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            <div className="flex flex-col items-start gap-2 p-4 md:p-5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
+            <div className="flex flex-col items-start gap-2 p-4 md:p-5 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
               <GraduationCap className="h-6 w-6 md:h-7 md:w-7 text-white mb-1" />
               <p className="text-white/90 text-sm md:text-base font-medium">Education</p>
             </div>
-            <div className="flex flex-col items-start gap-2 p-4 md:p-5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
+            <div className="flex flex-col items-start gap-2 p-4 md:p-5 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
               <Users className="h-6 w-6 md:h-7 md:w-7 text-white mb-1" />
               <p className="text-white/90 text-sm md:text-base font-medium">Support</p>
             </div>
-            <div className="flex flex-col items-start gap-2 p-4 md:p-5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
+            <div className="flex flex-col items-start gap-2 p-4 md:p-5 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
               <Heart className="h-6 w-6 md:h-7 md:w-7 text-white mb-1" />
               <p className="text-white/90 text-sm md:text-base font-medium">Care</p>
             </div>
-            <div className="flex flex-col items-start gap-2 p-4 md:p-5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
+            <div className="flex flex-col items-start gap-2 p-4 md:p-5 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
               <CheckCircle2 className="h-6 w-6 md:h-7 md:w-7 text-white mb-1" />
               <p className="text-white/90 text-sm md:text-base font-medium">Quality</p>
             </div>

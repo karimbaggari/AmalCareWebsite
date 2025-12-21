@@ -219,7 +219,9 @@
       "floatingBadgeLabel": "مقرها في",
       "floatingBadgeLocation": "الرباط، المغرب",
       "imageBadgeTitle": "التدريب المهني",
-      "imageBadgeSubtitle": "اللغة الألمانية مع التركيز على التمريض"
+      "imageBadgeSubtitle": "اللغة الألمانية مع التركيز على التمريض",
+      "heroImageAlt": "فصل مدرسة اللغة",
+      "sliderAlt": "فصل مدرسة اللغة"
     },
     "simulationCourse": {
       "heroBadge": "دورة المحاكاة",

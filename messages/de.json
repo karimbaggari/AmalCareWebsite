@@ -230,7 +230,9 @@
     "floatingBadgeLabel": "Ansässig in",
     "floatingBadgeLocation": "Rabat, Marokko",
     "imageBadgeTitle": "Berufliche Ausbildung",
-    "imageBadgeSubtitle": "Deutsche Sprache mit Pflegeschwerpunkt"
+    "imageBadgeSubtitle": "Deutsche Sprache mit Pflegeschwerpunkt",
+    "heroImageAlt": "Sprachschulklassenzimmer",
+    "sliderAlt": "Sprachschulklassenzimmer"
   },
   "simulationCourse": {
     "heroBadge": "Simulationskurs",

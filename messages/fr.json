@@ -219,7 +219,9 @@
       "floatingBadgeLabel": "Basé à",
       "floatingBadgeLocation": "Rabat, Maroc",
       "imageBadgeTitle": "Formation professionnelle",
-      "imageBadgeSubtitle": "Langue allemande axée sur les soins infirmiers"
+      "imageBadgeSubtitle": "Langue allemande axée sur les soins infirmiers",
+      "heroImageAlt": "Salle de classe de l'école de langues",
+      "sliderAlt": "Salle de classe de l'école de langues"
     },
     "simulationCourse": {
       "heroBadge": "Cours de simulation",

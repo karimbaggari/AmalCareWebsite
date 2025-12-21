@@ -264,7 +264,9 @@
       "floatingBadgeLabel": "Based in",
       "floatingBadgeLocation": "Rabat, Morocco",
       "imageBadgeTitle": "Professional Training",
-      "imageBadgeSubtitle": "German language with nursing focus"
+      "imageBadgeSubtitle": "German language with nursing focus",
+      "heroImageAlt": "Language School Classroom",
+      "sliderAlt": "Language school classroom"
     },
     "simulationCourse": {
       "heroBadge": "Simulation Course",
