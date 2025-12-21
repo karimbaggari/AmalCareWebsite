@@ -30,7 +30,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({ className = "" }) => {
   return (
     <button 
       onClick={toggleTheme}
-      className={`flex items-center justify-center hover:bg-gray-100 rounded-lg transition-colors p-2 ${className}`}
+      className={`flex items-center justify-center hover:bg-gray-100 rounded-lg transition-colors p-2 cursor-pointer ${className}`}
       aria-label="Toggle dark mode"
     >
       <svg width="20" height="20" viewBox="0 0 512 512" aria-hidden="true" fill="#00a6a2">

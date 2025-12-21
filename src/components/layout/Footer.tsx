@@ -40,7 +40,7 @@ export default function Footer() {
             <div className="mb-6">
               <Link 
                 href={`/${locale}`}
-                className="inline-block hover:opacity-80 transition-opacity duration-300 mb-4"
+                className="inline-block hover:opacity-80 transition-opacity duration-300 mb-4 cursor-pointer"
                 aria-label={t('home')}
               >
                 <Image
@@ -73,7 +73,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="group inline-flex items-center text-white/80 hover:text-white transition-colors text-sm sm:text-base"
+                    className="group inline-flex items-center text-white/80 hover:text-white transition-colors text-sm sm:text-base cursor-pointer"
                   >
                     <ArrowRight className="w-4 h-4 mr-2 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
                     <span>{link.label}</span>
@@ -98,7 +98,7 @@ export default function Footer() {
                   <p className="text-white/70 text-xs sm:text-sm mb-1">{tFooter('phoneLabel')}</p>
                   <a 
                     href={`tel:${tFooter('phoneNumber').replace(/\s/g, '')}`}
-                    className="text-white/90 hover:text-white transition-colors text-sm sm:text-base font-medium"
+                    className="text-white/90 hover:text-white transition-colors text-sm sm:text-base font-medium cursor-pointer"
                   >
                     {tFooter('phoneNumber')}
                   </a>
@@ -114,7 +114,7 @@ export default function Footer() {
                   <p className="text-white/70 text-xs sm:text-sm mb-1">{tFooter('emailLabel')}</p>
                   <a 
                     href={`mailto:${tFooter('emailAddress')}`}
-                    className="text-white/90 hover:text-white transition-colors text-sm sm:text-base font-medium break-all"
+                    className="text-white/90 hover:text-white transition-colors text-sm sm:text-base font-medium break-all cursor-pointer"
                   >
                     {tFooter('emailAddress')}
                   </a>

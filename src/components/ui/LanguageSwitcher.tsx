@@ -71,7 +71,7 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-[#00a6a2]/10 hover:bg-[#00a6a2]/20 border border-[#00a6a2]/20 transition-all duration-200 active:scale-95"
+        className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg bg-[#00a6a2]/10 hover:bg-[#00a6a2]/20 border border-[#00a6a2]/20 transition-all duration-200 active:scale-95 cursor-pointer"
         aria-label={tHeader('changeLanguageAriaLabel')}
         aria-expanded={isOpen}
         aria-haspopup="true"
@@ -96,7 +96,7 @@ export default function LanguageSwitcher() {
               <button
                 key={language.code}
                 onClick={() => handleLanguageChange(language.code)}
-                className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-[#00a6a2]/5 transition-colors ${
+                className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-[#00a6a2]/5 transition-colors cursor-pointer ${
                   language.code === locale ? 'bg-[#00a6a2]/10 text-[#00a6a2]' : 'text-[#003c3a]'
                 }`}
                 role="menuitem"

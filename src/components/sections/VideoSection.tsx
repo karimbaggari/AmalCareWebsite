@@ -85,7 +85,7 @@ export function VideoSection() {
                         {/* Close Button */}
                         <button
                             onClick={() => setIsVideoOpen(false)}
-                            className="absolute -top-12 right-0 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
+                            className="absolute -top-12 right-0 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
                             aria-label={tVideo('closeVideoAriaLabel')}
                         >
                             <X className="w-6 h-6" />

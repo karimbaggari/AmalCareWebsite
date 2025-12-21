@@ -178,7 +178,7 @@ export default function AboutPageContent() {
                   </p>
                   <Link
                     href={`/${locale}/contact`}
-                    className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm sm:text-base font-semibold text-[#00a6a2] transition-all hover:scale-105 hover:shadow-lg"
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm sm:text-base font-semibold text-[#00a6a2] transition-all hover:scale-105 hover:shadow-lg cursor-pointer"
                   >
                     {t('ctaButton')}
                     <ArrowRight className="h-5 w-5" />

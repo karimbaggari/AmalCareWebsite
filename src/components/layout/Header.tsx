@@ -100,7 +100,7 @@ export default function Header() {
                     <Link 
                         href={`/${locale}`} 
                         aria-label={tHeader('homepageAriaLabel')}
-                        className="block hover:opacity-80 transition-all duration-300 hover:scale-105"
+                        className="block hover:opacity-80 transition-all duration-300 hover:scale-105 cursor-pointer"
                     >
                         <Image
                             src={IMAGE_URLS.logo}
@@ -125,7 +125,7 @@ export default function Header() {
                     
                     <Link
                         href={`/${locale}/contact`}
-                        className="hidden lg:inline-flex items-center text-[#003c3a] text-sm lg:text-base font-medium tracking-wide hover:text-[#00a6a2] uppercase transition-all duration-300 whitespace-nowrap"
+                        className="hidden lg:inline-flex items-center text-[#003c3a] text-sm lg:text-base font-medium tracking-wide hover:text-[#00a6a2] uppercase transition-all duration-300 whitespace-nowrap cursor-pointer"
                         aria-label={t('contact')}
                     >
                         {t('contact')}
@@ -133,7 +133,7 @@ export default function Header() {
 
                     {/* Desktop Menu Button - hidden on mobile */}
                     <button
-                        className="hidden md:flex bg-gradient-to-br from-[#00a6a2] to-[#008a87] rounded-full items-center justify-center hover:from-[#008a87] hover:to-[#00a6a2] transition-all duration-300 hover:shadow-xl hover:shadow-[#00a6a2]/30 active:scale-95 w-14 h-14 lg:w-16 lg:h-16 shadow-lg flex-shrink-0"
+                        className="hidden md:flex bg-gradient-to-br from-[#00a6a2] to-[#008a87] rounded-full items-center justify-center hover:from-[#008a87] hover:to-[#00a6a2] transition-all duration-300 hover:shadow-xl hover:shadow-[#00a6a2]/30 active:scale-95 w-14 h-14 lg:w-16 lg:h-16 shadow-lg flex-shrink-0 cursor-pointer"
                         aria-label={t('menu')}
                         title={t('menu')}
                         aria-controls="main-nav"
@@ -153,7 +153,7 @@ export default function Header() {
             {mounted && createPortal(
             <div className={`fixed inset-0 z-[99999] transition-all duration-500 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} h-[100dvh] min-h-[100dvh] overscroll-contain`} aria-hidden={!isMenuOpen}>
                 {/* Backdrop */}
-                <div className="absolute inset-0 z-[99999] bg-gradient-to-br from-black/70 via-black/60 to-[#00a6a2]/20 backdrop-blur-md h-[100dvh]" onClick={() => setIsMenuOpen(false)}></div>
+                <div className="absolute inset-0 z-[99999] bg-gradient-to-br from-black/70 via-black/60 to-[#00a6a2]/20 backdrop-blur-md h-[100dvh] cursor-pointer" onClick={() => setIsMenuOpen(false)}></div>
                 {/* Drawer */}
                 <nav id="main-nav" className={`absolute right-0 top-0 z-[100000] h-[100dvh] min-h-[100dvh] w-[90%] sm:w-[420px] bg-white shadow-2xl transition-all duration-500 ease-out overflow-y-auto ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     {/* Header */}
@@ -161,7 +161,7 @@ export default function Header() {
                         <span className="text-[#003c3a] text-lg font-semibold tracking-wide">{t('menu')}</span>
                         <button 
                             aria-label={tHeader('closeMenuAriaLabel')} 
-                            className="p-2.5 rounded-full hover:bg-[#00a6a2]/10 transition-all duration-300 active:scale-90"
+                            className="p-2.5 rounded-full hover:bg-[#00a6a2]/10 transition-all duration-300 active:scale-90 cursor-pointer"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             <X className="w-6 h-6 text-[#003c3a]" />
@@ -190,7 +190,7 @@ export default function Header() {
                                 <li key={item.href}>
                                     <Link
                                         href={item.href}
-                                        className="group relative flex items-center justify-between rounded-2xl px-5 py-4 text-[#003c3a] hover:bg-gradient-to-r hover:from-[#00a6a2]/10 hover:to-[#00a6a2]/5 transition-all duration-300 overflow-hidden"
+                                        className="group relative flex items-center justify-between rounded-2xl px-5 py-4 text-[#003c3a] hover:bg-gradient-to-r hover:from-[#00a6a2]/10 hover:to-[#00a6a2]/5 transition-all duration-300 overflow-hidden cursor-pointer"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         <span className="font-medium tracking-wide text-base relative z-10">{item.label}</span>
@@ -206,13 +206,13 @@ export default function Header() {
                         <div className="grid grid-cols-2 gap-4 mb-8">
                             <Link 
                                 href={`/${locale}/contact`} 
-                                className="rounded-2xl bg-gradient-to-br from-[#00a6a2] to-[#008a87] text-white text-center py-4 text-sm font-semibold shadow-lg hover:shadow-xl hover:shadow-[#00a6a2]/30 transition-all duration-300 hover:scale-105 active:scale-95" 
+                                className="rounded-2xl bg-gradient-to-br from-[#00a6a2] to-[#008a87] text-white text-center py-4 text-sm font-semibold shadow-lg hover:shadow-xl hover:shadow-[#00a6a2]/30 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer" 
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {t('contact')}
                             </Link>
                             <button 
-                                className="rounded-2xl border-2 border-[#00a6a2]/30 text-[#00a6a2] py-4 text-sm font-semibold hover:bg-[#00a6a2]/10 hover:border-[#00a6a2] transition-all duration-300 hover:scale-105 active:scale-95" 
+                                className="rounded-2xl border-2 border-[#00a6a2]/30 text-[#00a6a2] py-4 text-sm font-semibold hover:bg-[#00a6a2]/10 hover:border-[#00a6a2] transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer" 
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {t('close')}

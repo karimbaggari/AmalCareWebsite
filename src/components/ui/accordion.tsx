@@ -28,7 +28,7 @@ export function AccordionTrigger({ children, className = "" }: { children: React
   return (
     <button
       type="button"
-      className={`group w-full text-left ${className}`}
+      className={`group w-full text-left cursor-pointer ${className}`}
       onClick={() => ctx.setIsOpen(!ctx.isOpen)}
       aria-expanded={ctx.isOpen}
       data-state={ctx.isOpen ? "open" : "closed"}

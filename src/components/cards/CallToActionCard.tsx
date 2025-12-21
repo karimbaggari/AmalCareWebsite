@@ -47,7 +47,7 @@ export function CallToActionCard({
                     <div className="flex items-center justify-center ml-2 sm:ml-4 md:ml-6 shrink-0">
                         <a
                             href={href}
-                            className="bg-white text-[#00a6a2] rounded-full p-2.5 sm:p-3 md:p-3.5 hover:bg-gray-50 transition-transform duration-300 hover:scale-110 shadow-xl group"
+                            className="bg-white text-[#00a6a2] rounded-full p-2.5 sm:p-3 md:p-3.5 hover:bg-gray-50 transition-transform duration-300 hover:scale-110 shadow-xl group cursor-pointer"
                         >
                             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform duration-300" />
                         </a>

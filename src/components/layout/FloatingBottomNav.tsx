@@ -94,7 +94,7 @@ export default function FloatingBottomNav() {
                 <Link
                   key={item.key}
                   href={item.href}
-                  className={`flex flex-col items-center justify-center gap-1 px-2 py-2 rounded-xl transition-all duration-200 min-w-[60px] ${
+                  className={`flex flex-col items-center justify-center gap-1 px-2 py-2 rounded-xl transition-all duration-200 min-w-[60px] cursor-pointer ${
                     active 
                       ? 'text-[#00a6a2] bg-[#00a6a2]/10' 
                       : 'text-gray-600 hover:text-[#00a6a2] hover:bg-gray-50'
@@ -110,7 +110,7 @@ export default function FloatingBottomNav() {
             })}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`flex flex-col items-center justify-center gap-1 px-2 py-2 rounded-xl transition-all duration-200 min-w-[60px] ${
+              className={`flex flex-col items-center justify-center gap-1 px-2 py-2 rounded-xl transition-all duration-200 min-w-[60px] cursor-pointer ${
                 isMenuOpen 
                   ? 'text-[#00a6a2] bg-[#00a6a2]/10' 
                   : 'text-gray-600 hover:text-[#00a6a2] hover:bg-gray-50'
@@ -158,7 +158,7 @@ export default function FloatingBottomNav() {
                 <h2 className="text-xl font-bold text-gray-900">{t('menu')}</h2>
                 <button
                   onClick={() => setIsMenuOpen(false)}
-                  className="p-2 rounded-full hover:bg-gray-100 transition-colors"
+                  className="p-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer"
                   aria-label={t('close')}
                 >
                   <span className="text-2xl text-gray-600">×</span>
@@ -175,7 +175,7 @@ export default function FloatingBottomNav() {
                       key={item.key}
                       href={item.href}
                       onClick={() => setIsMenuOpen(false)}
-                      className={`flex items-center gap-4 px-4 py-4 rounded-xl transition-colors ${
+                      className={`flex items-center gap-4 px-4 py-4 rounded-xl transition-colors cursor-pointer ${
                         active 
                           ? 'bg-[#00a6a2]/10 text-[#00a6a2]' 
                           : 'text-gray-700 hover:bg-gray-50'
@@ -196,7 +196,7 @@ export default function FloatingBottomNav() {
                 <Link
                   href={`/${locale}/faqs`}
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center gap-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-gray-50 transition-colors"
+                  className="flex items-center gap-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-gray-50 transition-colors cursor-pointer"
                 >
                   <span className="font-medium text-base">FAQs</span>
                 </Link>
@@ -215,7 +215,7 @@ export default function FloatingBottomNav() {
                     <button
                       key={language.code}
                       onClick={() => handleLanguageChange(language.code)}
-                      className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${
+                      className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all cursor-pointer ${
                         language.code === locale
                           ? 'bg-[#00a6a2]/10 text-[#00a6a2] border-2 border-[#00a6a2]/30 shadow-sm'
                           : 'bg-gray-50 text-gray-700 hover:bg-gray-100 border-2 border-transparent'

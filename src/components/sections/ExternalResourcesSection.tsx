@@ -49,7 +49,7 @@ export default function ExternalResourcesSection() {
                 href={partner.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-start gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-[#00a6a2] hover:shadow-lg transition-all"
+                className="group flex items-start gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-[#00a6a2] hover:shadow-lg transition-all cursor-pointer"
               >
                 <ExternalLink className="w-5 h-5 text-[#00a6a2] mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
                 <div>
@@ -83,7 +83,7 @@ export default function ExternalResourcesSection() {
                 href={course.url}
                 target={isExternalUrl(course.url) ? '_blank' : undefined}
                 rel={isExternalUrl(course.url) ? 'noopener noreferrer' : undefined}
-                className="flex items-center justify-between p-4 bg-[#00a6a2]/5 border border-[#00a6a2]/20 rounded-lg hover:bg-[#00a6a2]/10 hover:border-[#00a6a2]/40 transition-all group"
+                className="flex items-center justify-between p-4 bg-[#00a6a2]/5 border border-[#00a6a2]/20 rounded-lg hover:bg-[#00a6a2]/10 hover:border-[#00a6a2]/40 transition-all group cursor-pointer"
               >
                 <span className="font-medium text-gray-900 dark:text-white">{course.name}</span>
                 <ExternalLink className="w-4 h-4 text-[#00a6a2] group-hover:translate-x-1 transition-transform" />
@@ -113,7 +113,7 @@ export default function ExternalResourcesSection() {
                 key={resource.name}
                 href={resource.url}
                 download
-                className="group flex items-start gap-3 p-4 bg-gradient-to-br from-[#00a6a2]/10 to-[#00a6a2]/5 rounded-lg border border-[#00a6a2]/20 hover:shadow-lg transition-all"
+                className="group flex items-start gap-3 p-4 bg-gradient-to-br from-[#00a6a2]/10 to-[#00a6a2]/5 rounded-lg border border-[#00a6a2]/20 hover:shadow-lg transition-all cursor-pointer"
               >
                 <Download className="w-5 h-5 text-[#00a6a2] mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
                 <div>
@@ -167,7 +167,7 @@ export default function ExternalResourcesSection() {
                 href={video.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-[#00a6a2] hover:shadow-xl transition-all overflow-hidden"
+                className="group relative flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-[#00a6a2] hover:shadow-xl transition-all overflow-hidden cursor-pointer"
               >
                 <div className="flex-shrink-0 w-32 h-20 bg-gradient-to-br from-[#00a6a2] to-[#008581] rounded-lg flex items-center justify-center relative overflow-hidden">
                   <Video className="w-8 h-8 text-white" />
@@ -211,7 +211,7 @@ export default function ExternalResourcesSection() {
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-[#00a6a2] hover:scale-105 transition-all"
+                className="group flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-[#00a6a2] hover:scale-105 transition-all cursor-pointer"
               >
                 <span className="text-2xl">{tool.icon}</span>
                 <div className="flex-1">

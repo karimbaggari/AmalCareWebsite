@@ -134,14 +134,14 @@ export default function ContactPersonSection() {
                   </div>
 
                   <div className="grid grid-cols-2 gap-3 sm:gap-4 pt-2 sm:pt-4">
-                    <a href="tel:+212623055683" className="w-full">
-                      <button className="flex items-center justify-center gap-1.5 sm:gap-2 h-10 sm:h-11 md:h-12 bg-[#00a6a2] hover:bg-[#008581] text-white text-xs sm:text-sm md:text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full px-2 sm:px-4">
+                    <a href="tel:+212623055683" className="w-full cursor-pointer">
+                      <button className="flex items-center justify-center gap-1.5 sm:gap-2 h-10 sm:h-11 md:h-12 bg-[#00a6a2] hover:bg-[#008581] text-white text-xs sm:text-sm md:text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full px-2 sm:px-4 cursor-pointer">
                         <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
                         <span className="truncate">{t('schoolSection.callNowButton')}</span>
                       </button>
                     </a>
-                    <Link href="mailto:info@amal-care.de" className="w-full">
-                      <button className="flex items-center justify-center gap-1.5 sm:gap-2 h-10 sm:h-11 md:h-12 bg-[#7c3aed] hover:bg-[#6d28d9] text-white text-xs sm:text-sm md:text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full px-2 sm:px-4">
+                    <Link href="mailto:info@amal-care.de" className="w-full cursor-pointer">
+                      <button className="flex items-center justify-center gap-1.5 sm:gap-2 h-10 sm:h-11 md:h-12 bg-[#7c3aed] hover:bg-[#6d28d9] text-white text-xs sm:text-sm md:text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group w-full px-2 sm:px-4 cursor-pointer">
                         <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
                         <span className="truncate">{t('schoolSection.sendEmailButton')}</span>
                       </button>
