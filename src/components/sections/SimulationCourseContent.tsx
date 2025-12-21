@@ -27,15 +27,15 @@ export default function SimulationCourseContent() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#00a6a2]/95 via-[#00a6a2]/90 to-[#006b68]/80" />
           
           {/* Decorative Elements */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#003c3a]/20 rounded-full blur-3xl" />
+          <div className="absolute top-0 end-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 start-0 w-96 h-96 bg-[#003c3a]/20 rounded-full blur-3xl" />
         </div>
 
         {/* Content */}
         <div className="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-12 md:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Left Column - Main Title */}
-            <div className="space-y-6 md:space-y-8 animate-in fade-in slide-in-from-left-10 duration-700">
+            <div className="space-y-6 md:space-y-8 animate-in fade-in slide-in-from-left-10 rtl:slide-in-from-right-10 duration-700">
               {/* Badge */}
               <div className="inline-flex">
                 <Badge className="inline-flex items-center gap-2 border-0 bg-white/20 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur-md shadow-lg hover:bg-white/30 transition-all duration-300 hover:scale-105">
@@ -57,12 +57,12 @@ export default function SimulationCourseContent() {
             </div>
 
             {/* Right Column - Subtitle and Description */}
-            <div className="space-y-6 md:space-y-8 animate-in fade-in slide-in-from-right-10 duration-700 delay-150">
+            <div className="space-y-6 md:space-y-8 animate-in fade-in slide-in-from-right-10 rtl:slide-in-from-left-10 duration-700 delay-150">
               {/* Card Container */}
               <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-6 md:p-8 lg:p-10 border border-white/20 shadow-2xl hover:bg-white/15 transition-all duration-500 group">
                 {/* Decorative corner accent */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-white/20 to-transparent rounded-bl-3xl opacity-50" />
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-white/20 to-transparent rounded-tr-3xl opacity-50" />
+                <div className="absolute top-0 end-0 w-24 h-24 bg-gradient-to-br from-white/20 to-transparent rounded-bl-3xl rtl:rounded-br-3xl rtl:rounded-bl-none opacity-50" />
+                <div className="absolute bottom-0 start-0 w-24 h-24 bg-gradient-to-tr from-white/20 to-transparent rounded-tr-3xl rtl:rounded-tl-3xl rtl:rounded-tr-none opacity-50" />
                 
                 <div className="relative space-y-5 md:space-y-6">
                   {/* Subtitle */}
@@ -104,10 +104,10 @@ export default function SimulationCourseContent() {
 
         {/* Animated pattern overlay */}
         <div className="absolute inset-0 z-[1] opacity-10 pointer-events-none">
-          <div className="absolute top-10 left-10 w-2 h-2 bg-white rounded-full animate-pulse" />
-          <div className="absolute top-32 right-24 w-2 h-2 bg-white rounded-full animate-pulse delay-300" />
-          <div className="absolute bottom-24 left-32 w-2 h-2 bg-white rounded-full animate-pulse delay-700" />
-          <div className="absolute bottom-32 right-16 w-2 h-2 bg-white rounded-full animate-pulse delay-500" />
+          <div className="absolute top-10 start-10 w-2 h-2 bg-white rounded-full animate-pulse" />
+          <div className="absolute top-32 end-24 w-2 h-2 bg-white rounded-full animate-pulse delay-300" />
+          <div className="absolute bottom-24 start-32 w-2 h-2 bg-white rounded-full animate-pulse delay-700" />
+          <div className="absolute bottom-32 end-16 w-2 h-2 bg-white rounded-full animate-pulse delay-500" />
         </div>
       </section>
 
@@ -134,7 +134,7 @@ export default function SimulationCourseContent() {
                   <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
                     {t('handsOnDescription')}
                   </p>
-                  <div className="flex items-start gap-3 p-5 bg-[#00a6a2]/5 rounded-xl border-l-4 border-[#00a6a2]">
+                  <div className="flex items-start gap-3 p-5 bg-[#00a6a2]/5 rounded-xl border-s-4 border-[#00a6a2]">
                     <CheckCircle2 className="h-6 w-6 text-[#00a6a2] flex-shrink-0 mt-1" />
                     <p className="text-base sm:text-lg text-[#003c3a] leading-relaxed font-medium">
                       {t('handsOnConclusion')}
@@ -144,7 +144,7 @@ export default function SimulationCourseContent() {
 
                 {/* Feature badges */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
-                  <Card className="p-5 md:p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-[#00a6a2] bg-white">
+                  <Card className="p-5 md:p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 border-s-4 border-[#00a6a2] bg-white">
                     <div className="flex flex-col gap-3">
                       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#00a6a2]/10">
                         <Stethoscope className="h-6 w-6 text-[#00a6a2]" />
@@ -155,7 +155,7 @@ export default function SimulationCourseContent() {
                       </div>
                     </div>
                   </Card>
-                  <Card className="p-5 md:p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-[#003c3a] bg-white">
+                  <Card className="p-5 md:p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 border-s-4 border-[#003c3a] bg-white">
                     <div className="flex flex-col gap-3">
                       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#003c3a]/10">
                         <Users className="h-6 w-6 text-[#003c3a]" />
@@ -272,7 +272,7 @@ export default function SimulationCourseContent() {
                     <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
                       {t('systematicDescription2')}
                     </p>
-                    <div className="flex items-start gap-4 p-6 bg-[#00a6a2]/5 rounded-xl border-l-4 border-[#00a6a2] mt-8">
+                    <div className="flex items-start gap-4 p-6 bg-[#00a6a2]/5 rounded-xl border-s-4 border-[#00a6a2] mt-8">
                       <Target className="h-6 w-6 text-[#00a6a2] flex-shrink-0 mt-1" />
                       <p className="text-base sm:text-lg lg:text-xl text-[#003c3a] leading-relaxed font-medium">
                         {t('systematicConclusion')}
@@ -292,10 +292,10 @@ export default function SimulationCourseContent() {
             {/* Quality section */}
             <div className="relative">
               <Card className="bg-gradient-to-br from-[#00a6a2] via-[#008a87] to-[#006b68] text-white p-10 md:p-14 lg:p-20 border-0 overflow-hidden relative shadow-2xl">
-                <div className="absolute top-0 right-0 opacity-5 pointer-events-none">
+                <div className="absolute top-0 end-0 opacity-5 pointer-events-none">
                   <Heart className="h-64 w-64 lg:h-96 lg:w-96" />
                 </div>
-                <div className="absolute bottom-0 left-0 opacity-5 pointer-events-none">
+                <div className="absolute bottom-0 start-0 opacity-5 pointer-events-none">
                   <GraduationCap className="h-48 w-48 lg:h-72 lg:w-72" />
                 </div>
                 <div className="relative z-10 text-center space-y-8 max-w-4xl mx-auto">

@@ -9,7 +9,7 @@ const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
   { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  // { code: 'ar', name: 'العربية', flag: '🇲🇦' }, // Temporarily disabled until ready
+  { code: 'ar', name: 'العربية', flag: '🇲🇦' },
 ]
 
 export default function LanguageSwitcher() {

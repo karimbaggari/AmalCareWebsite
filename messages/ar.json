@@ -52,6 +52,12 @@
         "description": "دورة المحاكاة",
         "cardDescription": "التدريب العملي في المغرب"
       },
+      "features": {
+        "education": "التعليم",
+        "support": "الدعم",
+        "care": "الرعاية",
+        "quality": "الجودة"
+      },
       "pathWithAmalCare": {
         "title": "مستعدون جيداً لألمانيا:",
         "subtitle": "طريقك مع أمل كير"

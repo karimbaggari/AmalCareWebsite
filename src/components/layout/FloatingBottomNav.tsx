@@ -84,7 +84,7 @@ export default function FloatingBottomNav() {
   return (
     <>
       {/* Floating Bottom Navigation - Mobile Only */}
-      <nav className="fixed bottom-0 left-0 right-0 z-[9998] md:hidden">
+      <nav className="fixed bottom-0 start-0 end-0 z-[9998] md:hidden">
         <div className="bg-white border-t border-gray-200 shadow-lg">
           <div className="flex items-center justify-around px-2 py-3">
             {navItems.slice(0, 4).map((item) => {
@@ -142,7 +142,7 @@ export default function FloatingBottomNav() {
           
           {/* Menu Content - Slides up from bottom */}
           <div 
-            className={`absolute bottom-0 left-0 right-0 bg-white rounded-t-3xl shadow-2xl transition-transform duration-300 transform ${
+            className={`absolute bottom-0 start-0 end-0 bg-white rounded-t-3xl shadow-2xl transition-transform duration-300 transform ${
               isMenuOpen ? 'translate-y-0' : 'translate-y-full'
             }`}
             onClick={(e) => e.stopPropagation()}
@@ -184,7 +184,7 @@ export default function FloatingBottomNav() {
                       <Icon className="w-6 h-6" />
                       <span className="font-medium text-base">{item.label}</span>
                       {active && (
-                        <span className="ml-auto text-[#00a6a2] font-bold">●</span>
+                        <span className="ms-auto text-[#00a6a2] font-bold">●</span>
                       )}
                     </Link>
                   )
@@ -222,7 +222,7 @@ export default function FloatingBottomNav() {
                       }`}
                     >
                       <span className="text-2xl">{language.flag}</span>
-                      <div className="flex-1 text-left">
+                      <div className="flex-1 text-start">
                         <span className="text-sm font-medium block">{language.name}</span>
                       </div>
                       {language.code === locale && (

@@ -52,6 +52,12 @@
         "description": "The simulation course",
         "cardDescription": "Hands-on training in Morocco"
       },
+      "features": {
+        "education": "Education",
+        "support": "Support",
+        "care": "Care",
+        "quality": "Quality"
+      },
       "pathWithAmalCare": {
         "title": "Well prepared for Germany:",
         "subtitle": "Your path with Amal Care"

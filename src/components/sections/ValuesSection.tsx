@@ -11,9 +11,9 @@ const ValuesSection = () => {
                 <div className="relative bg-gradient-to-br from-[#5A2574] to-[#4a1f5f] rounded-2xl md:rounded-3xl overflow-hidden">
                     {/* Background decorative elements */}
                     <div className="absolute inset-0">
-                        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-                        <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-                        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-white/3 rounded-full blur-2xl"></div>
+                        <div className="absolute top-0 end-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+                        <div className="absolute bottom-0 start-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+                        <div className="absolute top-1/2 end-1/4 w-64 h-64 bg-white/3 rounded-full blur-2xl"></div>
                     </div>
 
                     {/* Grid pattern overlay */}
@@ -41,7 +41,7 @@ const ValuesSection = () => {
                                         className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white hover:bg-gray-50 flex justify-center items-center text-gray-900 p-0 shadow-lg transition-colors duration-200 cursor-pointer"
                                         aria-label="Learn more about AmalCare"
                                     >
-                                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 rtl:rotate-180" />
                                     </button>
                                 </Link>
                             </div>

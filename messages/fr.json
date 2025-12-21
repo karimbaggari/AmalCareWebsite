@@ -52,6 +52,12 @@
         "description": "Le cours de simulation",
         "cardDescription": "Formation pratique au Maroc"
       },
+      "features": {
+        "education": "Éducation",
+        "support": "Soutien",
+        "care": "Soins",
+        "quality": "Qualité"
+      },
       "pathWithAmalCare": {
         "title": "Bien préparé pour l'Allemagne :",
         "subtitle": "Votre chemin avec Amal Care"

@@ -154,8 +154,8 @@ export default function AboutPageContent() {
                         <div className="flex-shrink-0">
                           <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#00a6a2]/10 text-[#00a6a2] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#00a6a2] group-hover:text-white">
                             <ArrowRight
-                              className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 ${
-                                hoveredIndex === index ? "translate-x-1" : ""
+                              className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 rtl:rotate-180 ${
+                                hoveredIndex === index ? "translate-x-1 rtl:-translate-x-1" : ""
                               }`}
                             />
                           </div>
@@ -165,7 +165,7 @@ export default function AboutPageContent() {
                     </div>
 
                     {/* Decorative Corner Element */}
-                    <div className="pointer-events-none absolute -bottom-8 -right-8 h-32 w-32 rounded-full bg-[#00a6a2]/10 blur-2xl transition-all duration-300 group-hover:bg-[#00a6a2]/20" />
+                    <div className="pointer-events-none absolute -bottom-8 -end-8 h-32 w-32 rounded-full bg-[#00a6a2]/10 blur-2xl transition-all duration-300 group-hover:bg-[#00a6a2]/20" />
                   </div>
                 ))}
               </div>
@@ -181,7 +181,7 @@ export default function AboutPageContent() {
                     className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm sm:text-base font-semibold text-[#00a6a2] transition-all hover:scale-105 hover:shadow-lg cursor-pointer"
                   >
                     {t('ctaButton')}
-                    <ArrowRight className="h-5 w-5" />
+                    <ArrowRight className="h-5 w-5 rtl:rotate-180" />
                   </Link>
                 </div>
               </div>

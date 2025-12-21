@@ -56,14 +56,14 @@ export function VideoSection() {
                             />
 
                             {/* Country Flag */}
-                            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 rounded-full overflow-hidden border-2 border-white shadow-lg">
+                            <div className="absolute top-3 end-3 sm:top-4 sm:end-4 w-6 h-6 sm:w-8 sm:h-8 rounded-full overflow-hidden border-2 border-white shadow-lg">
                                 <div className="w-full h-full bg-gradient-to-b from-black via-red-600 to-yellow-400"></div>
                             </div>
 
                             {/* Play Button */}
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-teal-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200">
-                                    <Play className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white ml-1" fill="currentColor" />
+                                    <Play className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white ms-1 rtl:-ms-1" fill="currentColor" />
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ export function VideoSection() {
                         {/* Close Button */}
                         <button
                             onClick={() => setIsVideoOpen(false)}
-                            className="absolute -top-12 right-0 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
+                            className="absolute -top-12 end-0 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
                             aria-label={tVideo('closeVideoAriaLabel')}
                         >
                             <X className="w-6 h-6" />

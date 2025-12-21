@@ -44,12 +44,12 @@ export function CallToActionCard({
                     </div>
 
                     {/* Right side - CTA Button */}
-                    <div className="flex items-center justify-center ml-2 sm:ml-4 md:ml-6 shrink-0">
+                    <div className="flex items-center justify-center ms-2 sm:ms-4 md:ms-6 shrink-0 rtl:me-2 rtl:sm:me-4 rtl:md:me-6">
                         <a
                             href={href}
                             className="bg-white text-[#00a6a2] rounded-full p-2.5 sm:p-3 md:p-3.5 hover:bg-gray-50 transition-transform duration-300 hover:scale-110 shadow-xl group cursor-pointer"
                         >
-                            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform duration-300" />
+                            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform duration-300 rtl:rotate-180" />
                         </a>
                     </div>
                 </div>

@@ -79,24 +79,24 @@ export function ImageSlider({
         <>
           <button
             onClick={goToPrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white backdrop-blur-sm rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer"
+            className="absolute start-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white backdrop-blur-sm rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer rtl:end-4"
             aria-label="Previous image"
           >
-            <ChevronLeft className="w-5 h-5 text-[#00a6a2]" />
+            <ChevronLeft className="w-5 h-5 text-[#00a6a2] rtl:rotate-180" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white backdrop-blur-sm rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer"
+            className="absolute end-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white backdrop-blur-sm rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer rtl:start-4"
             aria-label="Next image"
           >
-            <ChevronRight className="w-5 h-5 text-[#00a6a2]" />
+            <ChevronRight className="w-5 h-5 text-[#00a6a2] rtl:rotate-180" />
           </button>
         </>
       )}
 
       {/* Dots Indicator */}
       {images.length > 1 && (
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        <div className="absolute bottom-4 start-1/2 -translate-x-1/2 rtl:translate-x-1/2 z-20 flex gap-2">
           {images.map((_, index) => (
             <button
               key={index}
@@ -114,7 +114,7 @@ export function ImageSlider({
 
       {/* Slide Counter */}
       {images.length > 1 && (
-        <div className="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 text-xs font-medium text-[#003c3a] shadow-lg">
+        <div className="absolute top-4 end-4 z-20 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 text-xs font-medium text-[#003c3a] shadow-lg">
           {currentIndex + 1} / {images.length}
         </div>
       )}

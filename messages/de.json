@@ -56,6 +56,12 @@
       "description": "Der Simulationskurs",
       "cardDescription": "Praktisches Training in Marokko"
     },
+    "features": {
+      "education": "Bildung",
+      "support": "Unterstützung",
+      "care": "Fürsorge",
+      "quality": "Qualität"
+    },
     "pathWithAmalCare": {
       "title": "Gut vorbereitet nach Deutschland:",
       "subtitle": "Dein Weg mit Amal Care"

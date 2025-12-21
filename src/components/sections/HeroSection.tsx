@@ -24,8 +24,8 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#00a6a2]/95 via-[#00a6a2]/85 to-[#008a87]/75" />
         
         {/* Decorative Elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#003c3a]/20 blur-3xl" />
+        <div className="absolute top-0 end-0 w-96 h-96 bg-white/5 blur-3xl" />
+        <div className="absolute bottom-0 start-0 w-96 h-96 bg-[#003c3a]/20 blur-3xl" />
       </div>
 
       {/* Content */}
@@ -48,19 +48,19 @@ export function HeroSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             <div className="flex flex-col items-start gap-2 p-4 md:p-5 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
               <GraduationCap className="h-6 w-6 md:h-7 md:w-7 text-white mb-1" />
-              <p className="text-white/90 text-sm md:text-base font-medium">Education</p>
+              <p className="text-white/90 text-sm md:text-base font-medium">{t('features.education')}</p>
             </div>
             <div className="flex flex-col items-start gap-2 p-4 md:p-5 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
               <Users className="h-6 w-6 md:h-7 md:w-7 text-white mb-1" />
-              <p className="text-white/90 text-sm md:text-base font-medium">Support</p>
+              <p className="text-white/90 text-sm md:text-base font-medium">{t('features.support')}</p>
             </div>
             <div className="flex flex-col items-start gap-2 p-4 md:p-5 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
               <Heart className="h-6 w-6 md:h-7 md:w-7 text-white mb-1" />
-              <p className="text-white/90 text-sm md:text-base font-medium">Care</p>
+              <p className="text-white/90 text-sm md:text-base font-medium">{t('features.care')}</p>
             </div>
             <div className="flex flex-col items-start gap-2 p-4 md:p-5 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-colors">
               <CheckCircle2 className="h-6 w-6 md:h-7 md:w-7 text-white mb-1" />
-              <p className="text-white/90 text-sm md:text-base font-medium">Quality</p>
+              <p className="text-white/90 text-sm md:text-base font-medium">{t('features.quality')}</p>
             </div>
           </div>
         </div>

@@ -12,9 +12,9 @@ const ProcessSection = () => {
                 <div className="relative bg-gradient-to-br from-[#00a6a2] to-[#008a87] rounded-2xl md:rounded-3xl overflow-hidden">
                     {/* Background decorative elements */}
                     <div className="absolute inset-0">
-                        <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-                        <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-                        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-white/3 rounded-full blur-2xl"></div>
+                        <div className="absolute top-0 start-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+                        <div className="absolute bottom-0 end-0 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+                        <div className="absolute top-1/2 start-1/3 w-64 h-64 bg-white/3 rounded-full blur-2xl"></div>
                     </div>
 
                     {/* Grid pattern overlay */}
@@ -42,7 +42,7 @@ const ProcessSection = () => {
                                         className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white hover:bg-gray-50 flex justify-center items-center text-[#00a6a2] p-0 shadow-lg transition-colors duration-200 cursor-pointer"
                                         aria-label="Learn more about simulation course"
                                     >
-                                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 rtl:rotate-180" />
                                     </button>
                                 </Link>
                             </div>

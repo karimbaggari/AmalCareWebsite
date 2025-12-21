@@ -26,8 +26,8 @@ export default function Footer() {
     <footer className="relative bg-gradient-to-br from-[#00a6a2] via-[#008581] to-[#006b68] text-white overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-80 h-80 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute top-20 end-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 start-10 w-80 h-80 bg-white rounded-full blur-3xl"></div>
       </div>
 
       {/* Main Footer Content */}
@@ -75,7 +75,7 @@ export default function Footer() {
                     href={link.href}
                     className="group inline-flex items-center text-white/80 hover:text-white transition-colors text-sm sm:text-base cursor-pointer"
                   >
-                    <ArrowRight className="w-4 h-4 mr-2 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
+                    <ArrowRight className="w-4 h-4 me-2 opacity-0 -ms-6 group-hover:opacity-100 group-hover:ms-0 transition-all duration-300 rtl:rotate-180" />
                     <span>{link.label}</span>
                   </Link>
                 </li>
