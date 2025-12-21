@@ -117,19 +117,16 @@ export default function Header() {
                     </Link>
                 </div>
                 
-                {/* Right side - Language Switcher, Contact Link, Menu Button */}
-                <div className="flex justify-end items-center w-full gap-3 md:gap-5 lg:gap-6 ms-auto z-[9998] rtl:justify-start">
-                    <div className="hidden lg:block">
+                {/* Left side - Language Switcher (RTL only) */}
+                <div className="hidden lg:block rtl:block ltr:hidden absolute rtl:left-0 top-1/2 -translate-y-1/2 z-[9998]">
+                    <LanguageSwitcher />
+                </div>
+                
+                {/* Right side - Language Switcher (LTR), Menu Button */}
+                <div className="flex justify-end items-center w-full gap-3 md:gap-5 lg:gap-6 ltr:ms-auto rtl:me-auto z-[9998] rtl:justify-start">
+                    <div className="hidden lg:block ltr:block rtl:hidden">
                         <LanguageSwitcher />
                     </div>
-                    
-                    <Link
-                        href={`/${locale}/contact`}
-                        className="hidden lg:inline-flex items-center text-[#003c3a] text-sm lg:text-base font-medium tracking-wide hover:text-[#00a6a2] uppercase transition-all duration-300 whitespace-nowrap cursor-pointer"
-                        aria-label={t('contact')}
-                    >
-                        {t('contact')}
-                    </Link>
 
                     {/* Desktop Menu Button - hidden on mobile */}
                     <button
@@ -155,9 +152,9 @@ export default function Header() {
                 {/* Backdrop */}
                 <div className="absolute inset-0 z-[99999] bg-gradient-to-br from-black/70 via-black/60 to-[#00a6a2]/20 backdrop-blur-md h-[100dvh] cursor-pointer" onClick={() => setIsMenuOpen(false)}></div>
                 {/* Drawer */}
-                <nav id="main-nav" className={`absolute end-0 top-0 z-[100000] h-[100dvh] min-h-[100dvh] w-[90%] sm:w-[420px] bg-white shadow-2xl transition-all duration-500 ease-out overflow-y-auto ${isMenuOpen ? 'translate-x-0 rtl:translate-x-0' : 'translate-x-full rtl:-translate-x-full'}`}>
+                <nav id="main-nav" className={`absolute end-0 top-0 z-[100000] h-[100dvh] min-h-[100dvh] w-[90%] sm:w-[420px] bg-white shadow-2xl transition-all duration-500 ease-out overflow-y-auto rtl:start-0 rtl:end-auto ${isMenuOpen ? 'translate-x-0 rtl:translate-x-0' : 'translate-x-full rtl:-translate-x-full'}`}>
                     {/* Header */}
-                    <div className="sticky top-0 z-10 flex items-center justify-between px-6 py-6 border-b border-gray-200 bg-gradient-to-r from-white via-white to-[#00a6a2]/5 backdrop-blur">
+                    <div className="sticky top-0 z-10 flex items-center justify-between px-6 py-6 border-b border-gray-200 bg-gradient-to-r from-white via-white to-[#00a6a2]/5 backdrop-blur rtl:flex-row-reverse">
                         <span className="text-[#003c3a] text-lg font-semibold tracking-wide">{t('menu')}</span>
                         <button 
                             aria-label={tHeader('closeMenuAriaLabel')} 
@@ -190,29 +187,29 @@ export default function Header() {
                                 <li key={item.href}>
                                     <Link
                                         href={item.href}
-                                        className="group relative flex items-center justify-between rounded-2xl px-5 py-4 text-[#003c3a] hover:bg-gradient-to-r hover:from-[#00a6a2]/10 hover:to-[#00a6a2]/5 transition-all duration-300 overflow-hidden cursor-pointer"
+                                        className="group relative flex items-center justify-between rounded-2xl px-5 py-4 text-[#003c3a] hover:bg-gradient-to-r hover:from-[#00a6a2]/10 hover:to-[#00a6a2]/5 transition-all duration-300 overflow-hidden cursor-pointer rtl:flex-row-reverse"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         <span className="font-medium tracking-wide text-base relative z-10">{item.label}</span>
-                                        <span className="text-[#00a6a2] text-xl opacity-0 group-hover:opacity-100 transform -translate-x-2.5 rtl:translate-x-2.5 group-hover:translate-x-0 rtl:group-hover:translate-x-0 transition-all duration-300">→</span>
+                                        <span className="text-[#00a6a2] text-xl opacity-0 group-hover:opacity-100 transform -translate-x-2.5 rtl:translate-x-2.5 rtl:rotate-180 group-hover:translate-x-0 rtl:group-hover:translate-x-0 transition-all duration-300">→</span>
                                         {/* Animated underline */}
-                                        <span className="absolute bottom-2 start-5 h-0.5 w-0 bg-gradient-to-r from-[#00a6a2] to-[#008a87] group-hover:w-[calc(100%-40px)] transition-all duration-300"></span>
+                                        <span className="absolute bottom-2 start-5 rtl:end-5 rtl:start-auto h-0.5 w-0 bg-gradient-to-r from-[#00a6a2] to-[#008a87] group-hover:w-[calc(100%-40px)] transition-all duration-300"></span>
                                     </Link>
                                 </li>
                             ))}
                         </ul>
 
                         {/* Action Buttons */}
-                        <div className="grid grid-cols-2 gap-4 mb-8">
+                        <div className="grid grid-cols-2 gap-4 mb-8 rtl:grid-flow-row-dense">
                             <Link 
                                 href={`/${locale}/contact`} 
-                                className="rounded-2xl bg-gradient-to-br from-[#00a6a2] to-[#008a87] text-white text-center py-4 text-sm font-semibold shadow-lg hover:shadow-xl hover:shadow-[#00a6a2]/30 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer" 
+                                className="rounded-2xl bg-gradient-to-br from-[#00a6a2] to-[#008a87] text-white text-center py-4 text-sm font-semibold shadow-lg hover:shadow-xl hover:shadow-[#00a6a2]/30 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer rtl:order-2" 
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {t('contact')}
                             </Link>
                             <button 
-                                className="rounded-2xl border-2 border-[#00a6a2]/30 text-[#00a6a2] py-4 text-sm font-semibold hover:bg-[#00a6a2]/10 hover:border-[#00a6a2] transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer" 
+                                className="rounded-2xl border-2 border-[#00a6a2]/30 text-[#00a6a2] py-4 text-sm font-semibold hover:bg-[#00a6a2]/10 hover:border-[#00a6a2] transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer rtl:order-1" 
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {t('close')}

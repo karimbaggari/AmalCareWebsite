@@ -87,7 +87,7 @@ export default function LanguageSwitcher() {
 
       {isOpen && (
         <div 
-          className="absolute top-full right-0 mt-2 w-52 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200"
+          className="absolute top-full end-0 rtl:start-0 rtl:end-auto mt-2 w-52 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200"
           role="menu"
           aria-orientation="vertical"
         >
@@ -96,7 +96,7 @@ export default function LanguageSwitcher() {
               <button
                 key={language.code}
                 onClick={() => handleLanguageChange(language.code)}
-                className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-[#00a6a2]/5 transition-colors cursor-pointer ${
+                className={`w-full flex items-center gap-3 px-4 py-3 text-start hover:bg-[#00a6a2]/5 transition-colors cursor-pointer ${
                   language.code === locale ? 'bg-[#00a6a2]/10 text-[#00a6a2]' : 'text-[#003c3a]'
                 }`}
                 role="menuitem"
@@ -105,7 +105,7 @@ export default function LanguageSwitcher() {
                 <span className="text-lg" aria-hidden="true">{language.flag}</span>
                 <span className="text-sm font-medium">{language.name}</span>
                 {language.code === locale && (
-                  <span className="ml-auto text-[#00a6a2] font-bold" aria-label="Selected">✓</span>
+                  <span className="ms-auto text-[#00a6a2] font-bold" aria-label="Selected">✓</span>
                 )}
               </button>
             ))}
