@@ -221,7 +221,19 @@
       "imageBadgeTitle": "Formation professionnelle",
       "imageBadgeSubtitle": "Langue allemande axée sur les soins infirmiers",
       "heroImageAlt": "Salle de classe de l'école de langues",
-      "sliderAlt": "Salle de classe de l'école de langues"
+      "sliderAlt": "Salle de classe de l'école de langues",
+      "costCoverageTitle": "Coûts et couverture",
+      "forStudentsTitle": "Pour les étudiants",
+      "forStudentsDescription": "Si vous êtes un étudiant qui souhaite uniquement étudier la langue, le coût est faible.",
+      "forStudentsCoverage": "Vous ne payez que les frais d'administration",
+      "forNursesTitle": "Pour les infirmières",
+      "forNursesDescription": "Pour les infirmières qui souhaitent aller en Allemagne, tout est pris en charge.",
+      "forNursesCoverage1": "Formation linguistique et certification",
+      "forNursesCoverage2": "Préparation aux connaissances infirmières",
+      "forNursesCoverage3": "Aide au placement professionnel",
+      "forNursesCoverage4": "Soutien pour le visa et la documentation",
+      "forNursesCoverage5": "Aide au logement",
+      "forNursesCoverage6": "Soutien continu après l'arrivée en Allemagne"
     },
     "simulationCourse": {
       "heroBadge": "Cours de simulation",

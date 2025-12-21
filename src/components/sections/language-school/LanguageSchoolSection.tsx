@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen, Languages, GraduationCap, Users, CheckCircle2 } from "lucide-react";
+import { BookOpen, Languages, GraduationCap, Users, CheckCircle2, DollarSign, Shield } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { IMAGE_URLS } from "@/constants/urls";
@@ -126,6 +126,70 @@ export function LanguageSchoolSection() {
                 <p className="text-lg md:text-xl leading-relaxed text-[#003c3a] font-medium">
                   {t('conclusion')}
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Cost & Coverage Section */}
+          <div className="mt-16 md:mt-20 max-w-6xl mx-auto">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#003c3a] mb-8 md:mb-12 text-center">
+              {t('costCoverageTitle')}
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              {/* Students - Language Study Only */}
+              <div className="p-6 md:p-8 bg-white border-2 border-gray-200">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex h-12 w-12 items-center justify-center bg-gray-100 text-gray-600">
+                    <DollarSign className="h-6 w-6" />
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-bold text-[#003c3a]">
+                    {t('forStudentsTitle')}
+                  </h4>
+                </div>
+                <p className="text-base md:text-lg text-gray-700 mb-4">
+                  {t('forStudentsDescription')}
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-gray-400 shrink-0 mt-0.5" />
+                    <p className="text-sm md:text-base text-gray-600">
+                      {t('forStudentsCoverage')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Nurses - Full Program */}
+              <div className="p-6 md:p-8 bg-gradient-to-br from-[#00a6a2]/10 to-[#00a6a2]/5 border-2 border-[#00a6a2]/30">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex h-12 w-12 items-center justify-center bg-[#00a6a2]/20 text-[#00a6a2]">
+                    <Shield className="h-6 w-6" />
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-bold text-[#003c3a]">
+                    {t('forNursesTitle')}
+                  </h4>
+                </div>
+                <p className="text-base md:text-lg text-gray-700 mb-4">
+                  {t('forNursesDescription')}
+                </p>
+                <div className="space-y-2">
+                  {[
+                    t('forNursesCoverage1'),
+                    t('forNursesCoverage2'),
+                    t('forNursesCoverage3'),
+                    t('forNursesCoverage4'),
+                    t('forNursesCoverage5'),
+                    t('forNursesCoverage6')
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-[#00a6a2] shrink-0 mt-0.5" />
+                      <p className="text-sm md:text-base text-gray-700">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

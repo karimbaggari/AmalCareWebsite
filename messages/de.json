@@ -232,7 +232,19 @@
     "imageBadgeTitle": "Berufliche Ausbildung",
     "imageBadgeSubtitle": "Deutsche Sprache mit Pflegeschwerpunkt",
     "heroImageAlt": "Sprachschulklassenzimmer",
-    "sliderAlt": "Sprachschulklassenzimmer"
+    "sliderAlt": "Sprachschulklassenzimmer",
+    "costCoverageTitle": "Kosten & Leistungen",
+    "forStudentsTitle": "Für Studierende",
+    "forStudentsDescription": "Wenn Sie ein Studierender sind, der nur die Sprache lernen möchte, sind die Kosten niedrig.",
+    "forStudentsCoverage": "Sie zahlen nur Verwaltungsgebühren",
+    "forNursesTitle": "Für Pflegefachkräfte",
+    "forNursesDescription": "Für Pflegefachkräfte, die nach Deutschland gehen möchten, wird alles übernommen.",
+    "forNursesCoverage1": "Sprachausbildung und Zertifizierung",
+    "forNursesCoverage2": "Vorbereitung auf Pflegewissen",
+    "forNursesCoverage3": "Stellenvermittlung",
+    "forNursesCoverage4": "Unterstützung bei Visa und Dokumentation",
+    "forNursesCoverage5": "Unterkunftsunterstützung",
+    "forNursesCoverage6": "Laufende Unterstützung nach der Ankunft in Deutschland"
   },
   "simulationCourse": {
     "heroBadge": "Simulationskurs",

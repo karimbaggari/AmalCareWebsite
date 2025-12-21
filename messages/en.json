@@ -266,7 +266,19 @@
       "imageBadgeTitle": "Professional Training",
       "imageBadgeSubtitle": "German language with nursing focus",
       "heroImageAlt": "Language School Classroom",
-      "sliderAlt": "Language school classroom"
+      "sliderAlt": "Language school classroom",
+      "costCoverageTitle": "Cost & Coverage",
+      "forStudentsTitle": "For Students",
+      "forStudentsDescription": "If you are a student who wants to study language only, the cost is low.",
+      "forStudentsCoverage": "You only cover administration fees",
+      "forNursesTitle": "For Nurses",
+      "forNursesDescription": "For nurses who want to go to Germany, everything is taken care of.",
+      "forNursesCoverage1": "Language training and certification",
+      "forNursesCoverage2": "Nursing knowledge preparation",
+      "forNursesCoverage3": "Job placement assistance",
+      "forNursesCoverage4": "Visa and documentation support",
+      "forNursesCoverage5": "Accommodation assistance",
+      "forNursesCoverage6": "Ongoing support after arrival in Germany"
     },
     "simulationCourse": {
       "heroBadge": "Simulation Course",

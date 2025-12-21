@@ -221,7 +221,19 @@
       "imageBadgeTitle": "التدريب المهني",
       "imageBadgeSubtitle": "اللغة الألمانية مع التركيز على التمريض",
       "heroImageAlt": "فصل مدرسة اللغة",
-      "sliderAlt": "فصل مدرسة اللغة"
+      "sliderAlt": "فصل مدرسة اللغة",
+      "costCoverageTitle": "التكلفة والتغطية",
+      "forStudentsTitle": "للطلاب",
+      "forStudentsDescription": "إذا كنت طالبًا تريد فقط دراسة اللغة، فإن التكلفة منخفضة.",
+      "forStudentsCoverage": "تغطي فقط رسوم الإدارة",
+      "forNursesTitle": "للممرضات",
+      "forNursesDescription": "للممرضات اللواتي يردن الذهاب إلى ألمانيا، يتم تغطية كل شيء.",
+      "forNursesCoverage1": "التدريب اللغوي والشهادة",
+      "forNursesCoverage2": "التحضير لمعرفة التمريض",
+      "forNursesCoverage3": "مساعدة في التوظيف",
+      "forNursesCoverage4": "الدعم في التأشيرة والوثائق",
+      "forNursesCoverage5": "مساعدة في السكن",
+      "forNursesCoverage6": "الدعم المستمر بعد الوصول إلى ألمانيا"
     },
     "simulationCourse": {
       "heroBadge": "دورة المحاكاة",
