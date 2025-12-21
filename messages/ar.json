@@ -312,9 +312,12 @@
       "tagline": "مكرس للرحمة والجودة والنمو.",
       "phoneLabel": "الهاتف",
       "phoneNumber": "+212 623‑055683",
+      "emailLabel": "البريد الإلكتروني",
+      "emailAddress": "info@amal-care.de",
       "addressLabel": "العنوان",
       "addressLine1": "N°3 imm 9 rue Moulay Idriss Al Akbar Rabat Hassan",
-      "addressLine2": "الرباط، المغرب"
+      "addressLine2": "الرباط، المغرب",
+      "quickLinks": "روابط سريعة"
     },
     "video": {
       "trainingPresentationAlt": "عرض تدريبي",

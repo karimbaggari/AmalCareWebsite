@@ -326,9 +326,12 @@
     "tagline": "Hingabe an Mitgefühl, Qualität & Wachstum.",
     "phoneLabel": "Telefon",
     "phoneNumber": "+212 623‑055683",
+    "emailLabel": "E-Mail",
+    "emailAddress": "info@amal-care.de",
     "addressLabel": "Adresse",
     "addressLine1": "N°3 imm 9 rue Moulay Idriss Al Akbar Rabat Hassan",
-    "addressLine2": "Rabat, Marokko"
+    "addressLine2": "Rabat, Marokko",
+    "quickLinks": "Schnelllinks"
   },
   "video": {
     "trainingPresentationAlt": "Trainingspräsentation",
