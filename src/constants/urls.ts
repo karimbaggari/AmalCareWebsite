@@ -227,7 +227,11 @@ export const IMAGE_URLS = {
   rabatSchoolClassroom6: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Language%20Classroom/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.59_8b5d550c.jpg?updatedAt=1761409485195',
   rabatSchoolClassroom7: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Language%20Classroom/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.58_2b8be133.jpg?updatedAt=1761409485157',
   rabatSchoolClassroom8: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Language%20Classroom/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.58_77b0594d.jpg?updatedAt=1761409485171',
+  rabatSchoolClassroom9: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Simulation%20Room/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.55_34cf0a3c.jpg?updatedAt=1761409485161',
+  rabatSchoolClassroom10: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Simulation%20Room/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.56_8d482402.jpg?updatedAt=1761409483269'
 } as const;
+
+
 
 // ==================== AGGREGATED EXPORTS ====================
 // Export all URLs in a single object for easy access

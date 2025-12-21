@@ -86,11 +86,14 @@ export default function Header() {
     }, [isMenuOpen])
 
     return (
-        <header className={`w-full sticky top-0 z-[9999] transition-all duration-500 ease-in-out ${
-            isScrolled 
-                ? 'bg-white/95 backdrop-blur-xl shadow-xl shadow-gray-900/10 h-20 md:h-28' 
-                : 'bg-white/70 backdrop-blur-md h-24 md:h-36 lg:h-40'
-        }`}>
+        <header 
+            className={`w-full sticky top-0 z-[9999] transition-all duration-500 ease-in-out bg-white ${
+                isScrolled 
+                    ? 'backdrop-blur-xl shadow-xl shadow-gray-900/10 h-20 md:h-28' 
+                    : 'backdrop-blur-md h-24 md:h-36 lg:h-40'
+            }`}
+            style={{ backgroundColor: '#ffffff' }}
+        >
             <div className="container mx-auto max-w-9xl px-4 sm:px-6 lg:px-8 h-full flex items-center relative">
                 {/* AmalCare Logo - Centered and Clickable */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9999]">

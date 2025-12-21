@@ -13,7 +13,7 @@ export function CallToActionCard({
 }: CallToActionCardProps) {
     // const t = useTranslations('home') // Unused for now
     return (
-        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl md:rounded-[2.5rem] shadow-[0_25px_100px_-20px_rgba(0,0,0,0.35)] h-[400px] sm:h-[480px] md:h-[560px] w-full max-w-[720px] flex justify-center items-center group">
+        <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl md:rounded-[2.5rem] shadow-[0_25px_100px_-20px_rgba(0,0,0,0.35)] h-[400px] sm:h-[480px] md:h-[560px] w-full flex justify-center items-center group">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-100 transition-transform duration-700 ease-out group-hover:scale-105"
@@ -38,7 +38,7 @@ export function CallToActionCard({
                         </p>
 
                         {/* Main Heading */}
-                        <h1 className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight leading-tight">
+                        <h1 className="text-white text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold tracking-tight leading-tight">
                             {title}
                         </h1>
                     </div>

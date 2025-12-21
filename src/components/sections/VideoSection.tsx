@@ -50,7 +50,7 @@ export function VideoSection() {
                             <Image
                                 width={1200}
                                 height={800}
-                                src={IMAGES.ctaImage2}
+                                src={IMAGES.rabatSchoolClassroom1}
                                 alt={tVideo('trainingPresentationAlt')}
                                 className="w-full h-[250px] sm:h-[320px] md:h-[400px] object-cover"
                             />

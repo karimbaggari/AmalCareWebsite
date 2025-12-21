@@ -158,7 +158,7 @@ export default function ContactPersonSection() {
                 <div className="relative rounded-2xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-500 h-[280px] sm:h-[340px] w-full">
                   <Image
                     src={IMAGE_URLS.nurseInGermany1}
-                    alt="Rachid Amessegher - AmalCare eG"
+                    alt="Rachid Amessegher - AmalCare SARL"
                     width={800}
                     height={600}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"

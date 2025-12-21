@@ -28,7 +28,7 @@
     "home": {
       "tagline": "CARE CONNECTS. AMALCARE.",
       "title": "Welcome to AmalCare",
-      "subtitle": "We are AmalCare eG – a placement agency organized as a cooperative for nursing professionals from Morocco.",
+      "subtitle": "We are AmalCare SARL – a placement agency organized as a cooperative for nursing professionals from Morocco.",
       "description": "What makes us special: we don't just mediate, we prepare, accompany and integrate. From the first lesson in Rabat to successful arrival at a German care facility.",
       "mission": {
         "title": "Our Mission",
@@ -44,13 +44,13 @@
         "title": "Language, Care, Perspective",
         "subtitle": "FOR NURSES FROM MOROCCO",
         "description": "Language school in Rabat",
-        "cardDescription": "Professional nursing careers in Germany with comprehensive preparation and support"
+        "cardDescription": "Professional nursing careers in Germany"
       },
       "forInstitutions": {
         "title": "Hands-on Care Practice",
-        "subtitle": "FOR STUDENTS IN MOROCCO",
+        "subtitle": "FOR STUDENTS WHO WANT TO SETTLE IN GERMANY",
         "description": "The simulation course",
-        "cardDescription": "Start your nursing education journey with hands-on training in Morocco"
+        "cardDescription": "Hands-on training in Morocco"
       },
       "pathWithAmalCare": {
         "title": "Well prepared for Germany:",
@@ -120,10 +120,10 @@
     "about": {
       "heroBadge": "About AmalCare",
       "heroTitle": "Who We Are",
-      "heroDescription": "We are AmalCare eG – a placement agency organized as a cooperative for nursing professionals from Morocco.",
+      "heroDescription": "We are AmalCare SARL – a placement agency organized as a cooperative for nursing professionals from Morocco.",
       "eyebrow": "About AmalCare",
       "mainTitle": "Who We Are",
-      "description1": "AmalCare eG is a registered cooperative in Germany. It was founded by nursing professionals and executives from the healthcare sector who know the diaconal nursing routine - both outpatient and inpatient - from their own experience.",
+      "description1": "AmalCare SARL is a registered cooperative in Germany. It was founded by nursing professionals and executives from the healthcare sector who know the diaconal nursing routine - both outpatient and inpatient - from their own experience.",
       "description2": "Our idea: a personnel placement agency that does more. One that prepares, accompanies and integrates - instead of just placing. And one where we can say with a clear conscience: \"We would hire this professional ourselves.\"",
       "uniqueTitle": "What Makes AmalCare Unique",
       "uniqueDescription": "AmalCare combines language promotion, nursing skills training and social integration into an overall concept - unique in its form and quality.",
@@ -209,12 +209,12 @@
       "privacyNotice": "By submitting this form, you agree to our privacy policy and terms of service.",
       "introTitle": "We look forward to",
       "introTitleHighlight": "your message",
-      "introDescription1": "Would you like to learn more about AmalCare eG? Do you have questions about our placement model, are interested in cooperation, or would like to know how we specifically prepare nursing professionals from Morocco for German nursing practice? Then you're in exactly the right place.",
+      "introDescription1": "Would you like to learn more about AmalCare SARL? Do you have questions about our placement model, are interested in cooperation, or would like to know how we specifically prepare nursing professionals from Morocco for German nursing practice? Then you're in exactly the right place.",
       "introDescription2": "Whether you are a nursing professional or trainee from Morocco who wants to work or learn in Germany - or whether you represent a nursing facility that is looking for qualified and reliably prepared staff: We are happy to be personally available for you.",
       "introDescription3": "AmalCare accompanies people on their professional path - and organizations in building strong nursing teams. Write to us. Call us. Or arrange a personal conversation directly. We look forward to hearing from you.",
       "introDescription4": "Whether nursing professional or facility - we are happy to be there for you.",
       "contactPersonTitle": "How to reach us",
-      "companyName": "AmalCare eG",
+      "companyName": "AmalCare SARL",
       "contactPersonName": "Rachid Amessegher",
       "contactEmail": "rachid.amessegher@amal-care.de",
       "availabilityLabel": "Availability",
@@ -309,7 +309,7 @@
       "newsletterDescription": "Get updates on nursing professionals and industry news.",
       "newsletterPlaceholder": "Your email address",
       "subscribeButton": "Subscribe",
-      "copyright": "© 2024 AmalCare eG. Alle Rechte vorbehalten.",
+      "copyright": "© 2024 AmalCare SARL. Alle Rechte vorbehalten.",
       "tagline": "Dedicated to Compassion, Quality & Growth.",
       "phoneLabel": "Phone",
       "phoneNumber": "+212 623‑055683",

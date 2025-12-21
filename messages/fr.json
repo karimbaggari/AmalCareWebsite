@@ -28,7 +28,7 @@
     "home": {
       "tagline": "LES SOINS CONNECTENT. AMALCARE.",
       "title": "Bienvenue chez AmalCare",
-      "subtitle": "Nous sommes AmalCare eG – une agence de placement organisée en coopération pour les professionnels des soins infirmiers du Maroc.",
+      "subtitle": "Nous sommes AmalCare SARL – une agence de placement organisée en coopération pour les professionnels des soins infirmiers du Maroc.",
       "description": "Ce qui nous rend spéciaux : nous ne nous contentons pas de faire de la médiation, nous préparons, accompagnons et intégrons. De la première leçon à Rabat à l'arrivée réussie dans un établissement de soins allemand.",
       "mission": {
         "title": "Notre mission",
@@ -44,13 +44,13 @@
         "title": "Langue, Soins, Perspective",
         "subtitle": "POUR LES INFIRMIÈRES DU MAROC",
         "description": "École de langue à Rabat",
-        "cardDescription": "Carrières infirmières professionnelles en Allemagne avec préparation et soutien complets"
+        "cardDescription": "Carrières infirmières professionnelles en Allemagne"
       },
       "forInstitutions": {
         "title": "Pratique des soins en situation réelle",
-        "subtitle": "POUR LES ÉTUDIANTS AU MAROC",
+        "subtitle": "POUR LES ÉTUDIANTS QUI VEULENT S'INSTALLER EN ALLEMAGNE",
         "description": "Le cours de simulation",
-        "cardDescription": "Commencez votre parcours d'études en soins infirmiers avec une formation pratique au Maroc"
+        "cardDescription": "Formation pratique au Maroc"
       },
       "pathWithAmalCare": {
         "title": "Bien préparé pour l'Allemagne :",
@@ -73,12 +73,12 @@
     "about": {
       "heroBadge": "À propos d'AmalCare",
       "heroTitle": "Qui nous sommes",
-      "heroDescription": "Nous sommes AmalCare eG – une agence de placement organisée en coopération pour les professionnels des soins infirmiers du Maroc.",
+      "heroDescription": "Nous sommes AmalCare SARL – une agence de placement organisée en coopération pour les professionnels des soins infirmiers du Maroc.",
       "title": "À propos d'AmalCare",
       "description": "Nous sommes une équipe de professionnels des soins infirmiers, d'experts en éducation et d'accompagnateurs formés de manière interculturelle qui connectent les soins de manière responsable.",
       "eyebrow": "À propos d'AmalCare",
       "mainTitle": "Qui nous sommes",
-      "description1": "AmalCare eG est une coopérative enregistrée en Allemagne. Elle a été fondée par des professionnels des soins infirmiers et des dirigeants du secteur de la santé qui connaissent la routine des soins diaconaux - ambulatoires et hospitaliers - par leur propre expérience.",
+      "description1": "AmalCare SARL est une coopérative enregistrée en Allemagne. Elle a été fondée par des professionnels des soins infirmiers et des dirigeants du secteur de la santé qui connaissent la routine des soins diaconaux - ambulatoires et hospitaliers - par leur propre expérience.",
       "description2": "Notre idée : une agence de placement de personnel qui fait plus. Une qui prépare, accompagne et intègre - au lieu de simplement placer. Et une où nous pouvons dire en toute conscience : \"Nous embaucherions ce professionnel nous-mêmes.\"",
       "uniqueTitle": "Ce qui rend AmalCare unique",
       "uniqueDescription": "AmalCare combine la promotion linguistique, la formation aux compétences infirmières et l'intégration sociale en un concept global - unique dans sa forme et sa qualité.",
@@ -164,12 +164,12 @@
       "privacyNotice": "En soumettant ce formulaire, vous acceptez notre politique de confidentialité et nos conditions d'utilisation.",
       "introTitle": "Nous nous réjouissons de",
       "introTitleHighlight": "votre message",
-      "introDescription1": "Vous souhaitez en savoir plus sur AmalCare eG ? Vous avez des questions sur notre modèle de placement, vous êtes intéressé par une coopération ou vous voulez savoir comment nous préparons spécifiquement les professionnels de la santé du Maroc à la pratique des soins allemande ? Alors vous êtes au bon endroit.",
+      "introDescription1": "Vous souhaitez en savoir plus sur AmalCare SARL ? Vous avez des questions sur notre modèle de placement, vous êtes intéressé par une coopération ou vous voulez savoir comment nous préparons spécifiquement les professionnels de la santé du Maroc à la pratique des soins allemande ? Alors vous êtes au bon endroit.",
       "introDescription2": "Que vous soyez un professionnel de la santé ou un stagiaire du Maroc qui veut travailler ou apprendre en Allemagne - ou que vous représentiez un établissement de soins qui cherche du personnel qualifié et fiable : Nous sommes heureux d'être personnellement disponibles pour vous.",
       "introDescription3": "AmalCare accompagne les gens dans leur parcours professionnel - et les organisations dans la construction d'équipes de soins solides. Écrivez-nous. Appelez-nous. Ou arrangez directement une conversation personnelle. Nous nous réjouissons de vous entendre.",
       "introDescription4": "Que ce soit un professionnel de la santé ou un établissement - nous sommes heureux d'être là pour vous.",
       "contactPersonTitle": "Comment nous joindre",
-      "companyName": "AmalCare eG",
+      "companyName": "AmalCare SARL",
       "contactPersonName": "Rachid Amessegher",
       "contactEmail": "rachid.amessegher@amal-care.de",
       "availabilityLabel": "Disponibilité",
@@ -311,7 +311,7 @@
       "newsletterDescription": "Recevez des mises à jour sur les professionnels infirmiers et les nouvelles de l'industrie.",
       "newsletterPlaceholder": "Votre adresse e-mail",
       "subscribeButton": "S'abonner",
-      "copyright": "© 2024 AmalCare eG. Tous droits réservés.",
+      "copyright": "© 2024 AmalCare SARL. Tous droits réservés.",
       "tagline": "Dévoué à la compassion, à la qualité et à la croissance.",
       "phoneLabel": "Téléphone",
       "phoneNumber": "+212 623‑055683",

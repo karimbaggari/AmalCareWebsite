@@ -32,7 +32,7 @@
   "home": {
     "tagline": "PFLEGE VERBINDET. AMALCARE BEGLEITET.",
     "title": "Willkommen bei AmalCare",
-    "subtitle": "Wir sind AmalCare eG – eine genossenschaftlich organisierte Vermittlungsagentur für Pflegefachkräfte aus Marokko.",
+    "subtitle": "Wir sind AmalCare SARL – eine genossenschaftlich organisierte Vermittlungsagentur für Pflegefachkräfte aus Marokko.",
     "description": "Was uns besonders macht: Wir vermitteln nicht nur – wir bereiten vor, begleiten und integrieren. Von der ersten Unterrichtsstunde in Rabat bis zur erfolgreichen Ankunft in einer deutschen Pflegeeinrichtung.",
     "mission": {
       "title": "Unsere Mission",
@@ -48,13 +48,13 @@
       "title": "Sprache, Pflege, Perspektive",
       "subtitle": "FÜR PFLEGEFACHKRÄFTE AUS MAROKKO",
       "description": "Sprachschule in Rabat",
-      "cardDescription": "Professionelle Pflegekarrieren in Deutschland mit umfassender Vorbereitung und Unterstützung"
+      "cardDescription": "Professionelle Pflegekarrieren in Deutschland"
     },
     "forInstitutions": {
       "title": "Praxisnahe Pflegeübungen",
-      "subtitle": "FÜR AUSZUBILDENDE IN MAROKKO",
+      "subtitle": "FÜR STUDENTEN, DIE SICH IN DEUTSCHLAND NIEDERLASSEN MÖCHTEN",
       "description": "Der Simulationskurs",
-      "cardDescription": "Starten Sie Ihre Pflegeausbildung mit praktischem Training in Marokko"
+      "cardDescription": "Praktisches Training in Marokko"
     },
     "pathWithAmalCare": {
       "title": "Gut vorbereitet nach Deutschland:",
@@ -84,12 +84,12 @@
   "about": {
     "heroBadge": "Über AmalCare",
     "heroTitle": "Wer wir sind",
-    "heroDescription": "Wir sind AmalCare eG – eine genossenschaftlich organisierte Vermittlungsagentur für Pflegefachkräfte aus Marokko.",
+    "heroDescription": "Wir sind AmalCare SARL – eine genossenschaftlich organisierte Vermittlungsagentur für Pflegefachkräfte aus Marokko.",
     "title": "Über AmalCare",
     "description": "Wir sind ein Team aus Pflegeprofis, Bildungsexpert:innen und interkulturell geschulten Begleiter:innen, die Pflege verantwortungsvoll verbinden.",
     "eyebrow": "Über AmalCare",
     "mainTitle": "Wer wir sind",
-    "description1": "AmalCare eG ist eine eingetragene Genossenschaft in Deutschland. Gegründet wurde sie von Pflegefachkräften und Führungspersonen aus dem Gesundheitswesen, die den diakonischen Pflegealltag – ambulant wie stationär – aus eigener Erfahrung kennen.",
+    "description1": "AmalCare SARL ist eine eingetragene Genossenschaft in Deutschland. Gegründet wurde sie von Pflegefachkräften und Führungspersonen aus dem Gesundheitswesen, die den diakonischen Pflegealltag – ambulant wie stationär – aus eigener Erfahrung kennen.",
     "description2": "Unsere Idee: eine Personalvermittlung, die mehr leistet. Eine, die vorbereitet, begleitet und integriert – statt nur zu vermitteln. Und eine, bei der wir mit gutem Gewissen sagen können: „Diese Fachkraft würden wir selbst einstellen.\"",
     "uniqueTitle": "Was AmalCare einzigartig macht",
     "uniqueDescription": "AmalCare vereint Sprachförderung, Schulung von Pflegekompetenzen und soziale Integration zu einem Gesamtkonzept – einzigartig in seiner Form und Qualität.",
@@ -175,12 +175,12 @@
     "privacyNotice": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzrichtlinie und den Nutzungsbedingungen zu.",
     "introTitle": "Wir freuen uns auf",
     "introTitleHighlight": "Ihre Nachricht",
-    "introDescription1": "Sie möchten mehr über AmalCare eG erfahren? Sie haben Fragen zu unserem Vermittlungsmodell, interessieren sich für eine Zusammenarbeit oder möchten wissen, wie wir Pflegefachkräfte aus Marokko gezielt auf den deutschen Pflegealltag vorbereiten? Dann sind Sie hier genau richtig.",
+    "introDescription1": "Sie möchten mehr über AmalCare SARL erfahren? Sie haben Fragen zu unserem Vermittlungsmodell, interessieren sich für eine Zusammenarbeit oder möchten wissen, wie wir Pflegefachkräfte aus Marokko gezielt auf den deutschen Pflegealltag vorbereiten? Dann sind Sie hier genau richtig.",
     "introDescription2": "Ganz gleich, ob Sie eine Pflegefachkraft oder Auszubildende:r aus Marokko sind, die:der in Deutschland arbeiten oder lernen möchte – oder ob Sie eine Pflegeeinrichtung vertreten, die qualifiziertes und verlässlich vorbereitetes Personal sucht: Wir sind gerne persönlich für Sie da.",
     "introDescription3": "AmalCare begleitet Menschen auf ihrem beruflichen Weg – und Organisationen beim Aufbau starker Pflegeteams. Schreiben Sie uns. Rufen Sie uns an. Oder vereinbaren Sie direkt ein persönliches Gespräch. Wir freuen uns, von Ihnen zu hören.",
     "introDescription4": "Ob Pflegefachkraft oder Einrichtung – wir sind gerne für Sie da.",
     "contactPersonTitle": "So erreichen Sie uns",
-    "companyName": "AmalCare eG",
+    "companyName": "AmalCare SARL",
     "contactPersonName": "Rachid Amessegher",
     "contactEmail": "rachid.amessegher@amal-care.de",
     "availabilityLabel": "Erreichbarkeit",
@@ -322,7 +322,7 @@
     "newsletterDescription": "Erhalten Sie Updates zu Pflegefachkräften und Branchennachrichten.",
     "newsletterPlaceholder": "Ihre E-Mail-Adresse",
     "subscribeButton": "Abonnieren",
-    "copyright": "© 2024 AmalCare eG. Alle Rechte vorbehalten.",
+    "copyright": "© 2024 AmalCare SARL. Alle Rechte vorbehalten.",
     "tagline": "Hingabe an Mitgefühl, Qualität & Wachstum.",
     "phoneLabel": "Telefon",
     "phoneNumber": "+212 623‑055683",
