@@ -82,7 +82,7 @@ export function LanguageSchoolSection() {
           </div>
 
           {/* Image Slider */}
-          <div className="mb-16 md:mb-20 max-w-5xl mx-auto">
+          <div className="mb-16 md:mb-20 max-w-3xl mx-auto">
             <ImageSlider
               images={sliderImages}
               alt={t('sliderAlt')}

@@ -66,7 +66,8 @@ export function ImageSlider({
               alt={`${alt} ${index + 1}`}
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 768px, 1024px"
+              quality={90}
               priority={index === 0}
             />
           </div>

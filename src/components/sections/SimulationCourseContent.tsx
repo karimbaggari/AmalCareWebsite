@@ -78,6 +78,11 @@ export default function SimulationCourseContent() {
                     {t('description')}
                   </p>
 
+                  {/* External Students Note */}
+                  <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90 drop-shadow-md font-medium">
+                    {t('externalStudentsNote')}
+                  </p>
+
                   {/* Icon decoration */}
                   <div className="flex items-center gap-3 pt-2">
                     <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm border border-white/30 group-hover:scale-110 transition-transform duration-300">
@@ -271,6 +276,12 @@ export default function SimulationCourseContent() {
                       <Target className="h-6 w-6 text-[#00a6a2] flex-shrink-0 mt-1" />
                       <p className="text-base sm:text-lg lg:text-xl text-[#003c3a] leading-relaxed font-medium">
                         {t('systematicConclusion')}
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-4 p-6 bg-gray-100 rounded-xl border border-gray-300 mt-6">
+                      <Users className="h-6 w-6 text-[#00a6a2] flex-shrink-0 mt-1" />
+                      <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed">
+                        {t('institutionsNote')}
                       </p>
                     </div>
                   </div>
