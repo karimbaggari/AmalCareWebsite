@@ -190,12 +190,12 @@ export default function ContactPersonSection() {
                 </div>
               </div>
 
-              {/* Second Team Member - Heike Steinbach */}
+              {/* Second Team Member - Naima Salam */}
               <div className="relative group">
                 <div className="relative rounded-2xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-500 h-[280px] sm:h-[340px] w-full">
                   <Image
-                    src={IMAGE_URLS.schoolRabat}
-                    alt="Heike Steinbach - Board Member Cooperative"
+                    src={IMAGE_URLS.teacherSchoolImage2}
+                    alt={t('teamMember2.name')}
                     width={800}
                     height={600}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
@@ -209,16 +209,16 @@ export default function ContactPersonSection() {
                     <div className="bg-white/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 max-w-md w-full">
                       <div className="flex items-start gap-2 sm:gap-3">
                         <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#7c3aed] rounded-full flex items-center justify-center flex-shrink-0">
-                          <span className="text-white font-bold text-xs sm:text-sm">HS</span>
+                          <span className="text-white font-bold text-xs sm:text-sm">NS</span>
                         </div>
                         <div className="flex-1 min-w-0">
                           <p className="font-semibold text-sm sm:text-base text-gray-900">{t('teamMember2.name')}</p>
                           <p className="text-[10px] sm:text-xs text-gray-600 mb-1">{t('teamMember2.role')}</p>
                           <a 
-                            href="mailto:heike.steinbach@amal-care.de" 
+                            href="mailto:naima.salam@amal-care.de" 
                             className="text-[10px] sm:text-xs text-[#7c3aed] hover:text-[#6d28d9] transition-colors break-all"
                           >
-                            heike.steinbach@amal-care.de
+                            naima.salam@amal-care.de
                           </a>
                         </div>
                       </div>

@@ -228,7 +228,8 @@ export const IMAGE_URLS = {
   rabatSchoolClassroom7: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Language%20Classroom/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.58_2b8be133.jpg?updatedAt=1761409485157',
   rabatSchoolClassroom8: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Language%20Classroom/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.58_77b0594d.jpg?updatedAt=1761409485171',
   rabatSchoolClassroom9: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Simulation%20Room/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.55_34cf0a3c.jpg?updatedAt=1761409485161',
-  rabatSchoolClassroom10: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Simulation%20Room/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.56_8d482402.jpg?updatedAt=1761409483269'
+  rabatSchoolClassroom10: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Simulation%20Room/WhatsApp%20Image%202025-09-12%20%C3%A0%2013.01.56_8d482402.jpg?updatedAt=1761409483269',
+  teacherSchoolImage2: 'https://ik.imagekit.io/p2myilloy/Pictures/School%20In%20Rabat/Language%20Classroom/prof.jpg',
 } as const;
 
 
